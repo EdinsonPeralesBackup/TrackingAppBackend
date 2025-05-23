@@ -1,0 +1,11 @@
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\bin\Debug\net8.0\Tracking.Domain.deps.json
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\bin\Debug\net8.0\Tracking.Domain.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\bin\Debug\net8.0\Tracking.Domain.pdb
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.AssemblyInfoInputs.cache
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.AssemblyInfo.cs
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.csproj.CoreCompileInputs.cache
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\obj\Debug\net8.0\refint\Tracking.Domain.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.pdb
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Domain\obj\Debug\net8.0\ref\Tracking.Domain.dll

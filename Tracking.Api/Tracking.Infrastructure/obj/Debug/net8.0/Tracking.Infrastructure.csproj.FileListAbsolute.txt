@@ -1,0 +1,17 @@
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\bin\Debug\net8.0\Tracking.Infrastructure.deps.json
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\bin\Debug\net8.0\Tracking.Infrastructure.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\bin\Debug\net8.0\Tracking.Infrastructure.pdb
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\bin\Debug\net8.0\Tracking.Application.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\bin\Debug\net8.0\Tracking.Domain.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\bin\Debug\net8.0\Tracking.Application.pdb
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\bin\Debug\net8.0\Tracking.Domain.pdb
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\obj\Debug\net8.0\Tracking.Infrastructure.csproj.AssemblyReference.cache
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\obj\Debug\net8.0\Tracking.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\obj\Debug\net8.0\Tracking.Infrastructure.AssemblyInfoInputs.cache
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\obj\Debug\net8.0\Tracking.Infrastructure.AssemblyInfo.cs
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\obj\Debug\net8.0\Tracking.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\obj\Debug\net8.0\Tracking.18313BC0.Up2Date
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\obj\Debug\net8.0\Tracking.Infrastructure.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\obj\Debug\net8.0\refint\Tracking.Infrastructure.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\obj\Debug\net8.0\Tracking.Infrastructure.pdb
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Infrastructure\obj\Debug\net8.0\ref\Tracking.Infrastructure.dll

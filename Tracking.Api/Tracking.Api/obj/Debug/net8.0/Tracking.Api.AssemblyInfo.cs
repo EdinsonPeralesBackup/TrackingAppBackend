@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tracking.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffc2eb9e681bc3c80ef26d8cf2c01a5096ba5ef4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tracking.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tracking.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

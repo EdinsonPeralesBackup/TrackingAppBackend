@@ -1,0 +1,17 @@
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\bin\Debug\net8.0\Tracking.Persistence.deps.json
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\bin\Debug\net8.0\Tracking.Persistence.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\bin\Debug\net8.0\Tracking.Persistence.pdb
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\bin\Debug\net8.0\Tracking.Application.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\bin\Debug\net8.0\Tracking.Domain.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\bin\Debug\net8.0\Tracking.Application.pdb
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\bin\Debug\net8.0\Tracking.Domain.pdb
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\obj\Debug\net8.0\Tracking.Persistence.csproj.AssemblyReference.cache
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\obj\Debug\net8.0\Tracking.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\obj\Debug\net8.0\Tracking.Persistence.AssemblyInfoInputs.cache
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\obj\Debug\net8.0\Tracking.Persistence.AssemblyInfo.cs
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\obj\Debug\net8.0\Tracking.Persistence.csproj.CoreCompileInputs.cache
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\obj\Debug\net8.0\Tracking.7312611B.Up2Date
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\obj\Debug\net8.0\Tracking.Persistence.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\obj\Debug\net8.0\refint\Tracking.Persistence.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\obj\Debug\net8.0\Tracking.Persistence.pdb
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Tracking.Persistence\obj\Debug\net8.0\ref\Tracking.Persistence.dll
