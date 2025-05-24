@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "ContainingType": "Tracking.Api.Controllers.AuthorizationController",
+    "Method": "Login",
+    "RelativePath": "api/v1/Authorization/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.Authorization.Commad.Login.LoginCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Authorization.Commad.Login.LoginCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.AuthorizationController",
+    "Method": "Register",
+    "RelativePath": "api/v1/Authorization/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.Authorization.Commad.Register.RegisterCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Authorization.Commad.Register.RegisterCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.EncryptController",
+    "Method": "Encrypt",
+    "RelativePath": "api/v1/Encrypt/encrypt",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "text",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

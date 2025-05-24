@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.persistence\\repository\\authorizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|solutionrelative:tracking.persistence\\repository\\authorizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\middlewares\\customexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\middlewares\\customexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\filter\\authorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\filter\\authorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\register\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\register\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,64 +34,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Startup.cs",
-              "RelativeDocumentMoniker": "Tracking.Api\\Startup.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Startup.cs",
-              "RelativeToolTip": "Tracking.Api\\Startup.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAADgv0UAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T01:58:39.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Tracking.Api\\Program.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Program.cs",
-              "RelativeToolTip": "Tracking.Api\\Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAADgvy0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T01:58:06.302Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ServiceExtensions.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Extensions\\ServiceExtensions.cs",
-              "RelativeDocumentMoniker": "Tracking.Api\\Extensions\\ServiceExtensions.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Extensions\\ServiceExtensions.cs",
-              "RelativeToolTip": "Tracking.Api\\Extensions\\ServiceExtensions.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAADgvzYAAAAdAAAAAAAAAA==",
+              "Title": "AuthorizationRepository.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\AuthorizationRepository.cs",
+              "RelativeDocumentMoniker": "Tracking.Persistence\\Repository\\AuthorizationRepository.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\AuthorizationRepository.cs",
+              "RelativeToolTip": "Tracking.Persistence\\Repository\\AuthorizationRepository.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwE0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T01:33:05.233Z",
+              "WhenOpened": "2025-05-24T04:17:44.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthorizationController.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthorizationController.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\AuthorizationController.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthorizationController.cs",
+              "RelativeToolTip": "Tracking.Api\\Controllers\\AuthorizationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T04:11:06.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CustomExceptionHandlerMiddleware.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Middlewares\\CustomExceptionHandlerMiddleware.cs",
-              "RelativeDocumentMoniker": "Tracking.Api\\Middlewares\\CustomExceptionHandlerMiddleware.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Middlewares\\CustomExceptionHandlerMiddleware.cs",
-              "RelativeToolTip": "Tracking.Api\\Middlewares\\CustomExceptionHandlerMiddleware.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAiwFQAAAA0AAAAAAAAAA==",
+              "Title": "RegisterCommand.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Register\\RegisterCommand.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\Register\\RegisterCommand.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Register\\RegisterCommand.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\Register\\RegisterCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T01:38:05.524Z"
+              "WhenOpened": "2025-05-24T03:47:32.888Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthorizationFilter.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Filter\\AuthorizationFilter.cs",
-              "RelativeDocumentMoniker": "Tracking.Api\\Filter\\AuthorizationFilter.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Filter\\AuthorizationFilter.cs",
-              "RelativeToolTip": "Tracking.Api\\Filter\\AuthorizationFilter.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAADgv0IAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RegisterCommandHandler.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Register\\RegisterCommandHandler.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\Register\\RegisterCommandHandler.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Register\\RegisterCommandHandler.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\Register\\RegisterCommandHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T01:37:54.197Z"
+              "WhenOpened": "2025-05-24T03:32:15.535Z",
+              "EditorCaption": ""
             }
           ]
         }

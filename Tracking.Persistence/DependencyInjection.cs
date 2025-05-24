@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Tracking.Application.Common.Interface;
+using Tracking.Application.Common.Interface.Repositories;
 using Tracking.Persistence.Database;
+using Tracking.Persistence.Repository;
 
 namespace Tracking.Persistence
 {
@@ -15,7 +17,7 @@ namespace Tracking.Persistence
         {
             services.AddTransient<IDataBase>(sp => new SqlDataBase(connectionString));
 
-            //services.AddSingleton<IAutenticacionRepository, AutenticacionRepository>();
+            services.AddSingleton<IAuthorizationRepository, AuthorizationRepository>();
 
             return services;
         }

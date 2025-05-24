@@ -1,0 +1,280 @@
+2025-05-23 22:07:11.108 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-23 22:07:11.151 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-23 22:07:11.643 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-23 22:07:14.950 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-23 22:07:29.594 -05:00 [INF] [Tracking.api] [0HNCQE0AVMILE:00000009] HTTP "POST" "/api/v1/Encrypt/encrypt" responded 200 in 1223.1910 ms
+2025-05-23 22:20:38.443 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-23 22:20:38.498 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-23 22:20:38.619 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-23 22:20:39.981 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-23 22:20:49.115 -05:00 [INF] [Tracking.api] [0HNCQE7R023FN:00000009] HTTP "POST" "/api/v1/Encrypt/encrypt" responded 200 in 136.4388 ms
+2025-05-23 22:25:21.358 -05:00 [INF] [Tracking.api] [0HNCQE7R023FN:0000000B] Procesando request "LoginCommand" de null
+2025-05-23 22:25:22.163 -05:00 [ERR] [Tracking.api] [0HNCQE7R023FN:0000000B] SqlException { Errors: [SqlError { Source: "Core .Net SqlClient Data Provider", Number: 4060, State: 1, Class: 11, Server: "DESKTOP-OPKFGCA", Message: "Cannot open database \"Tracking\" requested by the login. The login failed.", Procedure: "", LineNumber: 65536 }, SqlError { Source: "Core .Net SqlClient Data Provider", Number: 18456, State: 1, Class: 14, Server: "DESKTOP-OPKFGCA", Message: "Login failed for user 'DESKTOP-OPKFGCA\Alfiery'.", Procedure: "", LineNumber: 65536 }], ClientConnectionId: 853431a8-bf16-4582-9888-a8e312e0ded1, Class: 11, LineNumber: 65536, Number: 4060, Procedure: "", Server: "DESKTOP-OPKFGCA", State: 1, Source: "Core .Net SqlClient Data Provider", IsTransient: False, SqlState: null, BatchCommand: null, ErrorCode: -2146232060, TargetSite: Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, Boolean, System.String), Message: "Cannot open database \"Tracking\" requested by the login. The login failed.
+Login failed for user 'DESKTOP-OPKFGCA\Alfiery'.", Data: [DictionaryEntry { Key: "HelpLink.ProdName", Value: "Microsoft SQL Server" }, DictionaryEntry { Key: "HelpLink.EvtSrc", Value: "MSSQLServer" }, DictionaryEntry { Key: "HelpLink.EvtID", Value: "4060" }, DictionaryEntry { Key: "HelpLink.BaseHelpUrl", Value: "https://go.microsoft.com/fwlink" }, DictionaryEntry { Key: "HelpLink.LinkId", Value: "20476" }], InnerException: null, HelpLink: null, HResult: -2146232060, StackTrace: "   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteWrappedReaderImplAsync(IDbConnection cnn, CommandDefinition command, CommandBehavior commandBehavior) in /_/Dapper/SqlMapper.Async.cs:line 1165
+   at Tracking.Persistence.Repository.AuthorizationRepository.Login(LoginCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Persistence\Repository\AuthorizationRepository.cs:line 38
+   at Tracking.Application.Authorization.Commad.Login.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Authorization\Commad\Login\LoginCommandHandler.cs:line 38
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthorizationController.Login(LoginCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthorizationController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-23 22:25:22.237 -05:00 [ERR] [Tracking.api] [0HNCQE7R023FN:0000000B] HTTP "POST" "/api/v1/Authorization/login" responded 500 in 998.2519 ms
+2025-05-23 22:26:14.113 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-23 22:26:14.159 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-23 22:26:14.265 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-23 22:26:15.664 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-23 22:26:17.339 -05:00 [INF] [Tracking.api] [0HNCQEAUT4SL4:00000009] Procesando request "LoginCommand" de null
+2025-05-23 22:26:17.876 -05:00 [ERR] [Tracking.api] [0HNCQEAUT4SL4:00000009] SqlException { Errors: [SqlError { Source: "Core .Net SqlClient Data Provider", Number: 2812, State: 62, Class: 16, Server: "DESKTOP-OPKFGCA", Message: "Could not find stored procedure 'dbo.sp_IniciarSesion'.", Procedure: "dbo.sp_IniciarSesion", LineNumber: 1 }], ClientConnectionId: b146c7b1-e5a1-4b5b-a44a-64a35b1c12bc, Class: 16, LineNumber: 1, Number: 2812, Procedure: "dbo.sp_IniciarSesion", Server: "DESKTOP-OPKFGCA", State: 62, Source: "Core .Net SqlClient Data Provider", IsTransient: False, SqlState: null, BatchCommand: null, ErrorCode: -2146232060, TargetSite: System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__126_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader]), Message: "Could not find stored procedure 'dbo.sp_IniciarSesion'.", Data: [DictionaryEntry { Key: "HelpLink.ProdName", Value: "Microsoft SQL Server" }, DictionaryEntry { Key: "HelpLink.ProdVer", Value: "16.00.1135" }, DictionaryEntry { Key: "HelpLink.EvtSrc", Value: "MSSQLServer" }, DictionaryEntry { Key: "HelpLink.EvtID", Value: "2812" }, DictionaryEntry { Key: "HelpLink.BaseHelpUrl", Value: "https://go.microsoft.com/fwlink" }, DictionaryEntry { Key: "HelpLink.LinkId", Value: "20476" }], InnerException: null, HelpLink: null, HResult: -2146232060, StackTrace: "   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteWrappedReaderImplAsync(IDbConnection cnn, CommandDefinition command, CommandBehavior commandBehavior) in /_/Dapper/SqlMapper.Async.cs:line 1166
+   at Tracking.Persistence.Repository.AuthorizationRepository.Login(LoginCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Persistence\Repository\AuthorizationRepository.cs:line 38
+   at Tracking.Application.Authorization.Commad.Login.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Authorization\Commad\Login\LoginCommandHandler.cs:line 38
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthorizationController.Login(LoginCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthorizationController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-23 22:26:17.958 -05:00 [ERR] [Tracking.api] [0HNCQEAUT4SL4:00000009] HTTP "POST" "/api/v1/Authorization/login" responded 500 in 857.1645 ms
+2025-05-23 22:26:35.722 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-23 22:26:35.785 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-23 22:26:35.916 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-23 22:26:37.380 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-23 22:26:42.139 -05:00 [INF] [Tracking.api] [0HNCQEB5C95EH:00000009] Procesando request "LoginCommand" de null
+2025-05-23 22:26:42.517 -05:00 [INF] [Tracking.api] [0HNCQEB5C95EH:00000009] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 607.5287 ms
+2025-05-23 22:29:54.615 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-23 22:29:54.656 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-23 22:29:54.793 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-23 22:29:56.261 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-23 22:30:04.868 -05:00 [INF] [Tracking.api] [0HNCQED0O0P5P:00000009] Procesando request "LoginCommand" de null
+2025-05-23 22:30:05.162 -05:00 [INF] [Tracking.api] [0HNCQED0O0P5P:00000009] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 534.8960 ms
+2025-05-23 23:16:13.746 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-23 23:16:13.822 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-23 23:16:13.980 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-23 23:16:15.584 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-23 23:17:27.172 -05:00 [INF] [Tracking.api] [0HNCQF6T2JE74:00000001] Procesando request "RegisterCommand" de null
+2025-05-23 23:17:27.590 -05:00 [ERR] [Tracking.api] [0HNCQF6T2JE74:00000001] SqlException { Errors: [SqlError { Source: "Core .Net SqlClient Data Provider", Number: 2812, State: 62, Class: 16, Server: "DESKTOP-OPKFGCA", Message: "Could not find stored procedure 'dbo.sp_RegisterUser'.", Procedure: "dbo.sp_RegisterUser", LineNumber: 1 }], ClientConnectionId: 7d7ec892-fd14-4ac3-9386-d440bfbc31ce, Class: 16, LineNumber: 1, Number: 2812, Procedure: "dbo.sp_RegisterUser", Server: "DESKTOP-OPKFGCA", State: 62, Source: "Core .Net SqlClient Data Provider", IsTransient: False, SqlState: null, BatchCommand: null, ErrorCode: -2146232060, TargetSite: System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__126_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader]), Message: "Could not find stored procedure 'dbo.sp_RegisterUser'.", Data: [DictionaryEntry { Key: "HelpLink.ProdName", Value: "Microsoft SQL Server" }, DictionaryEntry { Key: "HelpLink.ProdVer", Value: "16.00.1135" }, DictionaryEntry { Key: "HelpLink.EvtSrc", Value: "MSSQLServer" }, DictionaryEntry { Key: "HelpLink.EvtID", Value: "2812" }, DictionaryEntry { Key: "HelpLink.BaseHelpUrl", Value: "https://go.microsoft.com/fwlink" }, DictionaryEntry { Key: "HelpLink.LinkId", Value: "20476" }], InnerException: null, HelpLink: null, HResult: -2146232060, StackTrace: "   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteWrappedReaderImplAsync(IDbConnection cnn, CommandDefinition command, CommandBehavior commandBehavior) in /_/Dapper/SqlMapper.Async.cs:line 1166
+   at Tracking.Persistence.Repository.AuthorizationRepository.Register(RegisterCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Persistence\Repository\AuthorizationRepository.cs:line 77
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthorizationController.Register(RegisterCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthorizationController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-23 23:17:27.657 -05:00 [ERR] [Tracking.api] [0HNCQF6T2JE74:00000001] HTTP "POST" "/api/v1/Authorization/register" responded 500 in 692.9901 ms
+2025-05-23 23:17:37.937 -05:00 [INF] [Tracking.api] [0HNCQF6T2JE74:00000003] Procesando request "RegisterCommand" de null
+2025-05-23 23:17:38.080 -05:00 [ERR] [Tracking.api] [0HNCQF6T2JE74:00000003] InvalidCastException { TargetSite: T Get[T](System.String), Message: "Unable to cast object of type 'System.String' to type 'System.Int32'.", Data: [], InnerException: null, HelpLink: null, Source: "Dapper", HResult: -2147467262, StackTrace: "   at Dapper.DynamicParameters.Get[T](String name) in /_/Dapper/DynamicParameters.cs:line 329
+   at Tracking.Persistence.Repository.AuthorizationRepository.Register(RegisterCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Persistence\Repository\AuthorizationRepository.cs:line 82
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthorizationController.Register(RegisterCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthorizationController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-23 23:17:38.099 -05:00 [ERR] [Tracking.api] [0HNCQF6T2JE74:00000003] HTTP "POST" "/api/v1/Authorization/register" responded 500 in 168.2613 ms
+2025-05-23 23:18:08.915 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-23 23:18:08.967 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-23 23:18:09.075 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-23 23:18:10.328 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-23 23:18:16.033 -05:00 [INF] [Tracking.api] [0HNCQF7V6EOHJ:00000001] Procesando request "RegisterCommand" de null
+2025-05-23 23:18:16.297 -05:00 [INF] [Tracking.api] [0HNCQF7V6EOHJ:00000001] HTTP "POST" "/api/v1/Authorization/register" responded 200 in 493.8959 ms
+2025-05-23 23:18:21.227 -05:00 [INF] [Tracking.api] [0HNCQF7V6EOHJ:00000003] Procesando request "RegisterCommand" de null
+2025-05-23 23:18:21.241 -05:00 [INF] [Tracking.api] [0HNCQF7V6EOHJ:00000003] HTTP "POST" "/api/v1/Authorization/register" responded 200 in 20.0039 ms
+2025-05-23 23:18:42.179 -05:00 [INF] [Tracking.api] [0HNCQF7V6EOHJ:00000005] Procesando request "RegisterCommand" de null
+2025-05-23 23:18:42.189 -05:00 [INF] [Tracking.api] [0HNCQF7V6EOHJ:00000005] HTTP "POST" "/api/v1/Authorization/register" responded 200 in 10.8881 ms
+2025-05-23 23:19:50.030 -05:00 [INF] [Tracking.api] [0HNCQF7V6EOHJ:00000007] Procesando request "RegisterCommand" de null
+2025-05-23 23:19:50.039 -05:00 [INF] [Tracking.api] [0HNCQF7V6EOHJ:00000007] HTTP "POST" "/api/v1/Authorization/register" responded 200 in 10.4874 ms
+2025-05-23 23:21:56.586 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-23 23:21:56.634 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-23 23:21:56.749 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-23 23:21:58.068 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-23 23:22:14.451 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000001] Procesando request "RegisterCommand" de null
+2025-05-23 23:22:14.683 -05:00 [ERR] [Tracking.api] [0HNCQFA3210JA:00000001] FormatException { TargetSite: System.DateTime Parse(System.ReadOnlySpan`1[System.Char], System.Globalization.DateTimeFormatInfo, System.Globalization.DateTimeStyles), Message: "String '28/02/2000' was not recognized as a valid DateTime.", Data: [], InnerException: null, HelpLink: null, Source: "System.Private.CoreLib", HResult: -2146233033, StackTrace: "   at System.DateTimeParse.Parse(ReadOnlySpan`1 s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.Convert.ToDateTime(String value)
+   at Tracking.Persistence.Repository.AuthorizationRepository.Register(RegisterCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Persistence\Repository\AuthorizationRepository.cs:line 71
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthorizationController.Register(RegisterCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthorizationController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-23 23:22:14.728 -05:00 [ERR] [Tracking.api] [0HNCQFA3210JA:00000001] HTTP "POST" "/api/v1/Authorization/register" responded 500 in 485.1707 ms
+2025-05-23 23:22:38.575 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000003] Procesando request "RegisterCommand" de null
+2025-05-23 23:22:38.904 -05:00 [ERR] [Tracking.api] [0HNCQFA3210JA:00000003] SqlException { Errors: [SqlError { Source: "Core .Net SqlClient Data Provider", Number: 2812, State: 62, Class: 16, Server: "DESKTOP-OPKFGCA", Message: "Could not find stored procedure 'dbo.sp_RegisterUser'.", Procedure: "dbo.sp_RegisterUser", LineNumber: 1 }], ClientConnectionId: 687d3cb6-d6e7-41e9-95de-aeb7b97fb1ca, Class: 16, LineNumber: 1, Number: 2812, Procedure: "dbo.sp_RegisterUser", Server: "DESKTOP-OPKFGCA", State: 62, Source: "Core .Net SqlClient Data Provider", IsTransient: False, SqlState: null, BatchCommand: null, ErrorCode: -2146232060, TargetSite: System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__126_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader]), Message: "Could not find stored procedure 'dbo.sp_RegisterUser'.", Data: [DictionaryEntry { Key: "HelpLink.ProdName", Value: "Microsoft SQL Server" }, DictionaryEntry { Key: "HelpLink.ProdVer", Value: "16.00.1135" }, DictionaryEntry { Key: "HelpLink.EvtSrc", Value: "MSSQLServer" }, DictionaryEntry { Key: "HelpLink.EvtID", Value: "2812" }, DictionaryEntry { Key: "HelpLink.BaseHelpUrl", Value: "https://go.microsoft.com/fwlink" }, DictionaryEntry { Key: "HelpLink.LinkId", Value: "20476" }], InnerException: null, HelpLink: null, HResult: -2146232060, StackTrace: "   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteWrappedReaderImplAsync(IDbConnection cnn, CommandDefinition command, CommandBehavior commandBehavior) in /_/Dapper/SqlMapper.Async.cs:line 1166
+   at Tracking.Persistence.Repository.AuthorizationRepository.Register(RegisterCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Persistence\Repository\AuthorizationRepository.cs:line 77
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthorizationController.Register(RegisterCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthorizationController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-23 23:22:38.941 -05:00 [ERR] [Tracking.api] [0HNCQFA3210JA:00000003] HTTP "POST" "/api/v1/Authorization/register" responded 500 in 369.8441 ms
+2025-05-23 23:22:44.622 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000005] Procesando request "RegisterCommand" de null
+2025-05-23 23:22:44.656 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000005] HTTP "POST" "/api/v1/Authorization/register" responded 200 in 34.8914 ms
+2025-05-23 23:22:55.480 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000007] Procesando request "LoginCommand" de null
+2025-05-23 23:22:55.503 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000007] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 38.4403 ms
+2025-05-23 23:23:09.505 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000009] Procesando request "LoginCommand" de null
+2025-05-23 23:23:09.514 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000009] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 11.1181 ms
+2025-05-23 23:23:26.017 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:0000000B] Procesando request "LoginCommand" de null
+2025-05-23 23:23:26.029 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:0000000B] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 13.4530 ms
+2025-05-23 23:23:27.057 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:0000000D] Procesando request "LoginCommand" de null
+2025-05-23 23:23:27.062 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:0000000D] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 5.8893 ms
+2025-05-23 23:23:27.508 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:0000000F] Procesando request "LoginCommand" de null
+2025-05-23 23:23:27.513 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:0000000F] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 5.9227 ms
+2025-05-23 23:23:27.689 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000011] Procesando request "LoginCommand" de null
+2025-05-23 23:23:27.693 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000011] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 4.7888 ms
+2025-05-23 23:23:27.904 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000013] Procesando request "LoginCommand" de null
+2025-05-23 23:23:27.907 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000013] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 4.5588 ms
+2025-05-23 23:23:28.022 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000015] Procesando request "LoginCommand" de null
+2025-05-23 23:23:28.026 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000015] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 4.9231 ms
+2025-05-23 23:23:28.230 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000017] Procesando request "LoginCommand" de null
+2025-05-23 23:23:28.234 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000017] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 4.7449 ms
+2025-05-23 23:23:28.465 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000019] Procesando request "LoginCommand" de null
+2025-05-23 23:23:28.469 -05:00 [INF] [Tracking.api] [0HNCQFA3210JA:00000019] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 5.6217 ms
+2025-05-23 23:24:01.631 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-23 23:24:01.673 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-23 23:24:01.799 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-23 23:24:03.168 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-23 23:32:48.857 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJO9:00000001] Procesando request "RegisterCommand" de null
+2025-05-23 23:32:49.111 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJO9:00000001] HTTP "POST" "/api/v1/Authorization/register" responded 200 in 469.9467 ms
+2025-05-23 23:32:51.881 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJO9:00000003] Procesando request "LoginCommand" de null
+2025-05-23 23:32:51.904 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJO9:00000003] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 36.5215 ms
+2025-05-23 23:32:55.686 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJO9:00000005] Procesando request "RegisterCommand" de null
+2025-05-23 23:32:55.693 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJO9:00000005] HTTP "POST" "/api/v1/Authorization/register" responded 200 in 8.0521 ms
+2025-05-23 23:35:49.248 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJOA:00000001] Procesando request "LoginCommand" de null
+2025-05-23 23:35:49.256 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJOA:00000001] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 13.1489 ms
+2025-05-23 23:36:48.071 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJO8:00000009] HTTP "POST" "/api/v1/Encrypt/encrypt" responded 200 in 13.7434 ms
+2025-05-23 23:36:50.794 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJO8:0000000B] HTTP "POST" "/api/v1/Encrypt/encrypt" responded 200 in 1.5067 ms
+2025-05-23 23:37:37.867 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJOA:00000003] Procesando request "RegisterCommand" de null
+2025-05-23 23:37:37.895 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJOA:00000003] HTTP "POST" "/api/v1/Authorization/register" responded 200 in 29.5437 ms
+2025-05-23 23:37:49.002 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJOA:00000005] Procesando request "LoginCommand" de null
+2025-05-23 23:37:49.008 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJOA:00000005] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 7.2154 ms
+2025-05-23 23:39:07.032 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJOA:00000007] Procesando request "RegisterCommand" de null
+2025-05-23 23:39:07.041 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJOA:00000007] HTTP "POST" "/api/v1/Authorization/register" responded 200 in 10.1092 ms
+2025-05-23 23:39:08.736 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJOA:00000009] Procesando request "LoginCommand" de null
+2025-05-23 23:39:08.782 -05:00 [INF] [Tracking.api] [0HNCQFB8DRJOA:00000009] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 47.2404 ms

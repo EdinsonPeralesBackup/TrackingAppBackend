@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Tracking.Application\Tracking.Application.csproj" />
     <ProjectReference Include="..\Tracking.Infrastructure\Tracking.Infrastructure.csproj" />
     <ProjectReference Include="..\Tracking.Persistence\Tracking.Persistence.csproj" />
