@@ -1,0 +1,13 @@
+2025-05-25 01:04:54.989 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-25 01:04:55.036 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-25 01:04:55.525 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-25 01:04:58.550 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-25 01:05:00.963 -05:00 [INF] [Tracking.api] [0HNCRA8A7QM0C:00000001] Procesando request "LoginCommand" de null
+2025-05-25 01:05:01.600 -05:00 [INF] [Tracking.api] [0HNCRA8A7QM0C:00000001] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 2082.6262 ms
+2025-05-25 01:06:35.436 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-25 01:06:35.474 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-25 01:06:35.580 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-25 01:06:36.383 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-25 01:07:32.638 -05:00 [INF] [Tracking.api] [0HNCRA97B0CQP:00000001] HTTP "GET" "/api/v1/Encrypt/encrypt" responded 200 in 125.0527 ms
+2025-05-25 01:07:52.092 -05:00 [INF] [Tracking.api] [0HNCRA97B0CQQ:00000001] HTTP "GET" "/api/v1/Encrypt/encrypt" responded 200 in 4.2131 ms
+2025-05-25 01:09:25.855 -05:00 [INF] [Tracking.api] [0HNCRA97B0CQQ:00000003] HTTP "GET" "/api/v1/Authenticate/me" responded 200 in 156.3479 ms

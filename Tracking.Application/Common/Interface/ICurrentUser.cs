@@ -8,12 +8,13 @@ namespace Tracking.Application.Common.Interface
 {
     public interface ICurrentUser
     {
-        string Identifier { get; set; }
-        string Nombres { get; set; }
-        string ApellidoPaterno { get; set; }
-        string ApellidoMaterno { get; set; }
-        string NombreCompleto { get; set; }
-        string RolId { get; set; }
-        string Rol { get; set; }
+        string Id { get; set; }
+        string Name { get; set; }
+        string LastName { get; set; }
+        string Birthday { get; set; }
+        string Phone { get; set; }
+        string FullName { get; set; }
+        int IdRol { get; set; }
+        string RolNombre { get; set; }
     }
 }

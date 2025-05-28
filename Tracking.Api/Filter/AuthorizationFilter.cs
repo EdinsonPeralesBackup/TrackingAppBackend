@@ -48,23 +48,25 @@ namespace Tracking.Api.Filter
                 {
                     var claims = jwtToken.Claims;
 
-                    var userId = claims.FirstOrDefault(c => c.Type == "identifier")?.Value;
-                    var userName = claims.FirstOrDefault(c => c.Type == "nombres")?.Value;
-                    var userApellidoPaterno = claims.FirstOrDefault(c => c.Type == "apellido_paterno")?.Value;
-                    var userApellidoMaterno = claims.FirstOrDefault(c => c.Type == "apellido_materno")?.Value;
-                    var userFullName = claims.FirstOrDefault(c => c.Type == "nombre_completo")?.Value;
-                    var rolId = claims.FirstOrDefault(c => c.Type == "id_rol")?.Value;
-                    var rolName = claims.FirstOrDefault(c => c.Type == "rol_nombre")?.Value;
+                    var userId = claims.FirstOrDefault(c => c.Type == "id")?.Value;
+                    var name = claims.FirstOrDefault(c => c.Type == "name")?.Value;
+                    var lastName = claims.FirstOrDefault(c => c.Type == "lastName")?.Value;
+                    var birthday = claims.FirstOrDefault(c => c.Type == "birthday")?.Value;
+                    var phone = claims.FirstOrDefault(c => c.Type == "phone")?.Value;
+                    var fullName = claims.FirstOrDefault(c => c.Type == "fullName")?.Value;
+                    var idRol = claims.FirstOrDefault(c => c.Type == "idRol")?.Value;
+                    var rolName = claims.FirstOrDefault(c => c.Type == "rolNombre")?.Value;
 
                     var currentUser = new CurrentUser()
                     {
-                        Identifier = userId,
-                        Nombres = userName,
-                        ApellidoPaterno = userApellidoPaterno,
-                        ApellidoMaterno = userApellidoMaterno,
-                        NombreCompleto = userFullName,
-                        RolId = rolId,
-                        Rol = rolName
+                        Id = userId,
+                        Name = name,
+                        LastName = lastName,
+                        Birthday = birthday,
+                        Phone = phone,
+                        FullName = fullName,
+                        IdRol = Convert.ToInt32(idRol),
+                        RolNombre = rolName
                     };
 
                     var currenUserSerialize = JsonConvert.SerializeObject(currentUser);

@@ -50,12 +50,13 @@ namespace Tracking.Application.Authorization.Commad.Login
             var claims = new List<Claim>
             {
                 new Claim("id", command.Id.ToString() ?? ""),
-                new Claim("phone", command.Phone ?? ""),
                 new Claim("name", command.Name ?? ""),
-                new Claim("last_name", command.Lastname ?? ""),
-                new Claim("full_name", $"{command.Name} {command.Lastname}"),
-                new Claim("id_rol", command.IdRole.ToString() ?? ""),
-                new Claim("rol_nombre", command.Role ?? ""),
+                new Claim("lastName", command.Lastname ?? ""),
+                new Claim("birthday", command.Birthday ?? ""),
+                new Claim("phone", command.Phone ?? ""),
+                new Claim("fullName", $"{command.Name} {command.Lastname}"),
+                new Claim("idRol", command.IdRole.ToString() ?? ""),
+                new Claim("rolNombre", command.Role ?? ""),
             };
 
             var token = _jwtService.Generate(claims.ToArray(), this._dateTimeService.HoraLocal());

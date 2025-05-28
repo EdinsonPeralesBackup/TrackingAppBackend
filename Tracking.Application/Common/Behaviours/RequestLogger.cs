@@ -22,7 +22,7 @@ namespace Tracking.Application.Common.Behaviours
 
         public Task Process(TRequest request, CancellationToken cancellationToken)
         {
-            _logger.LogInformation("Procesando request {0} de {1}", typeof(TRequest).Name, _currentUser.Identifier);
+            _logger.LogInformation("Procesando request {0} de {1}", typeof(TRequest).Name, _currentUser.Id);
 
             return Task.CompletedTask;
         }

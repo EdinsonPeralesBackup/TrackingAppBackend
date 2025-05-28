@@ -9,7 +9,7 @@ namespace Tracking.Api.Controllers
     [AllowAnonymous]
     public class EncryptController : AbstractController
     {
-        [HttpPost]
+        [HttpGet]
         [Route("encrypt")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         public IActionResult Encrypt(string text)

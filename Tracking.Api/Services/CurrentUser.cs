@@ -4,12 +4,13 @@ namespace Tracking.Api.Services
 {
     public class CurrentUser : ICurrentUser
     {
-        public string Identifier { get; set; }
-        public string Nombres { get; set; }
-        public string ApellidoPaterno { get; set; }
-        public string ApellidoMaterno { get; set; }
-        public string NombreCompleto { get; set; }
-        public string RolId { get; set; }
-        public string Rol { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public string Birthday { get; set; }
+        public string Phone { get; set; }
+        public string FullName { get; set; }
+        public int IdRol { get; set; }
+        public string RolNombre { get; set; }
     }
 }
