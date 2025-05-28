@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\login\\logincommandtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\login\\logincommandtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\login\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\login\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginCommand.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommand.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommand.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommand.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:25:57.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginCommandHandler.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:25:12.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginCommandToken.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandToken.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandToken.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandToken.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:25:11.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthorizationController.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthorizationController.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\AuthorizationController.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthorizationController.cs",
+              "RelativeToolTip": "Tracking.Api\\Controllers\\AuthorizationController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:25:00.006Z",
+              "EditorCaption": ""
             }
           ]
         }

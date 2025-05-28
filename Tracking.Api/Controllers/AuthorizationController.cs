@@ -13,7 +13,7 @@ namespace Tracking.Api.Controllers
     {
         [HttpPost]
         [Route("login")]
-        [ProducesResponseType(typeof(LoginCommandDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(LoginCommandToken), StatusCodes.Status200OK)]
         public async Task<IActionResult> Login(LoginCommand command)
         {
             var response = await Mediator.Send(command);
