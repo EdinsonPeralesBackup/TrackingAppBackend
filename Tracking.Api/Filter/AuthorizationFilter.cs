@@ -7,12 +7,21 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Tracking.Application.Common.Interface;
 using Tracking.Api.Services;
+using Tracking.Application.Common.Interface.Repositories;
+using Tracking.Application.Authorization.Commad.ValidToken;
 
 namespace Tracking.Api.Filter
 {
-    public class AuthorizationFilter : ActionFilterAttribute
+    public class AuthorizationFilter : IActionFilter
     {
-        public override void OnActionExecuting(ActionExecutingContext context)
+        private readonly IUserRepository _userRepository;
+
+        public AuthorizationFilter(IUserRepository userRepository)
+        {
+            this._userRepository = userRepository;
+        }
+
+        public void OnActionExecuting(ActionExecutingContext context)
         {
             string _key = "WCM9K1M2&7g1O4bogUii$TYxWwTP@S*1";
             string _issuer = "Tracking.Api";
@@ -26,6 +35,17 @@ namespace Tracking.Api.Filter
             }
 
             var token = request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+
+            var isTokenValid =  (this._userRepository.ValidToken(new ValidTokenCommand()
+            {
+                Token = token
+            })).Result;
+
+            if (!isTokenValid.IsValid)
+            {
+                context.Result = new UnauthorizedResult();
+                return;
+            }
 
             try
             {
@@ -41,7 +61,7 @@ namespace Tracking.Api.Filter
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_key))
                 };
 
-                var principal = handler.ValidateToken(token, validationParameters, out SecurityToken validatedToken);
+                handler.ValidateToken(token, validationParameters, out SecurityToken validatedToken);
 
                 var jwtToken = validatedToken as JwtSecurityToken;
                 if (jwtToken != null)
@@ -80,8 +100,10 @@ namespace Tracking.Api.Filter
             {
                 context.Result = new UnauthorizedResult();
             }
+        }
 
-            base.OnActionExecuting(context);
+        public void OnActionExecuted(ActionExecutedContext context)
+        {
         }
     }
 }

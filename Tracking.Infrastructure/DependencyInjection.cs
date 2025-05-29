@@ -16,6 +16,7 @@ namespace Tracking.Infrastructure
             services.AddSingleton<IDateTimeService, DateTimeService>();
             services.AddSingleton<ICryptography, Cryptography>();
             services.AddSingleton<IJwtService, JwtService>();
+            services.AddSingleton<ITwilioService, TwilioService>();
             return services;
         }
 

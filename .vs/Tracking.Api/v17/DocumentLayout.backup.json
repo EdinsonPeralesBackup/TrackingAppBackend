@@ -3,20 +3,68 @@
   "WorkspaceRootPath": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\filter\\authorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\filter\\authorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\common\\interface\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\common\\interface\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|solutionrelative:tracking.persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\validtoken\\validtokencommanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\validtoken\\validtokencommanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\deletetoken\\deletetokencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\deletetoken\\deletetokencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\validtoken\\validtokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\validtoken\\validtokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\abstractcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\abstractcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\deletetoken\\deletetokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\deletetoken\\deletetokencommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\login\\logincommandtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\login\\logincommandtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\deletetoken\\deletetokencommanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\deletetoken\\deletetokencommanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\login\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\login\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\authorization\\commad\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\authorization\\commad\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\user\\comand\\updatepassword\\updatepasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\user\\comand\\updatepassword\\updatepasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\verificationcode\\command\\resetpassword\\resetpasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\verificationcode\\command\\resetpassword\\resetpasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\user\\comand\\updatepassword\\updatepasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\user\\comand\\updatepassword\\updatepasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +73,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 179,
           "SelectedChildIndex": 4,
           "Children": [
             {
@@ -34,51 +82,210 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AbstractController.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AbstractController.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\AbstractController.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AbstractController.cs",
+              "RelativeToolTip": "Tracking.Api\\Controllers\\AbstractController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T06:15:38.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ValidTokenCommandHandler.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\ValidToken\\ValidTokenCommandHandler.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\ValidToken\\ValidTokenCommandHandler.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\ValidToken\\ValidTokenCommandHandler.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\ValidToken\\ValidTokenCommandHandler.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T06:08:03.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginCommand.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommand.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommand.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommand.cs",
-              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Title": "ValidTokenCommandDTO.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\ValidToken\\ValidTokenCommandDTO.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\ValidToken\\ValidTokenCommandDTO.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\ValidToken\\ValidTokenCommandDTO.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\ValidToken\\ValidTokenCommandDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T05:25:57.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginCommandHandler.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
-              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwCUAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T05:25:12.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginCommandToken.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandToken.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandToken.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandToken.cs",
-              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandToken.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T05:25:11.073Z"
+              "WhenOpened": "2025-05-29T06:08:00.608Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AuthorizationFilter.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Filter\\AuthorizationFilter.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Filter\\AuthorizationFilter.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Filter\\AuthorizationFilter.cs",
+              "RelativeToolTip": "Tracking.Api\\Filter\\AuthorizationFilter.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwC4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T05:56:26.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeleteTokenCommand.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommand.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommand.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommand.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T05:48:50.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Tracking.Persistence\\Repository\\UserRepository.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "Tracking.Persistence\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAnwIUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:57:43.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeleteTokenCommandHandler.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommandHandler.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommandHandler.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommandHandler.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommandHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T05:48:56.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Common\\Interface\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Common\\Interface\\Repositories\\IUserRepository.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Common\\Interface\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Tracking.Application\\Common\\Interface\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAhwBQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T05:47:24.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Tracking.Api\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowCsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:56:32.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthenticateController.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthenticateController.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\AuthenticateController.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthenticateController.cs",
+              "RelativeToolTip": "Tracking.Api\\Controllers\\AuthenticateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:56:19.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AuthorizationController.cs",
               "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthorizationController.cs",
               "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\AuthorizationController.cs",
               "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthorizationController.cs",
               "RelativeToolTip": "Tracking.Api\\Controllers\\AuthorizationController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T05:25:00.006Z",
+              "WhenOpened": "2025-05-29T04:56:16.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DeleteTokenCommandDTO.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommandDTO.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommandDTO.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommandDTO.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\DeleteToken\\DeleteTokenCommandDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T05:48:53.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginCommandHandler.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
+              "RelativeToolTip": "Tracking.Application\\Authorization\\Commad\\Login\\LoginCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T05:40:49.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ResetPasswordCommandHandler.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\VerificationCode\\Command\\ResetPassword\\ResetPasswordCommandHandler.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\VerificationCode\\Command\\ResetPassword\\ResetPasswordCommandHandler.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\VerificationCode\\Command\\ResetPassword\\ResetPasswordCommandHandler.cs",
+              "RelativeToolTip": "Tracking.Application\\VerificationCode\\Command\\ResetPassword\\ResetPasswordCommandHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:55:57.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UpdatePasswordCommand.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\User\\Comand\\UpdatePassword\\UpdatePasswordCommand.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\User\\Comand\\UpdatePassword\\UpdatePasswordCommand.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\User\\Comand\\UpdatePassword\\UpdatePasswordCommand.cs",
+              "RelativeToolTip": "Tracking.Application\\User\\Comand\\UpdatePassword\\UpdatePasswordCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:55:48.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpdatePasswordCommandHandler.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\User\\Comand\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\User\\Comand\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\User\\Comand\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
+              "RelativeToolTip": "Tracking.Application\\User\\Comand\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T04:54:21.676Z",
               "EditorCaption": ""
             }
           ]

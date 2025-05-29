@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Tracking.Application.Authorization.Commad.DeleteToken;
 using Tracking.Application.Authorization.Commad.Login;
 using Tracking.Application.Authorization.Commad.Register;
 
@@ -28,5 +29,15 @@ namespace Tracking.Api.Controllers
             var response = await Mediator.Send(command);
             return Ok(response);
         }
+
+        [HttpPost]
+        [Route("deleteToken")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> DeleteToken(LoginCommand command)
+        {
+            var response = await Mediator.Send(command);
+            return Ok(response);
+        }
+
     }
 }

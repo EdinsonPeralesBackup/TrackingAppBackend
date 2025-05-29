@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
+using Tracking.Application.Common.Settings;
 using Tracking.Persistence.Database;
 using Tracking.Persistence.Repository;
 
@@ -18,6 +19,7 @@ namespace Tracking.Persistence
             services.AddTransient<IDataBase>(sp => new SqlDataBase(connectionString));
 
             services.AddSingleton<IAuthorizationRepository, AuthorizationRepository>();
+            services.AddSingleton<IUserRepository, UserRepository>();
 
             return services;
         }

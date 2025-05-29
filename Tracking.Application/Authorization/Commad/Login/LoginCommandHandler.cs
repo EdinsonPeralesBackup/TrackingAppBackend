@@ -17,6 +17,7 @@ namespace Tracking.Application.Authorization.Commad.Login
         private readonly ILogger<LoginCommandHandler> _logger;
         private readonly IMapper _mapper;
         private readonly IAuthorizationRepository _authorizationRepository;
+        private readonly IUserRepository _userRepository;
         private readonly IJwtService _jwtService;
         private readonly IDateTimeService _dateTimeService;
 
@@ -24,12 +25,14 @@ namespace Tracking.Application.Authorization.Commad.Login
             ILogger<LoginCommandHandler> logger,
             IMapper mapper,
             IAuthorizationRepository authorizationRepository,
+            IUserRepository userRepository,
             IJwtService jwtService,
             IDateTimeService dateTimeService)
         {
             this._logger = logger;
             this._mapper = mapper;
             this._authorizationRepository = authorizationRepository;
+            this._userRepository = userRepository;
             this._jwtService = jwtService;
             this._dateTimeService = dateTimeService;
         }
@@ -42,6 +45,7 @@ namespace Tracking.Application.Authorization.Commad.Login
                 return token;
             }
             token.Token = GenerateToken(response);
+            this._userRepository.InsertToken(token.Token, response.Id);
             return token;
         }
 

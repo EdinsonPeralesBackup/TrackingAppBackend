@@ -20,6 +20,80 @@
     ]
   },
   {
+    "ContainingType": "Tracking.Api.Controllers.AuthenticateController",
+    "Method": "SendCodeVerification",
+    "RelativePath": "api/v1/Authenticate/sendCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Api.Services.CurrentUser",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.AuthenticateController",
+    "Method": "ValidationCodeVerification",
+    "RelativePath": "api/v1/Authenticate/validationCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.VerificationCode.Command.CheckVerificationCode.CheckVerificationCodeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Api.Services.CurrentUser",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.AuthorizationController",
+    "Method": "DeleteToken",
+    "RelativePath": "api/v1/Authorization/deleteToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.Authorization.Commad.Login.LoginCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Tracking.Api.Controllers.AuthorizationController",
     "Method": "Login",
     "RelativePath": "api/v1/Authorization/login",
@@ -35,7 +109,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Tracking.Application.Authorization.Commad.Login.LoginCommandDTO",
+        "Type": "Tracking.Application.Authorization.Commad.Login.LoginCommandToken",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -88,6 +162,72 @@
     "ReturnTypes": [
       {
         "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/v1/User/deleteUser",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.User.Comand.DeleteUser.DeleteUserCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.UserController",
+    "Method": "Logout",
+    "RelativePath": "api/v1/User/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Authorization.Commad.Login.LoginCommandToken",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.UserController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/v1/User/resetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Tracking.Application.VerificationCode.Command.ResetPassword.ResetPasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.VerificationCode.Command.ResetPassword.ResetPasswordCommandDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",

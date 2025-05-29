@@ -1,0 +1,123 @@
+2025-05-29 00:00:00.061 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVG:00000001] Procesando request "ResetPasswordCommand" de null
+2025-05-29 00:00:00.289 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVG:00000001] HTTP "POST" "/api/v1/User/resetPassword" responded 200 in 483.0169 ms
+2025-05-29 00:00:08.995 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVG:00000003] Procesando request "LoginCommand" de null
+2025-05-29 00:00:09.016 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVG:00000003] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 59.2812 ms
+2025-05-29 00:00:12.940 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVG:00000005] Procesando request "LoginCommand" de null
+2025-05-29 00:00:12.954 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVG:00000005] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 15.9768 ms
+2025-05-29 00:02:37.578 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVH:00000001] Procesando request "SendVerificationCodeCommand" de null
+2025-05-29 00:02:38.270 -05:00 [ERR] [Tracking.api] [0HNCUDMJGVCVH:00000001] ApiException { Code: 21608, Status: 403, MoreInfo: "https://www.twilio.com/docs/errors/21608", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "The phone number is unverified. Trial accounts cannot send messages to unverified numbers; verify it at twilio.com/user/account/phone-numbers/verified", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthenticateController.SendCodeVerification(SendVerificationCodeCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthenticateController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-29 00:02:38.302 -05:00 [ERR] [Tracking.api] [0HNCUDMJGVCVH:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 735.8549 ms
+2025-05-29 00:12:35.236 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000001] Procesando request "CheckVerificationCodeCommand" de null
+2025-05-29 00:12:36.320 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000001] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 200 in 1098.5778 ms
+2025-05-29 00:13:09.725 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000003] Procesando request "ResetPasswordCommand" de null
+2025-05-29 00:13:09.738 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000003] HTTP "POST" "/api/v1/User/resetPassword" responded 200 in 18.1494 ms
+2025-05-29 00:14:12.724 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000005] Procesando request "ResetPasswordCommand" de null
+2025-05-29 00:14:12.735 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000005] HTTP "POST" "/api/v1/User/resetPassword" responded 200 in 15.1810 ms
+2025-05-29 00:14:13.663 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000007] Procesando request "ResetPasswordCommand" de null
+2025-05-29 00:14:13.666 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000007] HTTP "POST" "/api/v1/User/resetPassword" responded 200 in 6.2904 ms
+2025-05-29 00:14:14.150 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000009] Procesando request "ResetPasswordCommand" de null
+2025-05-29 00:14:14.154 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000009] HTTP "POST" "/api/v1/User/resetPassword" responded 200 in 5.7307 ms
+2025-05-29 00:14:14.607 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:0000000B] Procesando request "ResetPasswordCommand" de null
+2025-05-29 00:14:14.611 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:0000000B] HTTP "POST" "/api/v1/User/resetPassword" responded 200 in 6.4544 ms
+2025-05-29 00:14:15.033 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:0000000D] Procesando request "ResetPasswordCommand" de null
+2025-05-29 00:14:15.037 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:0000000D] HTTP "POST" "/api/v1/User/resetPassword" responded 200 in 6.4593 ms
+2025-05-29 00:14:15.251 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:0000000F] Procesando request "ResetPasswordCommand" de null
+2025-05-29 00:14:15.254 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:0000000F] HTTP "POST" "/api/v1/User/resetPassword" responded 200 in 5.6543 ms
+2025-05-29 00:14:15.812 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000011] Procesando request "ResetPasswordCommand" de null
+2025-05-29 00:14:15.815 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000011] HTTP "POST" "/api/v1/User/resetPassword" responded 200 in 5.4948 ms
+2025-05-29 00:14:20.882 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000013] Procesando request "ResetPasswordCommand" de null
+2025-05-29 00:14:20.890 -05:00 [INF] [Tracking.api] [0HNCUDMJGVCVI:00000013] HTTP "POST" "/api/v1/User/resetPassword" responded 200 in 11.4226 ms
+2025-05-29 00:15:35.852 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-29 00:15:35.893 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-29 00:15:35.991 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-29 00:15:37.042 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-29 00:54:04.897 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-29 00:54:04.939 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-29 00:54:05.049 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-29 00:54:06.181 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-29 00:54:11.846 -05:00 [INF] [Tracking.api] [0HNCUEKSK3QKC:00000001] Procesando request "LoginCommand" de null
+2025-05-29 00:54:12.137 -05:00 [INF] [Tracking.api] [0HNCUEKSK3QKC:00000001] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 572.5689 ms
+2025-05-29 00:55:36.148 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-29 00:55:36.188 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-29 00:55:36.289 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-29 00:55:37.369 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-29 00:55:41.175 -05:00 [INF] [Tracking.api] [0HNCUELNR0QDS:00000001] Procesando request "DeleteTokenCommand" de null
+2025-05-29 00:55:41.301 -05:00 [INF] [Tracking.api] [0HNCUELNR0QDS:00000001] HTTP "POST" "/api/v1/user/logout" responded 200 in 388.6013 ms
+2025-05-29 00:56:16.207 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-29 00:56:16.246 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-29 00:56:16.355 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-29 00:56:17.345 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-29 01:04:39.582 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-29 01:04:39.620 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-29 01:04:39.719 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-29 01:04:40.663 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-29 01:04:59.528 -05:00 [INF] [Tracking.api] [0HNCUEQPLABPO:00000001] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:04:59.650 -05:00 [INF] [Tracking.api] [0HNCUEQPLABPO:00000001] HTTP "POST" "/api/v1/user/logout" responded 200 in 5912.7734 ms
+2025-05-29 01:20:06.205 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-29 01:20:06.244 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-29 01:20:06.357 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-29 01:20:07.677 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-29 01:20:14.770 -05:00 [INF] [Tracking.api] [0HNCUF3DV643P:00000001] HTTP "POST" "/api/v1/user/logout" responded 401 in 370.7303 ms
+2025-05-29 01:20:17.749 -05:00 [INF] [Tracking.api] [0HNCUF3DV643P:00000003] HTTP "POST" "/api/v1/user/logout" responded 401 in 9.2576 ms
+2025-05-29 01:20:20.104 -05:00 [INF] [Tracking.api] [0HNCUF3DV643P:00000005] HTTP "POST" "/api/v1/user/logout" responded 401 in 1.8705 ms
+2025-05-29 01:20:23.240 -05:00 [INF] [Tracking.api] [0HNCUF3DV643P:00000007] Procesando request "LoginCommand" de null
+2025-05-29 01:20:23.319 -05:00 [INF] [Tracking.api] [0HNCUF3DV643P:00000007] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 136.3839 ms
+2025-05-29 01:20:31.062 -05:00 [INF] [Tracking.api] [0HNCUF3DV643P:00000009] HTTP "POST" "/api/v1/user/logout" responded 401 in 4.1307 ms
+2025-05-29 01:23:40.325 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000001] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:23:40.331 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000001] HTTP "POST" "/api/v1/user/logout" responded 200 in 34.8396 ms
+2025-05-29 01:23:52.655 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000003] HTTP "POST" "/api/v1/user/logout" responded 401 in 6.9674 ms
+2025-05-29 01:24:15.526 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000005] Procesando request "LoginCommand" de null
+2025-05-29 01:24:15.531 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000005] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 8.2181 ms
+2025-05-29 01:24:35.315 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000007] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:24:35.317 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000007] HTTP "POST" "/api/v1/user/logout" responded 200 in 8.1842 ms
+2025-05-29 01:24:36.738 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000009] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:24:36.740 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000009] HTTP "POST" "/api/v1/user/logout" responded 200 in 5.8986 ms
+2025-05-29 01:24:38.189 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:0000000B] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:24:38.190 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:0000000B] HTTP "POST" "/api/v1/user/logout" responded 200 in 4.7813 ms
+2025-05-29 01:24:39.850 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:0000000D] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:24:39.851 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:0000000D] HTTP "POST" "/api/v1/user/logout" responded 200 in 9.2777 ms
+2025-05-29 01:25:53.144 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:0000000F] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:25:53.149 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:0000000F] HTTP "POST" "/api/v1/user/logout" responded 200 in 41500.2740 ms
+2025-05-29 01:26:20.403 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000011] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:26:20.404 -05:00 [INF] [Tracking.api] [0HNCUF3DV643Q:00000011] HTTP "POST" "/api/v1/user/logout" responded 200 in 23912.1322 ms
+2025-05-29 01:28:26.857 -05:00 [INF] [Tracking.api] [0HNCUF3DV643R:00000001] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:28:26.858 -05:00 [INF] [Tracking.api] [0HNCUF3DV643R:00000001] HTTP "POST" "/api/v1/user/logout" responded 200 in 1717.1769 ms
+2025-05-29 01:29:05.487 -05:00 [INF] [Tracking.api] [0HNCUF3DV643R:00000003] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:29:05.489 -05:00 [INF] [Tracking.api] [0HNCUF3DV643R:00000003] HTTP "POST" "/api/v1/user/logout" responded 200 in 2340.6884 ms
+2025-05-29 01:31:08.742 -05:00 [INF] [Tracking.api] [0HNCUF3DV643S:00000001] Procesando request "LoginCommand" de null
+2025-05-29 01:31:08.746 -05:00 [INF] [Tracking.api] [0HNCUF3DV643S:00000001] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 35.1627 ms
+2025-05-29 01:33:05.159 -05:00 [INF] [Tracking.api] [0HNCUF3DV643S:00000003] HTTP "POST" "/api/v1/user/logout" responded 401 in 10162.2148 ms
+2025-05-29 01:33:09.474 -05:00 [INF] [Tracking.api] [0HNCUF3DV643S:00000005] Procesando request "LoginCommand" de null
+2025-05-29 01:33:09.479 -05:00 [INF] [Tracking.api] [0HNCUF3DV643S:00000005] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 5.6868 ms
+2025-05-29 01:33:32.268 -05:00 [INF] [Tracking.api] [0HNCUF3DV643S:00000007] Procesando request "DeleteTokenCommand" de null
+2025-05-29 01:33:32.270 -05:00 [INF] [Tracking.api] [0HNCUF3DV643S:00000007] HTTP "POST" "/api/v1/user/logout" responded 200 in 1917.5875 ms
+2025-05-29 01:33:36.090 -05:00 [INF] [Tracking.api] [0HNCUF3DV643S:00000009] HTTP "POST" "/api/v1/user/logout" responded 401 in 1079.9509 ms

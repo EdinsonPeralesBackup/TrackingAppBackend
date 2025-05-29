@@ -1,0 +1,734 @@
+2025-05-28 15:44:33.680 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 15:44:33.730 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 15:44:34.261 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 15:44:37.237 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 15:45:05.796 -05:00 [INF] [Tracking.api] [0HNCU51R545RP:00000009] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 401 in 896.9386 ms
+2025-05-28 15:46:09.158 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000001] Procesando request "LoginCommand" de null
+2025-05-28 15:46:09.702 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000001] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 724.3125 ms
+2025-05-28 15:46:12.835 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000003] Procesando request "LoginCommand" de null
+2025-05-28 15:46:12.850 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000003] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 17.7493 ms
+2025-05-28 15:46:14.646 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000005] Procesando request "LoginCommand" de null
+2025-05-28 15:46:14.652 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000005] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 7.2018 ms
+2025-05-28 15:46:15.394 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000007] Procesando request "LoginCommand" de null
+2025-05-28 15:46:15.401 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000007] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 7.6788 ms
+2025-05-28 15:46:15.607 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000009] Procesando request "LoginCommand" de null
+2025-05-28 15:46:15.616 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000009] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 9.8905 ms
+2025-05-28 15:46:15.720 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:0000000B] Procesando request "LoginCommand" de null
+2025-05-28 15:46:15.728 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:0000000B] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 8.2842 ms
+2025-05-28 15:46:16.038 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:0000000D] Procesando request "LoginCommand" de null
+2025-05-28 15:46:16.044 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:0000000D] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 7.0467 ms
+2025-05-28 15:46:16.284 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:0000000F] Procesando request "LoginCommand" de null
+2025-05-28 15:46:16.291 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:0000000F] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 7.6581 ms
+2025-05-28 15:46:16.392 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000011] Procesando request "LoginCommand" de null
+2025-05-28 15:46:16.398 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000011] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 6.8700 ms
+2025-05-28 15:46:16.597 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000013] Procesando request "LoginCommand" de null
+2025-05-28 15:46:16.604 -05:00 [INF] [Tracking.api] [0HNCU51R545RQ:00000013] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 8.0699 ms
+2025-05-28 15:47:00.758 -05:00 [INF] [Tracking.api] [0HNCU51R545RR:00000001] Procesando request "LoginCommand" de null
+2025-05-28 15:47:00.765 -05:00 [INF] [Tracking.api] [0HNCU51R545RR:00000001] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 9.0351 ms
+2025-05-28 15:47:09.197 -05:00 [INF] [Tracking.api] [0HNCU51R545RS:00000001] Procesando request "LoginCommand" de null
+2025-05-28 15:47:09.208 -05:00 [INF] [Tracking.api] [0HNCU51R545RS:00000001] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 17.2113 ms
+2025-05-28 15:47:11.926 -05:00 [INF] [Tracking.api] [0HNCU51R545RS:00000003] Procesando request "LoginCommand" de null
+2025-05-28 15:47:11.933 -05:00 [INF] [Tracking.api] [0HNCU51R545RS:00000003] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 7.5132 ms
+2025-05-28 15:47:14.829 -05:00 [INF] [Tracking.api] [0HNCU51R545RS:00000005] Procesando request "LoginCommand" de null
+2025-05-28 15:47:14.836 -05:00 [INF] [Tracking.api] [0HNCU51R545RS:00000005] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 7.6369 ms
+2025-05-28 15:48:11.422 -05:00 [INF] [Tracking.api] [0HNCU51R545RT:00000001] Procesando request "LoginCommand" de null
+2025-05-28 15:49:19.578 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 15:49:19.620 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 15:49:19.726 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 15:49:21.118 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 15:49:21.643 -05:00 [INF] [Tracking.api] [0HNCU54FKN7CK:00000001] Procesando request "LoginCommand" de null
+2025-05-28 15:49:25.522 -05:00 [INF] [Tracking.api] [0HNCU54FKN7CK:00000001] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 4119.8395 ms
+2025-05-28 15:49:54.477 -05:00 [INF] [Tracking.api] [0HNCU54FKN7CK:00000003] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 15:50:09.454 -05:00 [ERR] [Tracking.api] [0HNCU54FKN7CK:00000003] JsonSerializationException { LineNumber: 0, LinePosition: 0, Path: null, TargetSite: System.Object GetValue(System.Object), Message: "Error getting value from 'Result' on 'System.Threading.Tasks.Task`1[Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandDTO]'.", Data: [], InnerException: AggregateException { InnerExceptions: [ApiException { Code: 20003, Status: 401, MoreInfo: "https://www.twilio.com/docs/errors/20003", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "Authenticate", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }], Message: "One or more errors occurred. (Authenticate)", TargetSite: Void ThrowIfExceptional(Boolean), Data: [], InnerException: ApiException { Code: 20003, Status: 401, MoreInfo: "https://www.twilio.com/docs/errors/20003", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "Authenticate", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }, HelpLink: null, Source: "System.Private.CoreLib", HResult: -2146233088, StackTrace: "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at lambda_method594(Closure, Object)
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)" }, HelpLink: null, Source: "Newtonsoft.Json", HResult: -2146233088, StackTrace: "   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 15:50:09.504 -05:00 [ERR] [Tracking.api] [0HNCU54FKN7CK:00000003] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 15097.1293 ms
+2025-05-28 15:52:31.533 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 15:52:31.572 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 15:52:31.671 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 15:52:32.932 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 15:52:51.319 -05:00 [INF] [Tracking.api] [0HNCU568SFOPL:00000001] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 15:52:56.840 -05:00 [ERR] [Tracking.api] [0HNCU568SFOPL:00000001] JsonSerializationException { LineNumber: 0, LinePosition: 0, Path: null, TargetSite: System.Object GetValue(System.Object), Message: "Error getting value from 'Result' on 'System.Threading.Tasks.Task`1[Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandDTO]'.", Data: [], InnerException: AggregateException { InnerExceptions: [ApiException { Code: 60200, Status: 400, MoreInfo: "https://www.twilio.com/docs/errors/60200", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "Invalid parameter `To`: 978525987", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }], Message: "One or more errors occurred. (Invalid parameter `To`: 978525987)", TargetSite: Void ThrowIfExceptional(Boolean), Data: [], InnerException: ApiException { Code: 60200, Status: 400, MoreInfo: "https://www.twilio.com/docs/errors/60200", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "Invalid parameter `To`: 978525987", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }, HelpLink: null, Source: "System.Private.CoreLib", HResult: -2146233088, StackTrace: "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at lambda_method564(Closure, Object)
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)" }, HelpLink: null, Source: "Newtonsoft.Json", HResult: -2146233088, StackTrace: "   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 15:52:56.899 -05:00 [ERR] [Tracking.api] [0HNCU568SFOPL:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 5852.7428 ms
+2025-05-28 15:54:55.396 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 15:54:55.436 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 15:54:55.602 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 15:54:56.689 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 15:57:49.235 -05:00 [INF] [Tracking.api] [0HNCU57JMPI4M:00000001] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 15:57:54.264 -05:00 [ERR] [Tracking.api] [0HNCU57JMPI4M:00000001] JsonSerializationException { LineNumber: 0, LinePosition: 0, Path: null, TargetSite: System.Object GetValue(System.Object), Message: "Error getting value from 'Result' on 'System.Threading.Tasks.Task`1[Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandDTO]'.", Data: [], InnerException: AggregateException { InnerExceptions: [ApiException { Code: 20003, Status: 401, MoreInfo: "https://www.twilio.com/docs/errors/20003", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "Authenticate", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }], Message: "One or more errors occurred. (Authenticate)", TargetSite: Void ThrowIfExceptional(Boolean), Data: [], InnerException: ApiException { Code: 20003, Status: 401, MoreInfo: "https://www.twilio.com/docs/errors/20003", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "Authenticate", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }, HelpLink: null, Source: "System.Private.CoreLib", HResult: -2146233088, StackTrace: "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at lambda_method564(Closure, Object)
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)" }, HelpLink: null, Source: "Newtonsoft.Json", HResult: -2146233088, StackTrace: "   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 15:57:54.339 -05:00 [ERR] [Tracking.api] [0HNCU57JMPI4M:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 5394.8533 ms
+2025-05-28 16:00:32.462 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 16:00:32.503 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 16:00:32.608 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 16:00:33.610 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 16:00:38.029 -05:00 [INF] [Tracking.api] [0HNCU5AO63E06:00000001] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 16:00:42.308 -05:00 [ERR] [Tracking.api] [0HNCU5AO63E06:00000001] JsonSerializationException { LineNumber: 0, LinePosition: 0, Path: null, TargetSite: System.Object GetValue(System.Object), Message: "Error getting value from 'Result' on 'System.Threading.Tasks.Task`1[Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandDTO]'.", Data: [], InnerException: AggregateException { InnerExceptions: [ApiException { Code: 60200, Status: 400, MoreInfo: "https://www.twilio.com/docs/errors/60200", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "Invalid parameter `To`: 978525987", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }], Message: "One or more errors occurred. (Invalid parameter `To`: 978525987)", TargetSite: Void ThrowIfExceptional(Boolean), Data: [], InnerException: ApiException { Code: 60200, Status: 400, MoreInfo: "https://www.twilio.com/docs/errors/60200", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "Invalid parameter `To`: 978525987", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }, HelpLink: null, Source: "System.Private.CoreLib", HResult: -2146233088, StackTrace: "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at lambda_method564(Closure, Object)
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)" }, HelpLink: null, Source: "Newtonsoft.Json", HResult: -2146233088, StackTrace: "   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 16:00:42.391 -05:00 [ERR] [Tracking.api] [0HNCU5AO63E06:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 4619.4340 ms
+2025-05-28 16:06:11.383 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 16:06:11.425 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 16:06:11.532 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 16:06:12.562 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 16:06:14.692 -05:00 [INF] [Tracking.api] [0HNCU5DT6LCEH:00000001] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 16:06:21.187 -05:00 [ERR] [Tracking.api] [0HNCU5DT6LCEH:00000001] JsonSerializationException { LineNumber: 0, LinePosition: 0, Path: null, TargetSite: System.Object GetValue(System.Object), Message: "Error getting value from 'Result' on 'System.Threading.Tasks.Task`1[Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandDTO]'.", Data: [], InnerException: AggregateException { InnerExceptions: [NullReferenceException { TargetSite: Void MoveNext(), Message: "Object reference not set to an instance of an object.", Data: [], InnerException: null, HelpLink: null, Source: "Tracking.Application", HResult: -2147467261, StackTrace: "   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }], Message: "One or more errors occurred. (Object reference not set to an instance of an object.)", TargetSite: Void ThrowIfExceptional(Boolean), Data: [], InnerException: NullReferenceException { TargetSite: Void MoveNext(), Message: "Object reference not set to an instance of an object.", Data: [], InnerException: null, HelpLink: null, Source: "Tracking.Application", HResult: -2147467261, StackTrace: "   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }, HelpLink: null, Source: "System.Private.CoreLib", HResult: -2146233088, StackTrace: "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at lambda_method577(Closure, Object)
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)" }, HelpLink: null, Source: "Newtonsoft.Json", HResult: -2146233088, StackTrace: "   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 16:06:21.245 -05:00 [ERR] [Tracking.api] [0HNCU5DT6LCEH:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 6805.0742 ms
+2025-05-28 16:08:14.728 -05:00 [INF] [Tracking.api] [0HNCU5DT6LCEH:00000003] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 16:10:40.339 -05:00 [ERR] [Tracking.api] [0HNCU5DT6LCEH:00000003] JsonSerializationException { LineNumber: 0, LinePosition: 0, Path: null, TargetSite: System.Object GetValue(System.Object), Message: "Error getting value from 'Result' on 'System.Threading.Tasks.Task`1[Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandDTO]'.", Data: [], InnerException: AggregateException { InnerExceptions: [NullReferenceException { TargetSite: Void MoveNext(), Message: "Object reference not set to an instance of an object.", Data: [], InnerException: null, HelpLink: null, Source: "Tracking.Application", HResult: -2147467261, StackTrace: "   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }], Message: "One or more errors occurred. (Object reference not set to an instance of an object.)", TargetSite: Void ThrowIfExceptional(Boolean), Data: [], InnerException: NullReferenceException { TargetSite: Void MoveNext(), Message: "Object reference not set to an instance of an object.", Data: [], InnerException: null, HelpLink: null, Source: "Tracking.Application", HResult: -2147467261, StackTrace: "   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)" }, HelpLink: null, Source: "System.Private.CoreLib", HResult: -2146233088, StackTrace: "   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at lambda_method577(Closure, Object)
+   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)" }, HelpLink: null, Source: "Newtonsoft.Json", HResult: -2146233088, StackTrace: "   at Newtonsoft.Json.Serialization.ExpressionValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 16:10:40.388 -05:00 [ERR] [Tracking.api] [0HNCU5DT6LCEH:00000003] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 145673.5632 ms
+2025-05-28 16:12:14.167 -05:00 [INF] [Tracking.api] [0HNCU5DT6LCEI:00000001] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 16:19:12.866 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 16:19:12.952 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 16:19:13.047 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 16:19:14.237 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 16:19:17.179 -05:00 [INF] [Tracking.api] [0HNCU5L6495QU:00000001] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 16:20:31.712 -05:00 [INF] [Tracking.api] [0HNCU5L6495QU:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 200 in 74790.6301 ms
+2025-05-28 16:20:41.539 -05:00 [INF] [Tracking.api] [0HNCU5L6495QU:00000003] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 16:20:41.981 -05:00 [INF] [Tracking.api] [0HNCU5L6495QU:00000003] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 200 in 454.1890 ms
+2025-05-28 16:25:24.838 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 16:25:24.875 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 16:25:24.978 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 16:25:26.026 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 16:25:42.625 -05:00 [INF] [Tracking.api] [0HNCU5OKVEQN6:00000001] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 16:25:43.183 -05:00 [INF] [Tracking.api] [0HNCU5OKVEQN6:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 200 in 829.6172 ms
+2025-05-28 16:26:16.132 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 16:26:16.175 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 16:26:16.273 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 16:26:17.448 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 16:41:41.222 -05:00 [INF] [Tracking.api] [0HNCU5P494APE:00000001] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 404 in 119.6923 ms
+2025-05-28 16:42:05.734 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 16:42:05.775 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 16:42:05.878 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 16:42:07.036 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 16:42:20.588 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEO:00000001] Procesando request "CheckVerificationCodeCommand" de null
+2025-05-28 16:42:21.347 -05:00 [ERR] [Tracking.api] [0HNCU61V8DDEO:00000001] ApiException { Code: 20404, Status: 404, MoreInfo: "https://www.twilio.com/docs/errors/20404", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "The requested resource /Services/VA4ab781658cb744fca0a48c0da76f8534/VerificationCheck was not found", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationCheckResource.Create(CreateVerificationCheckOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationCheckResource.Create(String pathServiceSid, String code, String to, String verificationSid, String amount, String payee, String snaClientToken, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.CheckVerificationCode(String phone, String code) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 37
+   at Tracking.Application.VerificationCode.Command.CheckVerificationCode.CheckVerificationCodeCommandHandler.Handle(CheckVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\CheckVerificationCode\CheckVerificationCodeCommandHandler.cs:line 31
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthenticateController.ValidationCodeVerification(CheckVerificationCodeCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 16:42:21.383 -05:00 [ERR] [Tracking.api] [0HNCU61V8DDEO:00000001] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 500 in 1059.4721 ms
+2025-05-28 16:46:05.070 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEP:00000001] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 16:46:05.601 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEP:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 200 in 548.4434 ms
+2025-05-28 16:57:25.480 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEQ:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 401 in 9.4759 ms
+2025-05-28 16:57:28.799 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEQ:00000003] Procesando request "LoginCommand" de null
+2025-05-28 16:57:29.067 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEQ:00000003] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 275.5384 ms
+2025-05-28 16:57:38.892 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEQ:00000005] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 16:57:39.379 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEQ:00000005] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 200 in 490.8266 ms
+2025-05-28 16:58:14.220 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEQ:00000007] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 401 in 1.0326 ms
+2025-05-28 16:58:19.335 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEQ:00000009] Procesando request "CheckVerificationCodeCommand" de null
+2025-05-28 16:58:19.526 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEQ:00000009] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 200 in 193.9563 ms
+2025-05-28 16:59:07.668 -05:00 [INF] [Tracking.api] [0HNCU61V8DDEQ:0000000B] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 16:59:08.161 -05:00 [ERR] [Tracking.api] [0HNCU61V8DDEQ:0000000B] ApiException { Code: 60410, Status: 403, MoreInfo: "https://www.twilio.com/docs/errors/60410", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "The destination phone number has been temporarily blocked by Twilio due to fraudulent activities. +51978525987 prefix is blocked for the SMS channel", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthenticateController.SendCodeVerification(SendVerificationCodeCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthenticateController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 16:59:08.183 -05:00 [ERR] [Tracking.api] [0HNCU61V8DDEQ:0000000B] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 540.9824 ms
+2025-05-28 17:39:25.170 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 17:39:25.221 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 17:39:25.404 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 17:39:26.763 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 17:43:01.846 -05:00 [INF] [Tracking.api] [0HNCU720B1122:00000001] Procesando request "LoginCommand" de null
+2025-05-28 17:43:02.204 -05:00 [INF] [Tracking.api] [0HNCU720B1122:00000001] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 656.2624 ms
+2025-05-28 17:43:19.055 -05:00 [ERR] [Tracking.api] [0HNCU720B1122:00000003] NullReferenceException { TargetSite: Void MoveNext(), Message: "Object reference not set to an instance of an object.", Data: [], InnerException: null, HelpLink: null, Source: "Tracking.Api", HResult: -2147467261, StackTrace: "   at Tracking.Api.Controllers.UserController.Login() in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\UserController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 17:43:19.077 -05:00 [ERR] [Tracking.api] [0HNCU720B1122:00000003] HTTP "DELETE" "/api/v1/User/deleteUser" responded 500 in 8171.6932 ms
+2025-05-28 17:43:39.645 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 17:43:39.685 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 17:43:39.825 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 17:43:40.754 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 17:43:50.302 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 17:43:50.345 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 17:43:50.438 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 17:43:51.695 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 17:44:28.264 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 17:44:28.302 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 17:44:28.391 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 17:44:29.432 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 17:44:39.621 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:00000001] Procesando request "DeleteUserCommand" de null
+2025-05-28 17:44:40.002 -05:00 [ERR] [Tracking.api] [0HNCU74QGA7FI:00000001] SqlException { Errors: [SqlError { Source: "Core .Net SqlClient Data Provider", Number: 2812, State: 62, Class: 16, Server: "DESKTOP-OPKFGCA", Message: "Could not find stored procedure 'dbo.usp_DeleteUser'.", Procedure: "dbo.usp_DeleteUser", LineNumber: 1 }], ClientConnectionId: b7e371ce-41b6-4311-8b6f-a120ca0aefd2, Class: 16, LineNumber: 1, Number: 2812, Procedure: "dbo.usp_DeleteUser", Server: "DESKTOP-OPKFGCA", State: 62, Source: "Core .Net SqlClient Data Provider", IsTransient: False, SqlState: null, BatchCommand: null, ErrorCode: -2146232060, TargetSite: System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__126_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader]), Message: "Could not find stored procedure 'dbo.usp_DeleteUser'.", Data: [DictionaryEntry { Key: "HelpLink.ProdName", Value: "Microsoft SQL Server" }, DictionaryEntry { Key: "HelpLink.ProdVer", Value: "16.00.1135" }, DictionaryEntry { Key: "HelpLink.EvtSrc", Value: "MSSQLServer" }, DictionaryEntry { Key: "HelpLink.EvtID", Value: "2812" }, DictionaryEntry { Key: "HelpLink.BaseHelpUrl", Value: "https://go.microsoft.com/fwlink" }, DictionaryEntry { Key: "HelpLink.LinkId", Value: "20476" }], InnerException: null, HelpLink: null, HResult: -2146232060, StackTrace: "   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteWrappedReaderImplAsync(IDbConnection cnn, CommandDefinition command, CommandBehavior commandBehavior) in /_/Dapper/SqlMapper.Async.cs:line 1166
+   at Tracking.Persistence.Repository.UserRepository.DeleteUser(DeleteUserCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Persistence\Repository\UserRepository.cs:line 36
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.UserController.Login() in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\UserController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 17:44:40.052 -05:00 [ERR] [Tracking.api] [0HNCU74QGA7FI:00000001] HTTP "DELETE" "/api/v1/User/deleteUser" responded 500 in 657.2472 ms
+2025-05-28 17:44:46.568 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:00000003] Procesando request "DeleteUserCommand" de null
+2025-05-28 17:44:46.610 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:00000003] HTTP "DELETE" "/api/v1/User/deleteUser" responded 200 in 47.6045 ms
+2025-05-28 17:45:04.859 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:00000005] Procesando request "DeleteUserCommand" de null
+2025-05-28 17:45:04.866 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:00000005] HTTP "DELETE" "/api/v1/User/deleteUser" responded 200 in 10.0137 ms
+2025-05-28 17:45:20.038 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:00000007] Procesando request "DeleteUserCommand" de null
+2025-05-28 17:45:20.052 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:00000007] HTTP "DELETE" "/api/v1/User/deleteUser" responded 200 in 17.3596 ms
+2025-05-28 17:45:29.647 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:00000009] Procesando request "DeleteUserCommand" de null
+2025-05-28 17:45:29.669 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:00000009] HTTP "DELETE" "/api/v1/User/deleteUser" responded 200 in 25.6680 ms
+2025-05-28 17:45:32.607 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:0000000B] Procesando request "DeleteUserCommand" de null
+2025-05-28 17:45:32.614 -05:00 [INF] [Tracking.api] [0HNCU74QGA7FI:0000000B] HTTP "DELETE" "/api/v1/User/deleteUser" responded 200 in 10.1457 ms
+2025-05-28 23:29:42.991 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 23:29:43.053 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 23:29:43.211 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 23:29:45.297 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 23:29:49.361 -05:00 [INF] [Tracking.api] [0HNCUD5O9PL5I:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 401 in 187.7966 ms
+2025-05-28 23:29:54.845 -05:00 [INF] [Tracking.api] [0HNCUD5O9PL5I:00000003] Procesando request "LoginCommand" de null
+2025-05-28 23:29:55.189 -05:00 [INF] [Tracking.api] [0HNCUD5O9PL5I:00000003] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 489.1040 ms
+2025-05-28 23:30:02.649 -05:00 [INF] [Tracking.api] [0HNCUD5O9PL5I:00000005] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 23:30:03.356 -05:00 [ERR] [Tracking.api] [0HNCUD5O9PL5I:00000005] ApiException { Code: 60410, Status: 403, MoreInfo: "https://www.twilio.com/docs/errors/60410", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "The destination phone number has been temporarily blocked by Twilio due to fraudulent activities. +51978525987 prefix is blocked for the SMS channel", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthenticateController.SendCodeVerification(SendVerificationCodeCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthenticateController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 23:30:03.386 -05:00 [ERR] [Tracking.api] [0HNCUD5O9PL5I:00000005] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 775.7580 ms
+2025-05-28 23:39:13.016 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 23:39:13.055 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 23:39:13.166 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 23:42:02.999 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 23:42:03.040 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 23:42:03.134 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 23:42:04.215 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 23:42:14.745 -05:00 [INF] [Tracking.api] [0HNCUDCKL3NH4:00000001] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 401 in 116.0480 ms
+2025-05-28 23:42:18.240 -05:00 [INF] [Tracking.api] [0HNCUDCKL3NH4:00000003] Procesando request "LoginCommand" de null
+2025-05-28 23:42:18.472 -05:00 [INF] [Tracking.api] [0HNCUDCKL3NH4:00000003] HTTP "POST" "/api/v1/Authorization/login" responded 200 in 356.1959 ms
+2025-05-28 23:42:25.413 -05:00 [INF] [Tracking.api] [0HNCUDCKL3NH4:00000005] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 23:42:26.186 -05:00 [ERR] [Tracking.api] [0HNCUDCKL3NH4:00000005] ApiException { Code: 21608, Status: 403, MoreInfo: "https://www.twilio.com/docs/errors/21608", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "The phone number is unverified. Trial accounts cannot send messages to unverified numbers; verify it at twilio.com/user/account/phone-numbers/verified", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthenticateController.SendCodeVerification(SendVerificationCodeCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthenticateController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 23:42:26.217 -05:00 [ERR] [Tracking.api] [0HNCUDCKL3NH4:00000005] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 850.6182 ms
+2025-05-28 23:44:16.768 -05:00 [INF] [Tracking.api] [0HNCUDCKL3NH4:00000007] Procesando request "CheckVerificationCodeCommand" de null
+2025-05-28 23:44:25.797 -05:00 [ERR] [Tracking.api] [0HNCUDCKL3NH4:00000007] SqlException { Errors: [SqlError { Source: "Core .Net SqlClient Data Provider", Number: 201, State: 4, Class: 16, Server: "DESKTOP-OPKFGCA", Message: "Procedure or function 'sp_RegisterCodeReset' expects parameter '@message', which was not supplied.", Procedure: "dbo.sp_RegisterCodeReset", LineNumber: 0 }], ClientConnectionId: 369a5abc-8d6e-46dd-924e-cb4503bff8b5, Class: 16, LineNumber: 0, Number: 201, Procedure: "dbo.sp_RegisterCodeReset", Server: "DESKTOP-OPKFGCA", State: 4, Source: "Core .Net SqlClient Data Provider", IsTransient: False, SqlState: null, BatchCommand: null, ErrorCode: -2146232060, TargetSite: System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__126_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader]), Message: "Procedure or function 'sp_RegisterCodeReset' expects parameter '@message', which was not supplied.", Data: [DictionaryEntry { Key: "HelpLink.ProdName", Value: "Microsoft SQL Server" }, DictionaryEntry { Key: "HelpLink.ProdVer", Value: "16.00.1135" }, DictionaryEntry { Key: "HelpLink.EvtSrc", Value: "MSSQLServer" }, DictionaryEntry { Key: "HelpLink.EvtID", Value: "201" }, DictionaryEntry { Key: "HelpLink.BaseHelpUrl", Value: "https://go.microsoft.com/fwlink" }, DictionaryEntry { Key: "HelpLink.LinkId", Value: "20476" }], InnerException: null, HelpLink: null, HResult: -2146232060, StackTrace: "   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteWrappedReaderImplAsync(IDbConnection cnn, CommandDefinition command, CommandBehavior commandBehavior) in /_/Dapper/SqlMapper.Async.cs:line 1166
+   at Tracking.Persistence.Repository.UserRepository.InsertCodeReset(InsertCodeResetCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Persistence\Repository\UserRepository.cs:line 62
+   at Tracking.Application.VerificationCode.Command.CheckVerificationCode.CheckVerificationCodeCommandHandler.Handle(CheckVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\CheckVerificationCode\CheckVerificationCodeCommandHandler.cs:line 38
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthenticateController.ValidationCodeVerification(CheckVerificationCodeCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthenticateController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 23:44:25.838 -05:00 [ERR] [Tracking.api] [0HNCUDCKL3NH4:00000007] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 500 in 9084.0970 ms
+2025-05-28 23:47:03.999 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 23:47:04.038 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 23:47:04.131 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 23:47:05.175 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 23:47:11.441 -05:00 [INF] [Tracking.api] [0HNCUDFEAO2IB:00000001] Procesando request "SendVerificationCodeCommand" de null
+2025-05-28 23:47:12.792 -05:00 [ERR] [Tracking.api] [0HNCUDFEAO2IB:00000001] ApiException { Code: 21608, Status: 403, MoreInfo: "https://www.twilio.com/docs/errors/21608", Details: null, TargetSite: Twilio.Http.Response ProcessResponse(Twilio.Http.Response), Message: "The phone number is unverified. Trial accounts cannot send messages to unverified numbers; verify it at twilio.com/user/account/phone-numbers/verified", Data: [], InnerException: null, HelpLink: null, Source: "Twilio", HResult: -2146233088, StackTrace: "   at Twilio.Clients.TwilioRestClient.ProcessResponse(Response response)
+   at Twilio.Clients.TwilioRestClient.Request(Request request)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(CreateVerificationOptions options, ITwilioRestClient client)
+   at Twilio.Rest.Verify.V2.Service.VerificationResource.Create(String pathServiceSid, String to, String channel, String customFriendlyName, String customMessage, String sendDigits, String locale, String customCode, String amount, String payee, Object rateLimits, Object channelConfiguration, String appHash, String templateSid, String templateCustomSubstitutions, String deviceIp, Nullable`1 enableSnaClientToken, RiskCheckEnum riskCheck, String tags, ITwilioRestClient client)
+   at Tracking.Infrastructure.Services.TwilioService.SendVerificationCode(String phone) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Infrastructure\Services\TwilioService.cs:line 25
+   at Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommandHandler.Handle(SendVerificationCodeCommand request, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\VerificationCode\Command\SendVerificationCode\SendVerificationCodeCommandHandler.cs:line 30
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.AuthenticateController.SendCodeVerification(SendVerificationCodeCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\AuthenticateController.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 23:47:12.826 -05:00 [ERR] [Tracking.api] [0HNCUDFEAO2IB:00000001] HTTP "POST" "/api/v1/Authenticate/sendCode" responded 500 in 1676.0956 ms
+2025-05-28 23:47:39.460 -05:00 [INF] [Tracking.api] [0HNCUDFEAO2IB:00000003] Procesando request "CheckVerificationCodeCommand" de null
+2025-05-28 23:47:44.017 -05:00 [INF] [Tracking.api] [0HNCUDFEAO2IB:00000003] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 200 in 4576.1968 ms
+2025-05-28 23:48:54.192 -05:00 [INF] [Tracking.api] [0HNCUDFEAO2IB:00000005] Procesando request "CheckVerificationCodeCommand" de null
+2025-05-28 23:49:47.453 -05:00 [INF] [Tracking.api] [0HNCUDFEAO2IB:00000005] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 200 in 53263.9265 ms
+2025-05-28 23:50:30.884 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 23:50:30.921 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 23:50:31.015 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 23:50:32.284 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 23:50:42.497 -05:00 [INF] [Tracking.api] [0HNCUDHBU4VFE:00000001] Procesando request "CheckVerificationCodeCommand" de null
+2025-05-28 23:51:33.773 -05:00 [INF] [Tracking.api] [0HNCUDHBU4VFE:00000001] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 200 in 51562.1219 ms
+2025-05-28 23:52:12.997 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 23:52:13.035 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 23:52:13.127 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 23:52:14.130 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 23:52:52.586 -05:00 [INF] [Tracking.api] [0HNCUDIA9Q27V:00000001] Procesando request "CheckVerificationCodeCommand" de null
+2025-05-28 23:53:08.158 -05:00 [INF] [Tracking.api] [0HNCUDIA9Q27V:00000001] HTTP "POST" "/api/v1/Authenticate/validationCode" responded 200 in 15842.9853 ms
+2025-05-28 23:53:50.657 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 23:53:50.703 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 23:53:50.882 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 23:53:51.974 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 23:58:18.685 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 23:58:18.722 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 23:58:18.806 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 23:58:19.925 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
+2025-05-28 23:58:41.967 -05:00 [INF] [Tracking.api] [0HNCUDLNDAMBV:00000001] Procesando request "ResetPasswordCommand" de null
+2025-05-28 23:58:42.373 -05:00 [ERR] [Tracking.api] [0HNCUDLNDAMBV:00000001] SqlException { Errors: [SqlError { Source: "Core .Net SqlClient Data Provider", Number: 201, State: 4, Class: 16, Server: "DESKTOP-OPKFGCA", Message: "Procedure or function 'sp_ResetPassword' expects parameter '@message', which was not supplied.", Procedure: "dbo.sp_ResetPassword", LineNumber: 0 }], ClientConnectionId: 5d02fd14-b389-4283-873a-28285e2e7739, Class: 16, LineNumber: 0, Number: 201, Procedure: "dbo.sp_ResetPassword", Server: "DESKTOP-OPKFGCA", State: 4, Source: "Core .Net SqlClient Data Provider", IsTransient: False, SqlState: null, BatchCommand: null, ErrorCode: -2146232060, TargetSite: System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__126_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader]), Message: "Procedure or function 'sp_ResetPassword' expects parameter '@message', which was not supplied.", Data: [DictionaryEntry { Key: "HelpLink.ProdName", Value: "Microsoft SQL Server" }, DictionaryEntry { Key: "HelpLink.ProdVer", Value: "16.00.1135" }, DictionaryEntry { Key: "HelpLink.EvtSrc", Value: "MSSQLServer" }, DictionaryEntry { Key: "HelpLink.EvtID", Value: "201" }, DictionaryEntry { Key: "HelpLink.BaseHelpUrl", Value: "https://go.microsoft.com/fwlink" }, DictionaryEntry { Key: "HelpLink.LinkId", Value: "20476" }], InnerException: null, HelpLink: null, HResult: -2146232060, StackTrace: "   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteWrappedReaderImplAsync(IDbConnection cnn, CommandDefinition command, CommandBehavior commandBehavior) in /_/Dapper/SqlMapper.Async.cs:line 1166
+   at Tracking.Persistence.Repository.UserRepository.ResetPassword(ResetPasswordCommand command) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Persistence\Repository\UserRepository.cs:line 88
+   at Tracking.Application.Common.Behaviours.RequestValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Application\Common\Behaviours\RequestValidationBehavior.cs:line 29
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at Tracking.Api.Controllers.UserController.ResetPassword(ResetPasswordCommand request) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Controllers\UserController.cs:line 34
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Tracking.Api.Middlewares.CustomExceptionHandlerMiddleware.Invoke(HttpContext context) in E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\Middlewares\CustomExceptionHandlerMiddleware.cs:line 32" }
+2025-05-28 23:58:42.421 -05:00 [ERR] [Tracking.api] [0HNCUDLNDAMBV:00000001] HTTP "POST" "/api/v1/User/resetPassword" responded 500 in 747.3440 ms
+2025-05-28 23:59:52.925 -05:00 [INF] [Tracking.api] [] *************** START APPLICATION ***************
+2025-05-28 23:59:52.964 -05:00 [INF] [Tracking.api] [] Configuring application...
+2025-05-28 23:59:53.065 -05:00 [INF] [Tracking.api] [] Starting application...
+2025-05-28 23:59:54.439 -05:00 [WRN] [Tracking.api] [] The WebRootPath was not found: "E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\wwwroot". Static files may be unavailable.
