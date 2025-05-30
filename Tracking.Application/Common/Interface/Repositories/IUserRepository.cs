@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Tracking.Application.Authorization.Commad.DeleteToken;
 using Tracking.Application.Authorization.Commad.ValidToken;
 using Tracking.Application.User.Comand.DeleteUser;
+using Tracking.Application.User.Comand.UpdateUserInfo;
+using Tracking.Application.User.Query.GetUserById;
+using Tracking.Application.User.Query.GetUsers;
 using Tracking.Application.VerificationCode.Command.CheckVerificationCode;
 using Tracking.Application.VerificationCode.Command.ResetPassword;
 
@@ -19,5 +22,8 @@ namespace Tracking.Application.Common.Interface.Repositories
         void InsertToken(string token, int idUser);
         void DeleteToken(DeleteTokenCommand command);
         Task<ValidTokenCommandDTO> ValidToken(ValidTokenCommand command);
+        Task<UpdateUserInfoCommandDTO> UpdateUserInfo(UpdateUserInfoCommand command);
+        Task<GetUsersQueryDTO> GetUser(GetUsersQuery command);
+        Task<GetUserByIdQueryDTO> GetUserById(GetUserByIdQuery command);
     }
 }

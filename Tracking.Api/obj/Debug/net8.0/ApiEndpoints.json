@@ -173,7 +173,7 @@
   },
   {
     "ContainingType": "Tracking.Api.Controllers.UserController",
-    "Method": "Login",
+    "Method": "DeleteUser",
     "RelativePath": "api/v1/User/deleteUser",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -193,6 +193,89 @@
   },
   {
     "ContainingType": "Tracking.Api.Controllers.UserController",
+    "Method": "DeleteUserById",
+    "RelativePath": "api/v1/User/deleteUserById/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.User.Comand.DeleteUser.DeleteUserCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.UserController",
+    "Method": "GetUser",
+    "RelativePath": "api/v1/User/getUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.User.Query.GetUsers.GetUsersQueryDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "api/v1/User/getUserById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.User.Query.GetUsers.GetUsersQueryDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.UserController",
     "Method": "Logout",
     "RelativePath": "api/v1/User/logout",
     "HttpMethod": "POST",
@@ -201,7 +284,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "Tracking.Application.Authorization.Commad.Login.LoginCommandToken",
+        "Type": "Tracking.Application.Authorization.Commad.DeleteToken.DeleteTokenCommandDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -228,6 +311,58 @@
     "ReturnTypes": [
       {
         "Type": "Tracking.Application.VerificationCode.Command.ResetPassword.ResetPasswordCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.UserController",
+    "Method": "UpdateUserInfo",
+    "RelativePath": "api/v1/User/updateUserInfo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Tracking.Application.User.Comand.UpdateUserInfo.UpdateUserInfoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.User.Comand.UpdateUserInfo.UpdateUserInfoCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.UserController",
+    "Method": "UpdateUserInfoById",
+    "RelativePath": "api/v1/User/updateUserInfoById",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Tracking.Application.User.Comand.UpdateUserInfo.UpdateUserInfoCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.User.Comand.UpdateUserInfo.UpdateUserInfoCommandDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",

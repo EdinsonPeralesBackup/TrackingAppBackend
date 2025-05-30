@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Tracking.Api.props" />
-</Project>

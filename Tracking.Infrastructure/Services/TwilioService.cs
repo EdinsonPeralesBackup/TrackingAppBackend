@@ -13,10 +13,12 @@ namespace Tracking.Infrastructure.Services
     {
         string accountSid;
         string authToken;
+        string pathServiceSid;
         public TwilioService()
         {
             this.accountSid = "ACb617e3ccb5c2b18d8f8681b4501f03f9";
-            this.authToken = "71ac9ca2bb816998968ae550f149d0d9";
+            this.authToken = "150827263387da679a044c6b445331d3";
+            this.pathServiceSid = "VA8c2e65202f923c86252eb99b0b3b6494";
         }
         public string SendVerificationCode(string phone)
         {
@@ -25,7 +27,7 @@ namespace Tracking.Infrastructure.Services
             var verification = VerificationResource.Create(
                 to: "+51" + phone,
                 channel: "sms",
-                pathServiceSid: "VA8c2e65202f923c86252eb99b0b3b6494"
+                pathServiceSid: pathServiceSid
             );
 
             return verification.Status;
@@ -37,7 +39,7 @@ namespace Tracking.Infrastructure.Services
             var verificationCheck = VerificationCheckResource.Create(
                 to: "+51" + phone,
                 code: code,
-                pathServiceSid: "VA8c2e65202f923c86252eb99b0b3b6494"
+                pathServiceSid: pathServiceSid
             );
             return verificationCheck.Status;
         }
