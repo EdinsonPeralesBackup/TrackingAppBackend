@@ -20,27 +20,5 @@ namespace Tracking.Api.Controllers
         {
             return Ok(CurrentUser);
         }
-
-        [HttpPost]
-        [Authorize]
-        [Route("sendCode")]
-        [ProducesResponseType(typeof(CurrentUser), StatusCodes.Status200OK)]
-        public async Task<IActionResult> SendCodeVerification(SendVerificationCodeCommand command)
-        {
-            var response = await this.Mediator.Send(command);
-            return Ok(response);
-        }
-
-        [HttpPost]
-        [Authorize]
-        [Route("validationCode")]
-        [ProducesResponseType(typeof(CurrentUser), StatusCodes.Status200OK)]
-        public async Task<IActionResult> ValidationCodeVerification(CheckVerificationCodeCommand command)
-        {
-            command.IdUser = Convert.ToInt32(CurrentUser.Id);
-            var response = await this.Mediator.Send(command);
-            return Ok(response);
-        }
-
     }
 }

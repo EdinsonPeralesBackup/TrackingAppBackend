@@ -32,7 +32,7 @@ namespace Tracking.Infrastructure.Services
                         issuer: _jwtSettings.Issuer,
                         audience: audience,
                         claims: claims,
-                        expires: _dateTimeService.HoraLocal().AddSeconds(_jwtSettings.ExpiresInSeconds),
+                        expires: _dateTimeService.HoraActual().AddSeconds(_jwtSettings.ExpiresInSeconds),
                         signingCredentials: signingCredentials);
 
             var token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);

@@ -15,5 +15,9 @@ namespace Tracking.Infrastructure.Services
             var fechaActual = horaActualPacifico;
             return fechaActual.DateTime;
         }
+        public DateTime HoraActual()
+        {
+            return DateTime.UtcNow;
+        }
     }
 }

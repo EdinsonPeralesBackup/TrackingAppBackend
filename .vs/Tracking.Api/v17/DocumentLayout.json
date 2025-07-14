@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|solutionrelative:tracking.persistence\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.persistence\\repository\\trustedcontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|solutionrelative:tracking.persistence\\repository\\trustedcontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\trustedcontactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\trustedcontactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\user\\query\\getuserbyid\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\user\\query\\getuserbyid\\getuserbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|e:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\user\\query\\getuserbyid\\getuserbyidquerydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\user\\query\\getuserbyid\\getuserbyidquerydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 179,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\UserController.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Tracking.Api\\Controllers\\UserController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAkwC8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T01:07:29.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetUserByIdQueryDTO.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\User\\Query\\GetUserById\\GetUserByIdQueryDTO.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\User\\Query\\GetUserById\\GetUserByIdQueryDTO.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\User\\Query\\GetUserById\\GetUserByIdQueryDTO.cs",
-              "RelativeToolTip": "Tracking.Application\\User\\Query\\GetUserById\\GetUserByIdQueryDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T01:06:13.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Tracking.Persistence\\Repository\\UserRepository.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "Tracking.Persistence\\Repository\\UserRepository.cs",
-              "ViewState": "AgIAAOcAAAAAAAAAAAAkwO4AAAAmAAAAAAAAAA==",
+              "Title": "TrustedContactRepository.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\TrustedContactRepository.cs",
+              "RelativeDocumentMoniker": "Tracking.Persistence\\Repository\\TrustedContactRepository.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\TrustedContactRepository.cs",
+              "RelativeToolTip": "Tracking.Persistence\\Repository\\TrustedContactRepository.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwKwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T01:06:15.891Z",
+              "WhenOpened": "2025-07-14T08:00:48.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GetUserByIdQueryHandler.cs",
-              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\User\\Query\\GetUserById\\GetUserByIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\User\\Query\\GetUserById\\GetUserByIdQueryHandler.cs",
-              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\User\\Query\\GetUserById\\GetUserByIdQueryHandler.cs",
-              "RelativeToolTip": "Tracking.Application\\User\\Query\\GetUserById\\GetUserByIdQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAcAAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Tracking.Api\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwBEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T01:06:13.347Z",
+              "WhenOpened": "2025-07-14T07:47:20.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrustedContactController.cs",
+              "DocumentMoniker": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\TrustedContactController.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\TrustedContactController.cs",
+              "ToolTip": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\TrustedContactController.cs",
+              "RelativeToolTip": "Tracking.Api\\Controllers\\TrustedContactController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwEYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T07:47:13.183Z",
               "EditorCaption": ""
             }
           ]

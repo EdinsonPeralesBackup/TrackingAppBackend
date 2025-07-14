@@ -20,58 +20,6 @@
     ]
   },
   {
-    "ContainingType": "Tracking.Api.Controllers.AuthenticateController",
-    "Method": "SendCodeVerification",
-    "RelativePath": "api/v1/Authenticate/sendCode",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Tracking.Api.Services.CurrentUser",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Tracking.Api.Controllers.AuthenticateController",
-    "Method": "ValidationCodeVerification",
-    "RelativePath": "api/v1/Authenticate/validationCode",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "Tracking.Application.VerificationCode.Command.CheckVerificationCode.CheckVerificationCodeCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Tracking.Api.Services.CurrentUser",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "Tracking.Api.Controllers.AuthorizationController",
     "Method": "DeleteToken",
     "RelativePath": "api/v1/Authorization/deleteToken",
@@ -146,6 +94,58 @@
     ]
   },
   {
+    "ContainingType": "Tracking.Api.Controllers.CodeController",
+    "Method": "SendCodeVerification",
+    "RelativePath": "api/v1/Code/sendCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.VerificationCode.Command.SendVerificationCode.SendVerificationCodeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Api.Services.CurrentUser",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.CodeController",
+    "Method": "ValidationCodeVerification",
+    "RelativePath": "api/v1/Code/validationCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.VerificationCode.Command.CheckVerificationCode.CheckVerificationCodeCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Api.Services.CurrentUser",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Tracking.Api.Controllers.EncryptController",
     "Method": "Encrypt",
     "RelativePath": "api/v1/Encrypt/encrypt",
@@ -162,6 +162,146 @@
     "ReturnTypes": [
       {
         "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.TrustedContactController",
+    "Method": "ChangeStatusConfidenceContact",
+    "RelativePath": "api/v1/TrustedContact/changeStatusConfidenceContact/{idTrustedContact}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTrustedContact",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.TrustedContactController",
+    "Method": "DeleteConfidenceContact",
+    "RelativePath": "api/v1/TrustedContact/deleteConfidenceContact/{idTrustedContact}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTrustedContact",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.TrustedContactController",
+    "Method": "GetConfidenceContact",
+    "RelativePath": "api/v1/TrustedContact/getConfidenceContact",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.TrustedContactController",
+    "Method": "GetSpecificConfidenceContact",
+    "RelativePath": "api/v1/TrustedContact/getSpecificConfidenceContact/{idTrustedContact}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTrustedContact",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.TrustedContactController",
+    "Method": "RegisterTrustedContact",
+    "RelativePath": "api/v1/TrustedContact/registerTrustedContact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.TrustedContacts.Command.RegisterTrustedContact.RegisterTrustedContactCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.TrustedContacts.Command.RegisterTrustedContact.RegisterTrustedContactCommand",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.TrustedContactController",
+    "Method": "UpdateTrustedContact",
+    "RelativePath": "api/v1/TrustedContact/updateTrustedContact",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.TrustedContacts.Command.UpdateTrustedContact.UpdateTrustedContactCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.TrustedContacts.Command.UpdateTrustedContact.UpdateTrustedContactCommand",
         "MediaTypes": [
           "text/plain",
           "application/json",
