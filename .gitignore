@@ -1,0 +1,7 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ProjectEvaluation/tracking.api.metadata.v9.bin
+/.vs/ProjectEvaluation/tracking.api.projects.v9.bin
+/.vs/ProjectEvaluation/tracking.api.strings.v9.bin
