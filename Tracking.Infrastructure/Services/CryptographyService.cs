@@ -1,18 +1,29 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.IdentityModel.Tokens;
 using Tracking.Application.Common.Interface;
+using Tracking.Application.Common.Settings;
 
 namespace Tracking.Infrastructure.Services
 {
     public class Cryptography : ICryptography
     {
-        private string Key = "V7MeCkZgH$@2&u;3";
-        private string Iv = "hBF-?]_B22}4O';>";
+        private string _Key;
+        private string _Iv;
+        private readonly IConfiguration _configuration;
+
+        public Cryptography(IConfiguration configuration)
+        {
+            this._configuration = configuration;
+            var keyEncrypt = this._configuration.GetSection("KeyEncrypt").Get<KeyEncrypt>();
+            this._Key = keyEncrypt.Key;
+            this._Iv = keyEncrypt.Iv;
+        }
         public string Encrypt(string Texto)
         {
             if (Texto == null || Texto.Length <= 0)
@@ -24,8 +35,8 @@ namespace Tracking.Infrastructure.Services
 
             using (Aes encrypt = Aes.Create())
             {
-                encrypt.Key = Encoding.UTF8.GetBytes(this.Key);
-                encrypt.IV = Encoding.UTF8.GetBytes(this.Iv);
+                encrypt.Key = Encoding.UTF8.GetBytes(this._Key);
+                encrypt.IV = Encoding.UTF8.GetBytes(this._Iv);
 
                 ICryptoTransform encryptor = encrypt.CreateEncryptor(encrypt.Key, encrypt.IV);
                 using (MemoryStream msEncrypt = new MemoryStream())
@@ -55,8 +66,8 @@ namespace Tracking.Infrastructure.Services
 
             using (Aes encrypt = Aes.Create())
             {
-                encrypt.Key = Encoding.UTF8.GetBytes(this.Key);
-                encrypt.IV = Encoding.UTF8.GetBytes(this.Iv);
+                encrypt.Key = Encoding.UTF8.GetBytes(this._Key);
+                encrypt.IV = Encoding.UTF8.GetBytes(this._Iv);
 
                 ICryptoTransform decryptor = encrypt.CreateDecryptor(encrypt.Key, encrypt.IV);
 

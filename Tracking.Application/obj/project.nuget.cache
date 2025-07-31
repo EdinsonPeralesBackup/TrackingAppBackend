@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lt7QyXbVopA=",
+  "dgSpecHash": "zbGqjhXOTiM=",
   "success": true,
-  "projectFilePath": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj",
+  "projectFilePath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alfiery\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Alfiery\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

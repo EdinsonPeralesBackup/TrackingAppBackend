@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pk06Cv7ZarU=",
+  "dgSpecHash": "ylp+BRRbEeA=",
   "success": true,
-  "projectFilePath": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Tracking.Api.csproj",
+  "projectFilePath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Tracking.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alfiery\\.nuget\\packages\\autofac\\8.1.0\\autofac.8.1.0.nupkg.sha512",
     "C:\\Users\\Alfiery\\.nuget\\packages\\autofac.extensions.dependencyinjection\\10.0.0\\autofac.extensions.dependencyinjection.10.0.0.nupkg.sha512",

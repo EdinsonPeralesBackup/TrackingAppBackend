@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {}
+    "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {}
   },
   "projects": {
-    "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {
+    "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
+        "projectUniqueName": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
         "projectName": "Tracking.Domain",
-        "projectPath": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
+        "projectPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
         "packagesPath": "C:\\Users\\Alfiery\\.nuget\\packages\\",
-        "outputPath": "E:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\obj\\",
+        "outputPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
