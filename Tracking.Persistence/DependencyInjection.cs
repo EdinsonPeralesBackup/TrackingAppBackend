@@ -21,6 +21,7 @@ namespace Tracking.Persistence
             services.AddSingleton<IAuthorizationRepository, AuthorizationRepository>();
             services.AddSingleton<IUserRepository, UserRepository>();
             services.AddSingleton<ITrustedContactRepository, TrustedContactRepository>();
+            services.AddSingleton<IMapsRepository, MapsRepository>();
 
             return services;
         }

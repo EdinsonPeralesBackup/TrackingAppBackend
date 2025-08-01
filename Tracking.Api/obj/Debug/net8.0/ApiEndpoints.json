@@ -172,6 +172,32 @@
     ]
   },
   {
+    "ContainingType": "Tracking.Api.Controllers.MapsController",
+    "Method": "GetRoute",
+    "RelativePath": "api/v1/Maps/getRoute",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.Maps.Command.ObtenerRuta.ObtenerRutaCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Maps.Command.ObtenerRuta.ObtenerRutaCommand",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Tracking.Api.Controllers.TrustedContactController",
     "Method": "ChangeStatusConfidenceContact",
     "RelativePath": "api/v1/TrustedContact/changeStatusConfidenceContact/{idTrustedContact}",

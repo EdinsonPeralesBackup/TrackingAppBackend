@@ -17,6 +17,7 @@ namespace Tracking.Infrastructure
             services.AddSingleton<ICryptography, Cryptography>();
             services.AddSingleton<IJwtService, JwtService>();
             services.AddSingleton<ITwilioService, TwilioService>();
+            services.AddSingleton<IMapsServices, MapsServices>();
             return services;
         }
 
