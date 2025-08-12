@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Tracking.Application.Maps.Command.ObtenerRuta
 {
-    public class ObtenerRutaCommand : IRequest<ObtenerRutaCommandDTO>
+    public class RegisterRouteCommand : IRequest<RegisterRouteCommandDTO>
     {
         public int UserId { get; set; }
         public Location Origin { get; set; }

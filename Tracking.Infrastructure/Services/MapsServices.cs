@@ -19,7 +19,7 @@ namespace Tracking.Infrastructure.Services
             this._configuration = configuration;
             this.apiKey = this._configuration.GetValue<string>("ApiKeyMaps");
         }
-        public async Task<string> ObtenerRuta(ObtenerRutaCommand command)
+        public async Task<string> ObtenerRuta(RegisterRouteCommand command)
         {
             using var client = new HttpClient();
             string url = $"https://maps.googleapis.com/maps/api/directions/json?origin={command.Origin.Lat},{command.Origin.Lng}&destination={command.Destination.Lat},{command.Destination.Lng}&key={apiKey}";

@@ -7,10 +7,12 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 using Tracking.Application.Authorization.Commad.Register;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
 using Tracking.Application.Maps.Command.ObtenerRuta;
+using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Persistence.Database;
 
 namespace Tracking.Persistence.Repository
@@ -19,20 +21,20 @@ namespace Tracking.Persistence.Repository
     {
         private readonly IDataBase _dataBase;
         private readonly IDateTimeService _dateTimeService;
-        private int apiKey;
+        private int IntervalCheckpoint;
 
         public MapsRepository(
-            IServiceProvider serviceProvider, 
+            IServiceProvider serviceProvider,
             IDateTimeService dateTimeService
             )
         {
             var services = serviceProvider.GetServices<IDataBase>();
             _dataBase = services.First(s => s.GetType() == typeof(SqlDataBase));
             this._dateTimeService = dateTimeService;
-            this.apiKey = 3600;
+            this.IntervalCheckpoint = 30;
         }
 
-        public async Task<ObtenerRutaCommandDTO> RegisterRoute(Route command, int IdUser)
+        public async Task<RegisterRouteCommandDTO> RegisterRoute(Route command, int IdUser)
         {
             using (var cnx = _dataBase.GetConnection())
             {
@@ -56,7 +58,7 @@ namespace Tracking.Persistence.Repository
 
                 parameters.Add("@ptimestamp", this._dateTimeService.HoraActual(), DbType.DateTime, ParameterDirection.Input);
 
-                parameters.Add("@pXMLPoint", "", DbType.Xml, ParameterDirection.Input);
+                parameters.Add("@pXMLPoint", this.ConvertirXML(command.Steps), DbType.Xml, ParameterDirection.Input);
 
                 parameters.Add("@numberTracking", "", DbType.String, ParameterDirection.Output);
                 parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
@@ -68,14 +70,67 @@ namespace Tracking.Persistence.Repository
 
                 var trackingId = parameters.Get<string>("numberTracking");
                 var message = parameters.Get<string>("message");
-                return new ObtenerRutaCommandDTO()
+                return new RegisterRouteCommandDTO()
                 {
                     RouteTravel = command,
                     TrackingId = trackingId,
                     Message = message,
-                    CheckpointInterval = this.apiKey
+                    CheckpointInterval = this.IntervalCheckpoint
                 };
             }
         }
+
+        public async Task<UpdatePointCommandDTO> UpdatePoint(UpdatePointCommand command)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@pidTracking", command.TrackingId, DbType.String, ParameterDirection.Input);
+                parameters.Add("@platitud", command.Coordinates.Latitude, DbType.Double, ParameterDirection.Input);
+                parameters.Add("@plongitute", command.Coordinates.Longitude, DbType.Double, ParameterDirection.Input);
+                parameters.Add("@ptimestamp", this._dateTimeService.HoraActual(), DbType.DateTime, ParameterDirection.Input);
+
+                parameters.Add("@status", "", DbType.String, ParameterDirection.Output);
+                parameters.Add("@deviation", "", DbType.Double, ParameterDirection.Output);
+                parameters.Add("@lastLatitud", "", DbType.Double, ParameterDirection.Output);
+                parameters.Add("@lastLongitute", "", DbType.Double, ParameterDirection.Output);
+
+                using var reader = await cnx.ExecuteReaderAsync(
+                    "[dbo].[sp_RegisterLiveCoordinate]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure);
+
+                var status = parameters.Get<string>("status");
+                var deviation = parameters.Get<double>("deviation");
+                var lastLatitud = parameters.Get<double>("lastLatitud");
+                var lastLongitute = parameters.Get<double>("lastLongitute");
+                return new UpdatePointCommandDTO()
+                {
+                    Status = status,
+                    NextCheckIn = this.IntervalCheckpoint,
+                    LastValidPoint = new Coordinates()
+                    {
+                        Latitude = lastLatitud,
+                        Longitude = lastLongitute
+                    },
+                    DeviationRadius = deviation
+                };
+            }
+        }
+
+        private string ConvertirXML(List<Step> steps)
+        {
+            var serializer = new XmlSerializer(typeof(List<Step>));
+            string xmlOutput;
+            using (var writer = new StringWriter())
+            {
+                serializer.Serialize(writer, steps);
+                xmlOutput = writer.ToString();
+                Console.WriteLine(xmlOutput);
+            }
+            return xmlOutput;
+        }
+
     }
 }

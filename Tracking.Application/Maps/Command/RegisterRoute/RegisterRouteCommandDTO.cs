@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tracking.Application.Maps.Command.ObtenerRuta
 {
-    public class ObtenerRutaCommandDTO
+    public class RegisterRouteCommandDTO
     {
         public string TrackingId { get; set; }
         public string Message { get; set; }

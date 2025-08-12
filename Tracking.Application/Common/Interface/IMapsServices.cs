@@ -9,6 +9,6 @@ namespace Tracking.Application.Common.Interface
 {
     public interface IMapsServices
     {
-        Task<string> ObtenerRuta(ObtenerRutaCommand command);
+        Task<string> ObtenerRuta(RegisterRouteCommand command);
     }
 }

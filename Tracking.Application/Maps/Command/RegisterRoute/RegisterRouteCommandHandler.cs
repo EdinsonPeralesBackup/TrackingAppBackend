@@ -12,15 +12,15 @@ using Tracking.Application.Common.Interface.Repositories;
 
 namespace Tracking.Application.Maps.Command.ObtenerRuta
 {
-    public class ObtenerRutaCommandHandler : IRequestHandler<ObtenerRutaCommand, ObtenerRutaCommandDTO>
+    public class RegisterRouteCommandHandler : IRequestHandler<RegisterRouteCommand, RegisterRouteCommandDTO>
     {
-        private readonly ILogger<ObtenerRutaCommandHandler> _logger;
+        private readonly ILogger<RegisterRouteCommandHandler> _logger;
         private readonly IMapper _mapper;
         private readonly IMapsRepository _mapsRepository;
         private readonly IMapsServices _mapsServices;
 
-        public ObtenerRutaCommandHandler(
-            ILogger<ObtenerRutaCommandHandler> logger,
+        public RegisterRouteCommandHandler(
+            ILogger<RegisterRouteCommandHandler> logger,
             IMapper mapper,
             IMapsRepository mapsRepository,
             IMapsServices mapsServices
@@ -31,7 +31,8 @@ namespace Tracking.Application.Maps.Command.ObtenerRuta
             this._mapsRepository = mapsRepository;
             this._mapsServices = mapsServices;
         }
-        public async Task<ObtenerRutaCommandDTO> Handle(ObtenerRutaCommand request, CancellationToken cancellationToken)
+
+        public async Task<RegisterRouteCommandDTO> Handle(RegisterRouteCommand request, CancellationToken cancellationToken)
         {
             var respuestaMaps = await _mapsServices.ObtenerRuta(request);
             var routes= JObject.Parse(respuestaMaps)["routes"][0];
@@ -61,6 +62,7 @@ namespace Tracking.Application.Maps.Command.ObtenerRuta
             {
                 response.RouteTravel = null;
             }
+
             return response;
         }
     }
