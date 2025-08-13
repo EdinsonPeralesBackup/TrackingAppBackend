@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Tracking.Api.Filter;
+using Tracking.Application.Maps.Command.SendSOSSignal;
 using Tracking.Application.TrustedContacts.Command.ChangeStatusConfidenceContact;
 using Tracking.Application.TrustedContacts.Command.DeleteTrustedContact;
 using Tracking.Application.TrustedContacts.Command.RegisterTrustedContact;
@@ -76,6 +77,15 @@ namespace Tracking.Api.Controllers
             {
                 IdTrustedContact = idTrustedContact
             });
+            return Ok(response);
+        }
+
+        [HttpPost]
+        [Route("sendSOS")]
+        [ProducesResponseType(typeof(SendSOSSignalCommand), StatusCodes.Status200OK)]
+        public async Task<IActionResult> SendSOS(SendSOSSignalCommand command)
+        {
+            var response = await Mediator.Send(command);
             return Ok(response);
         }
     }

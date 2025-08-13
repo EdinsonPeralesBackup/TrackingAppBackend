@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.persistence\\repository\\mapsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|solutionrelative:tracking.persistence\\repository\\mapsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\maps\\command\\sendsossignal\\sendsossignalcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\sendsossignal\\sendsossignalcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\maps\\command\\updatepoint\\updatepointcommanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\updatepoint\\updatepointcommanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1075353-05BB-4B80-BCED-45102BCC2877}|Tracking.Infrastructure\\Tracking.Infrastructure.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.infrastructure\\services\\twilioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1075353-05BB-4B80-BCED-45102BCC2877}|Tracking.Infrastructure\\Tracking.Infrastructure.csproj|solutionrelative:tracking.infrastructure\\services\\twilioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\maps\\command\\updatepoint\\updatepointcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\updatepoint\\updatepointcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\common\\interface\\itwilioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\common\\interface\\itwilioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\maps\\command\\updatepoint\\updatepointcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\updatepoint\\updatepointcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\maps\\command\\sendsossignal\\sendsossignalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\sendsossignal\\sendsossignalcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\maps\\command\\sendsossignal\\sendsossignalcommanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\sendsossignal\\sendsossignalcommanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +30,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 204,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ITwilioService.cs",
+              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Common\\Interface\\ITwilioService.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Common\\Interface\\ITwilioService.cs",
+              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Common\\Interface\\ITwilioService.cs",
+              "RelativeToolTip": "Tracking.Application\\Common\\Interface\\ITwilioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T07:26:35.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TwilioService.cs",
+              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\Services\\TwilioService.cs",
+              "RelativeDocumentMoniker": "Tracking.Infrastructure\\Services\\TwilioService.cs",
+              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\Services\\TwilioService.cs",
+              "RelativeToolTip": "Tracking.Infrastructure\\Services\\TwilioService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T07:09:16.378Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
@@ -35,51 +65,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MapsRepository.cs",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\MapsRepository.cs",
-              "RelativeDocumentMoniker": "Tracking.Persistence\\Repository\\MapsRepository.cs",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\MapsRepository.cs",
-              "RelativeToolTip": "Tracking.Persistence\\Repository\\MapsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAoAAAAAAAAAA==",
+              "Title": "SendSOSSignalCommandHandler.cs",
+              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommandHandler.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommandHandler.cs",
+              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommandHandler.cs",
+              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommandHandler.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwD0AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T06:04:48.302Z",
+              "WhenOpened": "2025-08-13T06:43:23.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdatePointCommand.cs",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommand.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommand.cs",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommand.cs",
-              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAARAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "SendSOSSignalCommandDTO.cs",
+              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommandDTO.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommandDTO.cs",
+              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommandDTO.cs",
+              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommandDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T05:09:46.668Z"
+              "WhenOpened": "2025-08-13T06:43:17.786Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UpdatePointCommandHandler.cs",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandHandler.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandHandler.cs",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandHandler.cs",
-              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "Title": "SendSOSSignalCommand.cs",
+              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommand.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommand.cs",
+              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommand.cs",
+              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\SendSOSSignal\\SendSOSSignalCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T05:02:11.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdatePointCommandDTO.cs",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandDTO.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandDTO.cs",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandDTO.cs",
-              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T05:02:06.995Z"
+              "WhenOpened": "2025-08-13T06:43:13.372Z",
+              "EditorCaption": ""
             }
           ]
         }
