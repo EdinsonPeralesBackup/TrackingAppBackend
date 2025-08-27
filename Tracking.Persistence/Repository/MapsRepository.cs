@@ -11,8 +11,11 @@ using System.Xml.Serialization;
 using Tracking.Application.Authorization.Commad.Register;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
+using Tracking.Application.Maps.Command.ArriveRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
+using Tracking.Application.Maps.Query.GetTrackingHistory;
+using Tracking.Application.TrustedContacts.Query.GetTrustedContact;
 using Tracking.Persistence.Database;
 
 namespace Tracking.Persistence.Repository
@@ -119,6 +122,59 @@ namespace Tracking.Persistence.Repository
             }
         }
 
+        public async Task<ArriveRouteCommandDTO> ArriveRoute(ArriveRouteCommand command)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@ptrackingID", command.TrackingId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@puserId", command.UserId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@plongitude", command.Coordinates.Longitude, DbType.Double, ParameterDirection.Input);
+                parameters.Add("@platitude", command.Coordinates.Latitude, DbType.Double, ParameterDirection.Input);
+                parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
+
+                using var reader = await cnx.ExecuteReaderAsync(
+                    "[dbo].[sp_ArriveRoute]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure);
+
+                var message = parameters.Get<string>("message");
+                return new ArriveRouteCommandDTO()
+                {
+                    Message = message
+                };
+            }
+        }
+
+        public async Task<IEnumerable<GetTrackingHistoryQueryDTO>> GetTrustedContacts(GetTrackingHistoryQuery query)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@pRouteId", query.RouteId, DbType.Int32, ParameterDirection.Input);
+
+                using (var reader = await cnx.ExecuteReaderAsync(
+                    "[dbo].[sp_GetTrackingHistory]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure))
+                {
+                    List<GetTrackingHistoryQueryDTO> response = new();
+                    while (reader.Read())
+                    {
+                        response.Add(new GetTrackingHistoryQueryDTO()
+                        {
+                            Latitud = Convert.IsDBNull(reader["LATITUD"]) ? 0 : Convert.ToDouble(reader["LATITUD"].ToString()),
+                            Longitude = Convert.IsDBNull(reader["LONGITUDE"]) ? 0 : Convert.ToDouble(reader["LONGITUDE"].ToString()),
+                            Timestamp = Convert.IsDBNull(reader["TIMESTAMP"]) ? default : Convert.ToDateTime(reader["TIMESTAMP"].ToString()),
+                        });
+                    }
+                    return response;
+                }
+            }
+        }
+
         private string ConvertirXML(List<Step> steps)
         {
             var serializer = new XmlSerializer(typeof(List<Step>));
@@ -131,6 +187,5 @@ namespace Tracking.Persistence.Repository
             }
             return xmlOutput;
         }
-
     }
 }

@@ -181,13 +181,39 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "Tracking.Application.Maps.Command.ObtenerRuta.ObtenerRutaCommand",
+        "Type": "Tracking.Application.Maps.Command.ObtenerRuta.RegisterRouteCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Tracking.Application.Maps.Command.ObtenerRuta.ObtenerRutaCommand",
+        "Type": "Tracking.Application.Maps.Command.ObtenerRuta.RegisterRouteCommand",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.MapsController",
+    "Method": "UpdateLiveCoordinate",
+    "RelativePath": "api/v1/Maps/updateLiveCoordinates",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.Maps.Command.UpdatePoint.UpdatePointCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Maps.Command.UpdatePoint.UpdatePointCommand",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -302,6 +328,32 @@
     "ReturnTypes": [
       {
         "Type": "Tracking.Application.TrustedContacts.Command.RegisterTrustedContact.RegisterTrustedContactCommand",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.TrustedContactController",
+    "Method": "SendSOS",
+    "RelativePath": "api/v1/TrustedContact/sendSOS",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.Maps.Command.SendSOSSignal.SendSOSSignalCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Maps.Command.SendSOSSignal.SendSOSSignalCommand",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -329,22 +329,22 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/ObtenerRutaCommand"
+                "$ref": "#/components/schemas/RegisterRouteCommand"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ObtenerRutaCommand"
+                "$ref": "#/components/schemas/RegisterRouteCommand"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ObtenerRutaCommand"
+                "$ref": "#/components/schemas/RegisterRouteCommand"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ObtenerRutaCommand"
+                "$ref": "#/components/schemas/RegisterRouteCommand"
               }
             }
           }
@@ -355,17 +355,70 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ObtenerRutaCommand"
+                  "$ref": "#/components/schemas/RegisterRouteCommand"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ObtenerRutaCommand"
+                  "$ref": "#/components/schemas/RegisterRouteCommand"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ObtenerRutaCommand"
+                  "$ref": "#/components/schemas/RegisterRouteCommand"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Maps/updateLiveCoordinates": {
+      "post": {
+        "tags": [
+          "Maps"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePointCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePointCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePointCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePointCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdatePointCommand"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdatePointCommand"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdatePointCommand"
                 }
               }
             }
@@ -613,6 +666,59 @@
                 "schema": {
                   "type": "integer",
                   "format": "int32"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/TrustedContact/sendSOS": {
+      "post": {
+        "tags": [
+          "TrustedContact"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendSOSSignalCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendSOSSignalCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendSOSSignalCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendSOSSignalCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendSOSSignalCommand"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendSOSSignalCommand"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendSOSSignalCommand"
                 }
               }
             }
@@ -985,6 +1091,20 @@
         },
         "additionalProperties": false
       },
+      "Coordinates": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "CurrentUser": {
         "type": "object",
         "properties": {
@@ -1131,22 +1251,6 @@
         },
         "additionalProperties": false
       },
-      "ObtenerRutaCommand": {
-        "type": "object",
-        "properties": {
-          "userId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "origin": {
-            "$ref": "#/components/schemas/Location"
-          },
-          "destination": {
-            "$ref": "#/components/schemas/Location"
-          }
-        },
-        "additionalProperties": false
-      },
       "RegisterCommand": {
         "type": "object",
         "properties": {
@@ -1183,6 +1287,22 @@
           "userId": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterRouteCommand": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "origin": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "destination": {
+            "$ref": "#/components/schemas/Location"
           }
         },
         "additionalProperties": false
@@ -1241,12 +1361,42 @@
         },
         "additionalProperties": false
       },
+      "SendSOSSignalCommand": {
+        "type": "object",
+        "properties": {
+          "trackingId": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "coordinate": {
+            "$ref": "#/components/schemas/Coordinates"
+          }
+        },
+        "additionalProperties": false
+      },
       "SendVerificationCodeCommand": {
         "type": "object",
         "properties": {
           "phone": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePointCommand": {
+        "type": "object",
+        "properties": {
+          "trackingId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "coordinates": {
+            "$ref": "#/components/schemas/Coordinates"
           }
         },
         "additionalProperties": false
