@@ -37,7 +37,7 @@ namespace Tracking.Persistence.Repository
             this.IntervalCheckpoint = 30;
         }
 
-        public async Task<RegisterRouteCommandDTO> RegisterRoute(Route command, int IdUser)
+        public async Task<RegisterRouteCommandDTO> RegisterRoute(Route command, int IdUser, int RouteCalibrated)
         {
             using (var cnx = _dataBase.GetConnection())
             {
@@ -63,7 +63,9 @@ namespace Tracking.Persistence.Repository
 
                 parameters.Add("@pXMLPoint", this.ConvertirXML(command.Steps), DbType.Xml, ParameterDirection.Input);
 
-                parameters.Add("@numberTracking", "", DbType.String, ParameterDirection.Output);
+                parameters.Add("@pRouteCalibrated", RouteCalibrated, DbType.Int32, ParameterDirection.Input);
+
+                parameters.Add("@@idRoute", "", DbType.String, ParameterDirection.Output);
                 parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
 
                 using var reader = await cnx.ExecuteReaderAsync(
@@ -71,7 +73,7 @@ namespace Tracking.Persistence.Repository
                     param: parameters,
                     commandType: CommandType.StoredProcedure);
 
-                var trackingId = parameters.Get<string>("numberTracking");
+                var trackingId = parameters.Get<Int32>("idRoute");
                 var message = parameters.Get<string>("message");
                 return new RegisterRouteCommandDTO()
                 {
@@ -89,7 +91,7 @@ namespace Tracking.Persistence.Repository
             {
                 DynamicParameters parameters = new DynamicParameters();
 
-                parameters.Add("@pidTracking", command.TrackingId, DbType.String, ParameterDirection.Input);
+                parameters.Add("@pidTracking", command.TrackingId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@platitud", command.Coordinates.Latitude, DbType.Double, ParameterDirection.Input);
                 parameters.Add("@plongitute", command.Coordinates.Longitude, DbType.Double, ParameterDirection.Input);
                 parameters.Add("@ptimestamp", this._dateTimeService.HoraActual(), DbType.DateTime, ParameterDirection.Input);
@@ -153,7 +155,8 @@ namespace Tracking.Persistence.Repository
             {
                 DynamicParameters parameters = new DynamicParameters();
 
-                parameters.Add("@pRouteId", query.RouteId, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@pIdUser", query.IdUser, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@pEsRutaActual", query.EsRutaActual, DbType.Boolean, ParameterDirection.Input);
 
                 using (var reader = await cnx.ExecuteReaderAsync(
                     "[dbo].[sp_GetTrackingHistory]",
@@ -165,9 +168,14 @@ namespace Tracking.Persistence.Repository
                     {
                         response.Add(new GetTrackingHistoryQueryDTO()
                         {
-                            Latitud = Convert.IsDBNull(reader["LATITUD"]) ? 0 : Convert.ToDouble(reader["LATITUD"].ToString()),
-                            Longitude = Convert.IsDBNull(reader["LONGITUDE"]) ? 0 : Convert.ToDouble(reader["LONGITUDE"].ToString()),
-                            Timestamp = Convert.IsDBNull(reader["TIMESTAMP"]) ? default : Convert.ToDateTime(reader["TIMESTAMP"].ToString()),
+                            IdRoute = Convert.IsDBNull(reader["ID_ROUTE"]) ? 0 : Convert.ToInt32(reader["ID_ROUTE"].ToString()),
+                            Origen = Convert.IsDBNull(reader["ORIGEN"]) ? string.Empty : reader["ORIGEN"].ToString(),
+                            OrigenLatitud = Convert.IsDBNull(reader["ORIGIN_LATITUD"]) ? 0 : Convert.ToDouble(reader["ORIGIN_LATITUD"].ToString()),
+                            OrigenLongitude = Convert.IsDBNull(reader["ORIGIN_LONGITUD"]) ? 0 : Convert.ToDouble(reader["ORIGIN_LONGITUD"].ToString()),
+                            Destination = Convert.IsDBNull(reader["DESTINATION"]) ? string.Empty : reader["DESTINATION"].ToString(),
+                            DestinationLatitud = Convert.IsDBNull(reader["DESTINATION_LATITUD"]) ? 0 : Convert.ToDouble(reader["DESTINATION_LATITUD"].ToString()),
+                            DestinationLongitude = Convert.IsDBNull(reader["DESTINATION_LONGITUDE"]) ? 0 : Convert.ToDouble(reader["DESTINATION_LONGITUDE"].ToString()),
+                            Timestamp = Convert.IsDBNull(reader["TIME"]) ? default : Convert.ToDateTime(reader["TIME"].ToString()),
                         });
                     }
                     return response;

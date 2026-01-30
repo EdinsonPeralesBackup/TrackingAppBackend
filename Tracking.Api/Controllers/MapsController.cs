@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Tracking.Api.Filter;
 using Tracking.Application.Authorization.Commad.Login;
 using Tracking.Application.Maps.Command.ArriveRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
@@ -10,7 +11,8 @@ namespace Tracking.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    [AllowAnonymous]
+    [Authorize]
+    [TypeFilter(typeof(AuthorizationFilter))]
     public class MapsController : AbstractController
     {
         [HttpPost]
@@ -41,13 +43,14 @@ namespace Tracking.Api.Controllers
         }
 
         [HttpPost]
-        [Route("getTrackingHistory/{IdRoute}")]
+        [Route("getTrackingHistory/{isRutaActual}")]
         [ProducesResponseType(typeof(RegisterRouteCommandDTO), StatusCodes.Status200OK)]
-        public async Task<IActionResult> GetTrackingHistory(int IdRoute)
+        public async Task<IActionResult> GetTrackingHistory(bool isRutaActual)
         {
             var response = await Mediator.Send(new GetTrackingHistoryQuery()
             {
-                RouteId = IdRoute
+                IdUser = Convert.ToInt32(this.CurrentUser.Id),
+                EsRutaActual = isRutaActual
             });
             return Ok(response);
         }

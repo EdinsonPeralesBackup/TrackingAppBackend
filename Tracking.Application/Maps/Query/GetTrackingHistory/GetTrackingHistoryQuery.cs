@@ -9,6 +9,7 @@ namespace Tracking.Application.Maps.Query.GetTrackingHistory
 {
     public class GetTrackingHistoryQuery : IRequest<IEnumerable<GetTrackingHistoryQueryDTO>>
     {
-        public int RouteId { get; set; }
+        public int IdUser { get; set; }
+        public bool EsRutaActual{ get; set; }
     }
 }

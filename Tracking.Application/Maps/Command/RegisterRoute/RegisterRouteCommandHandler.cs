@@ -50,15 +50,15 @@ namespace Tracking.Application.Maps.Command.ObtenerRuta
                         EndAddress = leg["end_address"]?.ToString(),
                         StartLocation = leg["start_location"]?.ToObject<Location>(),
                         EndLocation = leg["end_location"]?.ToObject<Location>(),
-                        Steps = leg["steps"]?.ToObject<List<Step>>()
+                        Steps = leg["steps"]?.ToObject<List<Step>>(),
                     };
 
                     steps.Add(dto);
                 }
             }
 
-            var response = await this._mapsRepository.RegisterRoute(steps.FirstOrDefault(), request.UserId);
-            if (response.TrackingId == "EX")
+            var response = await this._mapsRepository.RegisterRoute(steps.FirstOrDefault(), request.UserId, request.RouteCalibrated);
+            if (response.TrackingId == 0)
             {
                 response.RouteTravel = null;
             }

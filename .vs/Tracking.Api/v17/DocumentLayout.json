@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|g:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|g:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\mapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\mapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|g:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\maps\\command\\registerroute\\registerroutecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\registerroute\\registerroutecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthenticateController.cs",
-              "DocumentMoniker": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthenticateController.cs",
-              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\AuthenticateController.cs",
-              "ToolTip": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthenticateController.cs",
-              "RelativeToolTip": "Tracking.Api\\Controllers\\AuthenticateController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "Title": "MapsController.cs",
+              "DocumentMoniker": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\MapsController.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\MapsController.cs",
+              "ToolTip": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\MapsController.cs",
+              "RelativeToolTip": "Tracking.Api\\Controllers\\MapsController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAvwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T07:10:20.056Z",
+              "WhenOpened": "2026-01-30T07:43:43.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterRouteCommandHandler.cs",
+              "DocumentMoniker": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\RegisterRoute\\RegisterRouteCommandHandler.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\RegisterRoute\\RegisterRouteCommandHandler.cs",
+              "ToolTip": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\RegisterRoute\\RegisterRouteCommandHandler.cs",
+              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\RegisterRoute\\RegisterRouteCommandHandler.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAvwDwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T07:43:32.683Z",
               "EditorCaption": ""
             }
           ]

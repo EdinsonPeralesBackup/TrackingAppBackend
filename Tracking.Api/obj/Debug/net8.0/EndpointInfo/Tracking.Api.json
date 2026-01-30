@@ -426,19 +426,18 @@
         }
       }
     },
-    "/api/v1/Maps/getTrackingHistory/{IdRoute}": {
+    "/api/v1/Maps/getTrackingHistory/{isRutaActual}": {
       "post": {
         "tags": [
           "Maps"
         ],
         "parameters": [
           {
-            "name": "IdRoute",
+            "name": "isRutaActual",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "boolean"
             }
           }
         ],
@@ -1430,8 +1429,8 @@
         "type": "object",
         "properties": {
           "trackingId": {
-            "type": "string",
-            "nullable": true
+            "type": "integer",
+            "format": "int32"
           },
           "message": {
             "type": "string",

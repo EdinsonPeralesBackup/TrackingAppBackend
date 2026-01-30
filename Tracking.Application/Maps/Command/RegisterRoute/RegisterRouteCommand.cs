@@ -12,5 +12,6 @@ namespace Tracking.Application.Maps.Command.ObtenerRuta
         public int UserId { get; set; }
         public Location Origin { get; set; }
         public Location Destination { get; set; }
+        public int RouteCalibrated { get; set; }
     }
 }

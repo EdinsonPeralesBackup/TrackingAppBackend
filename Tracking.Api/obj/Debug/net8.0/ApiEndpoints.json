@@ -200,14 +200,14 @@
   {
     "ContainingType": "Tracking.Api.Controllers.MapsController",
     "Method": "GetTrackingHistory",
-    "RelativePath": "api/v1/Maps/getTrackingHistory/{IdRoute}",
+    "RelativePath": "api/v1/Maps/getTrackingHistory/{isRutaActual}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "IdRoute",
-        "Type": "System.Int32",
+        "Name": "isRutaActual",
+        "Type": "System.Boolean",
         "IsRequired": true
       }
     ],
