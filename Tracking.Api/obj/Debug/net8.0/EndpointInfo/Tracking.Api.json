@@ -229,59 +229,6 @@
         }
       }
     },
-    "/api/v1/Code/validationCode": {
-      "post": {
-        "tags": [
-          "Code"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CheckVerificationCodeCommand"
-              }
-            },
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CheckVerificationCodeCommand"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CheckVerificationCodeCommand"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CheckVerificationCodeCommand"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/CurrentUser"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CurrentUser"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/CurrentUser"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/v1/Encrypt/encrypt": {
       "get": {
         "tags": [
@@ -355,17 +302,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/RegisterRouteCommand"
+                  "$ref": "#/components/schemas/RegisterRouteCommandDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/RegisterRouteCommand"
+                  "$ref": "#/components/schemas/RegisterRouteCommandDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/RegisterRouteCommand"
+                  "$ref": "#/components/schemas/RegisterRouteCommandDTO"
                 }
               }
             }
@@ -408,17 +355,110 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/UpdatePointCommand"
+                  "$ref": "#/components/schemas/UpdatePointCommandDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UpdatePointCommand"
+                  "$ref": "#/components/schemas/UpdatePointCommandDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/UpdatePointCommand"
+                  "$ref": "#/components/schemas/UpdatePointCommandDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Maps/arriveRoute": {
+      "post": {
+        "tags": [
+          "Maps"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArriveRouteCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArriveRouteCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArriveRouteCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArriveRouteCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArriveRouteCommandDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArriveRouteCommandDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArriveRouteCommandDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/Maps/getTrackingHistory/{IdRoute}": {
+      "post": {
+        "tags": [
+          "Maps"
+        ],
+        "parameters": [
+          {
+            "name": "IdRoute",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegisterRouteCommandDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegisterRouteCommandDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegisterRouteCommandDTO"
                 }
               }
             }
@@ -1073,20 +1113,36 @@
   },
   "components": {
     "schemas": {
-      "CheckVerificationCodeCommand": {
+      "ArriveRouteCommand": {
         "type": "object",
         "properties": {
-          "phoneNumber": {
-            "type": "string",
-            "nullable": true
-          },
-          "verificationCode": {
-            "type": "string",
-            "nullable": true
-          },
-          "idUser": {
+          "trackingId": {
             "type": "integer",
             "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "coordinates": {
+            "$ref": "#/components/schemas/Coordinates"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ArriveRouteCommandDTO": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactsNotified": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetTrustedContactQueryDTO"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1159,6 +1215,59 @@
           "message": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Distance": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Duration": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetTrustedContactQueryDTO": {
+        "type": "object",
+        "properties": {
+          "contactId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
@@ -1251,6 +1360,16 @@
         },
         "additionalProperties": false
       },
+      "Polyline": {
+        "type": "object",
+        "properties": {
+          "points": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "RegisterCommand": {
         "type": "object",
         "properties": {
@@ -1303,6 +1422,27 @@
           },
           "destination": {
             "$ref": "#/components/schemas/Location"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegisterRouteCommandDTO": {
+        "type": "object",
+        "properties": {
+          "trackingId": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkpointInterval": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "routeTravel": {
+            "$ref": "#/components/schemas/Route"
           }
         },
         "additionalProperties": false
@@ -1361,6 +1501,39 @@
         },
         "additionalProperties": false
       },
+      "Route": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "$ref": "#/components/schemas/Distance"
+          },
+          "duration": {
+            "$ref": "#/components/schemas/Duration"
+          },
+          "endAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "endLocation": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "startAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "startLocation": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Step"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "SendSOSSignalCommand": {
         "type": "object",
         "properties": {
@@ -1388,6 +1561,35 @@
         },
         "additionalProperties": false
       },
+      "Step": {
+        "type": "object",
+        "properties": {
+          "distance": {
+            "$ref": "#/components/schemas/Distance"
+          },
+          "duration": {
+            "$ref": "#/components/schemas/Duration"
+          },
+          "start_location": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "end_location": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "html_instructions": {
+            "type": "string",
+            "nullable": true
+          },
+          "polyline": {
+            "$ref": "#/components/schemas/Polyline"
+          },
+          "travel_mode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UpdatePointCommand": {
         "type": "object",
         "properties": {
@@ -1397,6 +1599,27 @@
           },
           "coordinates": {
             "$ref": "#/components/schemas/Coordinates"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePointCommandDTO": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "nextCheckIn": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "lastValidPoint": {
+            "$ref": "#/components/schemas/Coordinates"
+          },
+          "deviationRadius": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

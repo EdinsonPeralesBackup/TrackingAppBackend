@@ -9,6 +9,7 @@ using Tracking.Application.User.Query.GetUserById;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Rest.Verify.V2.Service;
+using Twilio.Types;
 using static Org.BouncyCastle.Crypto.Engines.SM2Engine;
 
 namespace Tracking.Infrastructure.Services
@@ -19,35 +20,24 @@ namespace Tracking.Infrastructure.Services
         string authToken;
         string pathServiceSid;
         string numberPhone;
+        string messagingServicesId;
         public TwilioService()
         {
             this.accountSid = "ACb617e3ccb5c2b18d8f8681b4501f03f9";
-            this.authToken = "150827263387da679a044c6b445331d3";
+            this.authToken = "b863421c2d63e827ffcb8caeae1943e7";
             this.pathServiceSid = "VA8c2e65202f923c86252eb99b0b3b6494";
             this.numberPhone = "+14155238886";
+            this.messagingServicesId = "MGc6ce529a20d4c2d97c049282cda9d1f7";
         }
-        public string SendVerificationCode(string phone)
+        public string SendVerificationCode(string phone, string message)
         {
             TwilioClient.Init(this.accountSid, this.authToken);
+            var messageOptions = new CreateMessageOptions(new PhoneNumber("+51" + phone));
+            messageOptions.MessagingServiceSid = this.messagingServicesId;
+            messageOptions.Body = message;
+            var send = MessageResource.Create(messageOptions);
 
-            var verification = VerificationResource.Create(
-                to: "+51" + phone,
-                channel: "sms",
-                pathServiceSid: pathServiceSid
-            );
-
-            return verification.Status;
-        }
-
-        public string CheckVerificationCode(string phone, string code)
-        {
-            TwilioClient.Init(this.accountSid, this.authToken);
-            var verificationCheck = VerificationCheckResource.Create(
-                to: "+51" + phone,
-                code: code,
-                pathServiceSid: pathServiceSid
-            );
-            return verificationCheck.Status;
+            return send.Status.ToString();
         }
 
         public string SendSOS(string phone, GetUserByIdQueryDTO getUserById, Coordinates? coordinates)

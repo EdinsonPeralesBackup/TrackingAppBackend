@@ -1,38 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\",
+  "WorkspaceRootPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.persistence\\repository\\mapsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|solutionrelative:tracking.persistence\\repository\\mapsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.persistence\\repository\\trustedcontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|solutionrelative:tracking.persistence\\repository\\trustedcontactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\maps\\command\\arriveroute\\arriveroutecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\arriveroute\\arriveroutecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\maps\\command\\arriveroute\\arriveroutecommanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\arriveroute\\arriveroutecommanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\maps\\command\\arriveroute\\arriveroutecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\arriveroute\\arriveroutecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|h:\\proyectos\\trackingapp\\trackingappbackend\\tracking.application\\tracking.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\tracking.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|g:\\proyectos\\trackingapp\\trackingappbackend\\tracking.api\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 204,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,102 +22,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Tracking.Api\\appsettings.Development.json",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\appsettings.Development.json",
-              "RelativeToolTip": "Tracking.Api\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-27T02:04:51.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MapsRepository.cs",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\MapsRepository.cs",
-              "RelativeDocumentMoniker": "Tracking.Persistence\\Repository\\MapsRepository.cs",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\MapsRepository.cs",
-              "RelativeToolTip": "Tracking.Persistence\\Repository\\MapsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHkAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T07:49:40.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ArriveRouteCommandHandler.cs",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommandHandler.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommandHandler.cs",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommandHandler.cs",
-              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T07:22:36.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ArriveRouteCommandDTO.cs",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommandDTO.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommandDTO.cs",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommandDTO.cs",
-              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommandDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T07:22:32.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ArriveRouteCommand.cs",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommand.cs",
-              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommand.cs",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommand.cs",
-              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\ArriveRoute\\ArriveRouteCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T07:21:59.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Tracking.Application.csproj",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj",
-              "RelativeDocumentMoniker": "Tracking.Application\\Tracking.Application.csproj",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj",
-              "RelativeToolTip": "Tracking.Application\\Tracking.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-14T07:07:44.734Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "Tracking.Api\\appsettings.json",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\appsettings.json",
-              "RelativeToolTip": "Tracking.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-14T05:46:34.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TrustedContactRepository.cs",
-              "DocumentMoniker": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\TrustedContactRepository.cs",
-              "RelativeDocumentMoniker": "Tracking.Persistence\\Repository\\TrustedContactRepository.cs",
-              "ToolTip": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\TrustedContactRepository.cs",
-              "RelativeToolTip": "Tracking.Persistence\\Repository\\TrustedContactRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AuthenticateController.cs",
+              "DocumentMoniker": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthenticateController.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\AuthenticateController.cs",
+              "ToolTip": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Api\\Controllers\\AuthenticateController.cs",
+              "RelativeToolTip": "Tracking.Api\\Controllers\\AuthenticateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T04:45:57.598Z"
+              "WhenOpened": "2026-01-30T07:10:20.056Z",
+              "EditorCaption": ""
             }
           ]
         }

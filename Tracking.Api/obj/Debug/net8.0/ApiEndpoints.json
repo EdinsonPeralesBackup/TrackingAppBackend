@@ -120,32 +120,6 @@
     ]
   },
   {
-    "ContainingType": "Tracking.Api.Controllers.CodeController",
-    "Method": "ValidationCodeVerification",
-    "RelativePath": "api/v1/Code/validationCode",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "Tracking.Application.VerificationCode.Command.CheckVerificationCode.CheckVerificationCodeCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Tracking.Api.Services.CurrentUser",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "Tracking.Api.Controllers.EncryptController",
     "Method": "Encrypt",
     "RelativePath": "api/v1/Encrypt/encrypt",
@@ -173,6 +147,32 @@
   },
   {
     "ContainingType": "Tracking.Api.Controllers.MapsController",
+    "Method": "ArriveRoute",
+    "RelativePath": "api/v1/Maps/arriveRoute",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.Maps.Command.ArriveRoute.ArriveRouteCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Maps.Command.ArriveRoute.ArriveRouteCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.MapsController",
     "Method": "GetRoute",
     "RelativePath": "api/v1/Maps/getRoute",
     "HttpMethod": "POST",
@@ -187,7 +187,33 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Tracking.Application.Maps.Command.ObtenerRuta.RegisterRouteCommand",
+        "Type": "Tracking.Application.Maps.Command.ObtenerRuta.RegisterRouteCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.MapsController",
+    "Method": "GetTrackingHistory",
+    "RelativePath": "api/v1/Maps/getTrackingHistory/{IdRoute}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdRoute",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Maps.Command.ObtenerRuta.RegisterRouteCommandDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -213,7 +239,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Tracking.Application.Maps.Command.UpdatePoint.UpdatePointCommand",
+        "Type": "Tracking.Application.Maps.Command.UpdatePoint.UpdatePointCommandDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",

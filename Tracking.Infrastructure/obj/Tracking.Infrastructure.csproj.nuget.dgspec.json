@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\Tracking.Infrastructure.csproj": {}
+    "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\Tracking.Infrastructure.csproj": {}
   },
   "projects": {
-    "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj": {
+    "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj",
+        "projectUniqueName": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj",
         "projectName": "Tracking.Application",
-        "projectPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj",
-        "packagesPath": "C:\\Users\\Alfiery\\.nuget\\packages\\",
-        "outputPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\obj\\",
+        "projectPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj",
+        "packagesPath": "C:\\Users\\alfie\\.nuget\\packages\\",
+        "outputPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alfiery\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alfie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {
-                "projectPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj"
+              "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {
+                "projectPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj"
               }
             }
           }
@@ -48,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -99,24 +99,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {
+    "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
+        "projectUniqueName": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
         "projectName": "Tracking.Domain",
-        "projectPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
-        "packagesPath": "C:\\Users\\Alfiery\\.nuget\\packages\\",
-        "outputPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\obj\\",
+        "projectPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
+        "packagesPath": "C:\\Users\\alfie\\.nuget\\packages\\",
+        "outputPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alfiery\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alfie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -143,7 +143,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -164,24 +164,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\Tracking.Infrastructure.csproj": {
+    "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\Tracking.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\Tracking.Infrastructure.csproj",
+        "projectUniqueName": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\Tracking.Infrastructure.csproj",
         "projectName": "Tracking.Infrastructure",
-        "projectPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\Tracking.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Alfiery\\.nuget\\packages\\",
-        "outputPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\obj\\",
+        "projectPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\Tracking.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\alfie\\.nuget\\packages\\",
+        "outputPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Alfiery\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alfie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -196,8 +196,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj": {
-                "projectPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj"
+              "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj": {
+                "projectPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Application\\Tracking.Application.csproj"
               }
             }
           }
@@ -212,7 +212,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -267,7 +267,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

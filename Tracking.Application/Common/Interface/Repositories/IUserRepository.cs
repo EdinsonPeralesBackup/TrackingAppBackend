@@ -9,8 +9,8 @@ using Tracking.Application.User.Comand.DeleteUser;
 using Tracking.Application.User.Comand.UpdateUserInfo;
 using Tracking.Application.User.Query.GetUserById;
 using Tracking.Application.User.Query.GetUsers;
-using Tracking.Application.VerificationCode.Command.CheckVerificationCode;
 using Tracking.Application.VerificationCode.Command.ResetPassword;
+using Tracking.Application.VerificationCode.Command.SendVerificationCode;
 
 namespace Tracking.Application.Common.Interface.Repositories
 {

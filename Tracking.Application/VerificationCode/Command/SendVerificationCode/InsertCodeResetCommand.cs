@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using MediatR;
 
-namespace Tracking.Application.VerificationCode.Command.CheckVerificationCode
+namespace Tracking.Application.VerificationCode.Command.SendVerificationCode
 {
     public class InsertCodeResetCommand
     {
         public string Code { get; set; }
-        public int IdUser { get; set; }
+        public string Phone{ get; set; }
     }
 }

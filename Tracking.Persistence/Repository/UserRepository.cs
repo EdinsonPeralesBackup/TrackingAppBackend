@@ -15,9 +15,9 @@ using Tracking.Application.User.Comand.DeleteUser;
 using Tracking.Application.User.Comand.UpdateUserInfo;
 using Tracking.Application.User.Query.GetUserById;
 using Tracking.Application.User.Query.GetUsers;
-using Tracking.Application.VerificationCode.Command.CheckVerificationCode;
 
 using Tracking.Application.VerificationCode.Command.ResetPassword;
+using Tracking.Application.VerificationCode.Command.SendVerificationCode;
 using Tracking.Persistence.Database;
 
 namespace Tracking.Persistence.Repository
@@ -63,7 +63,7 @@ namespace Tracking.Persistence.Repository
                 DynamicParameters parameters = new DynamicParameters();
 
                 parameters.Add("@pcode", command.Code, DbType.String, ParameterDirection.Input);
-                parameters.Add("@pidUser", command.IdUser, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@pphone", command.Phone, DbType.String, ParameterDirection.Input);
                 parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
 
                 using var reader = await cnx.ExecuteReaderAsync(

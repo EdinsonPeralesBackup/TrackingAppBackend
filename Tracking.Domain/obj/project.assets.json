@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Alfiery\\.nuget\\packages\\": {},
+    "C:\\Users\\alfie\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
+      "projectUniqueName": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
       "projectName": "Tracking.Domain",
-      "projectPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
-      "packagesPath": "C:\\Users\\Alfiery\\.nuget\\packages\\",
-      "outputPath": "H:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\obj\\",
+      "projectPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
+      "packagesPath": "C:\\Users\\alfie\\.nuget\\packages\\",
+      "outputPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alfiery\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alfie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -51,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

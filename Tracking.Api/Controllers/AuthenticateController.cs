@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Tracking.Api.Filter;
 using Tracking.Api.Services;
-using Tracking.Application.VerificationCode.Command.CheckVerificationCode;
-using Tracking.Application.VerificationCode.Command.SendVerificationCode;
 
 namespace Tracking.Api.Controllers
 {

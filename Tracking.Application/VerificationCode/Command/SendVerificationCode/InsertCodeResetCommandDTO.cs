@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tracking.Application.VerificationCode.Command.CheckVerificationCode
+namespace Tracking.Application.VerificationCode.Command.SendVerificationCode
 {
     public class InsertCodeResetCommandDTO
     {
