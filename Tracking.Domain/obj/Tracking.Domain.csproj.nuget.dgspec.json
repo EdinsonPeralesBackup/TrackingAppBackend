@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {}
+    "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {}
   },
   "projects": {
-    "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {
+    "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
         "projectName": "Tracking.Domain",
-        "projectPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
-        "packagesPath": "C:\\Users\\alfie\\.nuget\\packages\\",
-        "outputPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Domain\\obj\\",
+        "projectPath": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Domain\\Tracking.Domain.csproj",
+        "packagesPath": "C:\\Users\\ghiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alfie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ghiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

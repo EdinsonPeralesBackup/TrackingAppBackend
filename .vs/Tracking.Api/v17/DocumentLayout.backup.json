@@ -1,10 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\",
+  "WorkspaceRootPath": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|g:\\proyectos\\trackingapp\\trackingappbackend\\tracking.persistence\\repository\\mapsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|c:\\users\\ghiro\\documents\\estudio\\programacion\\tesisprog\\trackingappbackend\\tracking.persistence\\repository\\mapsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8206CD85-379C-4F66-9D52-3006B328EB4F}|Tracking.Persistence\\Tracking.Persistence.csproj|solutionrelative:tracking.persistence\\repository\\mapsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|c:\\users\\ghiro\\documents\\estudio\\programacion\\tesisprog\\trackingappbackend\\tracking.application\\maps\\command\\updatepoint\\updatepointcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51215A7A-9712-4F45-AF56-F0426C571372}|Tracking.Application\\Tracking.Application.csproj|solutionrelative:tracking.application\\maps\\command\\updatepoint\\updatepointcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1075353-05BB-4B80-BCED-45102BCC2877}|Tracking.Infrastructure\\Tracking.Infrastructure.csproj|c:\\users\\ghiro\\documents\\estudio\\programacion\\tesisprog\\trackingappbackend\\tracking.infrastructure\\services\\mapsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1075353-05BB-4B80-BCED-45102BCC2877}|Tracking.Infrastructure\\Tracking.Infrastructure.csproj|solutionrelative:tracking.infrastructure\\services\\mapsservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|c:\\users\\ghiro\\documents\\estudio\\programacion\\tesisprog\\trackingappbackend\\tracking.api\\controllers\\mapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\controllers\\mapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|c:\\users\\ghiro\\documents\\estudio\\programacion\\tesisprog\\trackingappbackend\\tracking.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|c:\\users\\ghiro\\documents\\estudio\\programacion\\tesisprog\\trackingappbackend\\tracking.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B9D6294-4C64-45B6-A4FF-9BADF05925AC}|Tracking.Api\\Tracking.Api.csproj|solutionrelative:tracking.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +34,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 204,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdatePointCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandHandler.cs",
+              "RelativeDocumentMoniker": "Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandHandler.cs",
+              "RelativeToolTip": "Tracking.Application\\Maps\\Command\\UpdatePoint\\UpdatePointCommandHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T21:16:27.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MapsServices.cs",
+              "DocumentMoniker": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Infrastructure\\Services\\MapsServices.cs",
+              "RelativeDocumentMoniker": "Tracking.Infrastructure\\Services\\MapsServices.cs",
+              "ToolTip": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Infrastructure\\Services\\MapsServices.cs",
+              "RelativeToolTip": "Tracking.Infrastructure\\Services\\MapsServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T21:13:50.096Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MapsRepository.cs",
-              "DocumentMoniker": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\MapsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Persistence\\Repository\\MapsRepository.cs",
               "RelativeDocumentMoniker": "Tracking.Persistence\\Repository\\MapsRepository.cs",
-              "ToolTip": "G:\\Proyectos\\TrackingApp\\TrackingAppBackend\\Tracking.Persistence\\Repository\\MapsRepository.cs",
+              "ToolTip": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Persistence\\Repository\\MapsRepository.cs",
               "RelativeToolTip": "Tracking.Persistence\\Repository\\MapsRepository.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAAAK8AAAB0AAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowFIAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T07:15:00.427Z",
+              "WhenOpened": "2026-02-04T20:53:55.72Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Tracking.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Api\\appsettings.Development.json",
+              "RelativeToolTip": "Tracking.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-04T20:47:30.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "Tracking.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Api\\appsettings.json",
+              "RelativeToolTip": "Tracking.Api\\appsettings.json",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAC0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-04T17:09:51.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MapsController.cs",
+              "DocumentMoniker": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Api\\Controllers\\MapsController.cs",
+              "RelativeDocumentMoniker": "Tracking.Api\\Controllers\\MapsController.cs",
+              "ToolTip": "C:\\Users\\ghiro\\Documents\\Estudio\\Programacion\\TesisProg\\TrackingAppBackend\\Tracking.Api\\Controllers\\MapsController.cs",
+              "RelativeToolTip": "Tracking.Api\\Controllers\\MapsController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAvwB0AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T07:43:43.464Z"
             }
           ]
         }

@@ -33,3 +33,15 @@ G:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\Tra
 G:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\refint\Tracking.Domain.dll
 G:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.pdb
 G:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\ref\Tracking.Domain.dll
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\bin\Debug\net8.0\Tracking.Domain.deps.json
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\bin\Debug\net8.0\Tracking.Domain.dll
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\bin\Debug\net8.0\Tracking.Domain.pdb
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.AssemblyInfoInputs.cache
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.AssemblyInfo.cs
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.sourcelink.json
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.dll
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\refint\Tracking.Domain.dll
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\Tracking.Domain.pdb
+C:\Users\ghiro\Documents\Estudio\Programacion\TesisProg\TrackingAppBackend\Tracking.Domain\obj\Debug\net8.0\ref\Tracking.Domain.dll

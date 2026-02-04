@@ -65,7 +65,7 @@ namespace Tracking.Persistence.Repository
 
                 parameters.Add("@pRouteCalibrated", RouteCalibrated, DbType.Int32, ParameterDirection.Input);
 
-                parameters.Add("@@idRoute", "", DbType.String, ParameterDirection.Output);
+                parameters.Add("@idRoute", "", DbType.Int32, ParameterDirection.Output);
                 parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
 
                 using var reader = await cnx.ExecuteReaderAsync(
