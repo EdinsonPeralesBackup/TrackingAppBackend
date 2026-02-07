@@ -92,14 +92,14 @@ namespace Tracking.Persistence.Repository
                 DynamicParameters parameters = new DynamicParameters();
 
                 parameters.Add("@pidTracking", command.TrackingId, DbType.Int32, ParameterDirection.Input);
-                parameters.Add("@platitud", command.Coordinates.Latitude, DbType.Double, ParameterDirection.Input);
-                parameters.Add("@plongitute", command.Coordinates.Longitude, DbType.Double, ParameterDirection.Input);
+                parameters.Add("@platitud", command.Coordinates.Latitude, DbType.Decimal, ParameterDirection.Input);
+                parameters.Add("@plongitute", command.Coordinates.Longitude, DbType.Decimal, ParameterDirection.Input);
                 parameters.Add("@ptimestamp", this._dateTimeService.HoraActual(), DbType.DateTime, ParameterDirection.Input);
 
                 parameters.Add("@status", "", DbType.String, ParameterDirection.Output);
-                parameters.Add("@deviation", "", DbType.Double, ParameterDirection.Output);
-                parameters.Add("@lastLatitud", "", DbType.Double, ParameterDirection.Output);
-                parameters.Add("@lastLongitute", "", DbType.Double, ParameterDirection.Output);
+                parameters.Add("@deviation", 0, DbType.Double, ParameterDirection.Output);
+                parameters.Add("@lastLatitud", 0, DbType.Double, ParameterDirection.Output);
+                parameters.Add("@lastLongitute", 0, DbType.Double, ParameterDirection.Output);
 
                 using var reader = await cnx.ExecuteReaderAsync(
                     "[dbo].[sp_RegisterLiveCoordinate]",
