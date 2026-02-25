@@ -92,6 +92,7 @@ namespace Tracking.Persistence.Repository
                 parameters.Add("@deviation", 0, DbType.Double, ParameterDirection.Output);
                 parameters.Add("@lastLatitud", 0, DbType.Double, ParameterDirection.Output);
                 parameters.Add("@lastLongitute", 0, DbType.Double, ParameterDirection.Output);
+                parameters.Add("@cancelable", false, DbType.Boolean, ParameterDirection.Output);
 
                 using var reader = await cnx.ExecuteReaderAsync(
                     "[dbo].[sp_RegisterLiveCoordinate]",
@@ -102,6 +103,7 @@ namespace Tracking.Persistence.Repository
                 var deviation = parameters.Get<double>("deviation");
                 var lastLatitud = parameters.Get<double>("lastLatitud");
                 var lastLongitute = parameters.Get<double>("lastLongitute");
+                var cancelable = parameters.Get<bool>("cancelable");
                 return new UpdatePointCommandDTO()
                 {
                     Status = status,
@@ -111,7 +113,8 @@ namespace Tracking.Persistence.Repository
                         Latitude = lastLatitud,
                         Longitude = lastLongitute
                     },
-                    DeviationRadius = deviation
+                    DeviationRadius = deviation,
+                    Cancelable = cancelable
                 };
             }
         }

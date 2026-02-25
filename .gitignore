@@ -1,23 +1,71 @@
-# Archivos de compilación
-bin/
-obj/
-*.dll
-*.exe
-*.pdb
+############################
+# Visual Studio
+############################
 
-# Configuración de usuario de Visual Studio
-*.user
+.vs/
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
-# Archivos de paquetes
-packages/
-*.nupkg
-project.lock.json
-project.fragment.lock.json
+############################
+# Build results
+############################
 
-# Configuración temporal
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+############################
+# .NET Core
+############################
+
+project.assets.json
+project.nuget.cache
+*.nuget.props
+*.nuget.targets
+
+############################
+# Logs
+############################
+
 *.log
-*.vs/
+
+############################
+# Publish
+############################
+
+publish/
+*.Publish.xml
+
+############################
+# Rider / VS Code
+############################
+
+.idea/
 .vscode/
+
+############################
+# OS
+############################
+
+.DS_Store
+Thumbs.db
+
+############################
+# Temporary files
+############################
+
+*.tmp
+*.cache
+*.pdb
+
+############################
+# App secrets
+############################
+
+appsettings.Development.json
+appsettings.Local.json
