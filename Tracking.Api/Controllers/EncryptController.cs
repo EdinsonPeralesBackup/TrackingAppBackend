@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Tracking.Application.Authorization.Commad.Login;
 
 namespace Tracking.Api.Controllers
 {

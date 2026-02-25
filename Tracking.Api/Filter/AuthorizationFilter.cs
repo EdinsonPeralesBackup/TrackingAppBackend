@@ -1,14 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
-using System.Diagnostics;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
-using Tracking.Application.Common.Interface;
 using Tracking.Api.Services;
-using Tracking.Application.Common.Interface.Repositories;
 using Tracking.Application.Authorization.Commad.ValidToken;
+using Tracking.Application.Common.Interface.Repositories;
 
 namespace Tracking.Api.Filter
 {
@@ -36,7 +34,7 @@ namespace Tracking.Api.Filter
 
             var token = request.Headers["Authorization"].ToString().Replace("Bearer ", "");
 
-            var isTokenValid =  (this._userRepository.ValidToken(new ValidTokenCommand()
+            var isTokenValid = (this._userRepository.ValidToken(new ValidTokenCommand()
             {
                 Token = token
             })).Result;

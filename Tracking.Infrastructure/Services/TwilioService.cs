@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Application.User.Query.GetUserById;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
-using Twilio.Rest.Verify.V2.Service;
 using Twilio.Types;
-using static Org.BouncyCastle.Crypto.Engines.SM2Engine;
 
 namespace Tracking.Infrastructure.Services
 {
@@ -18,16 +12,16 @@ namespace Tracking.Infrastructure.Services
     {
         string accountSid;
         string authToken;
-        string pathServiceSid;
         string numberPhone;
         string messagingServicesId;
-        public TwilioService()
+
+        public TwilioService(
+            IAcortadorServices acortadorServices)
         {
             this.accountSid = "ACb617e3ccb5c2b18d8f8681b4501f03f9";
             this.authToken = "b863421c2d63e827ffcb8caeae1943e7";
-            this.pathServiceSid = "VA8c2e65202f923c86252eb99b0b3b6494";
-            this.numberPhone = "+14155238886";
-            this.messagingServicesId = "MGc6ce529a20d4c2d97c049282cda9d1f7";
+            this.numberPhone = "+18503184909";
+            this.messagingServicesId = "VA8c2e65202f923c86252eb99b0b3b6494";
         }
         public string SendVerificationCode(string phone, string message)
         {
@@ -40,13 +34,15 @@ namespace Tracking.Infrastructure.Services
             return send.Status.ToString();
         }
 
-        public string SendSOS(string phone, GetUserByIdQueryDTO getUserById, Coordinates? coordinates)
+        public string SendSOS(string phone, GetUserByIdQueryDTO getUserById, Coordinates? coordinates, string rutaAcortada)
         {
             var messageBody = new StringBuilder();
+
             messageBody.AppendLine($"Su contacto de confianza {getUserById.Name} {getUserById.LastName}, ha enviado un mensaje de emergencia.");
             if (coordinates != null)
             {
                 messageBody.AppendLine($"Coordenadas: {coordinates.Latitude}, {coordinates.Longitude}");
+                messageBody.AppendLine($"Puede visitar el viaje en el siguiente enlace: {rutaAcortada}");
             }
             else
             {

@@ -13,7 +13,7 @@ namespace Tracking.Api.Controllers
         [HttpGet]
         [Authorize]
         [Route("me")]
-        [ProducesResponseType(typeof(CurrentUser) ,StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(CurrentUser), StatusCodes.Status200OK)]
         public IActionResult UserInfo()
         {
             return Ok(CurrentUser);

@@ -2,11 +2,6 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
 
@@ -35,7 +30,7 @@ namespace Tracking.Application.Maps.Command.ObtenerRuta
         public async Task<RegisterRouteCommandDTO> Handle(RegisterRouteCommand request, CancellationToken cancellationToken)
         {
             var respuestaMaps = await _mapsServices.ObtenerRuta(request);
-            var routes= JObject.Parse(respuestaMaps)["routes"][0];
+            var routes = JObject.Parse(respuestaMaps)["routes"][0];
             var legs = routes["legs"];
             var steps = new List<Route>();
             if (legs != null)

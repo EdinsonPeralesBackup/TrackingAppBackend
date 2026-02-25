@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tracking.Application.User.Query.GetUsers
+﻿namespace Tracking.Application.User.Query.GetUsers
 {
     public class GetUsersQueryDTO
     {

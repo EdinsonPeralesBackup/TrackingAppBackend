@@ -1,5 +1,4 @@
 using Autofac.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Hosting;
 using Serilog;
 using Tracking.Api;
 using Tracking.Api.Utils;

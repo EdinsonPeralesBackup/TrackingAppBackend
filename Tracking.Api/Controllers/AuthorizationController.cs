@@ -1,7 +1,5 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Tracking.Application.Authorization.Commad.DeleteToken;
 using Tracking.Application.Authorization.Commad.Login;
 using Tracking.Application.Authorization.Commad.Register;
 

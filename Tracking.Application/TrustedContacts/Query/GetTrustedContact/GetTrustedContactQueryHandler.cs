@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using Tracking.Application.Common.Interface.Repositories;
-using Tracking.Application.TrustedContacts.Command.RegisterTrustedContact;
 
 namespace Tracking.Application.TrustedContacts.Query.GetTrustedContact
 {

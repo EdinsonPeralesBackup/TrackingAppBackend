@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Tracking.Application.Common.Interface;
 using Tracking.Infrastructure.Services;
 
@@ -18,6 +13,7 @@ namespace Tracking.Infrastructure
             services.AddSingleton<IJwtService, JwtService>();
             services.AddSingleton<ITwilioService, TwilioService>();
             services.AddSingleton<IMapsServices, MapsServices>();
+            services.AddHttpClient<IAcortadorServices, AcortadorServices>();
             return services;
         }
 

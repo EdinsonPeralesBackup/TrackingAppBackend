@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dapper;
+﻿using Dapper;
 using Microsoft.Extensions.DependencyInjection;
+using System.Data;
 using Tracking.Application.Authorization.Commad.DeleteToken;
-using Tracking.Application.Authorization.Commad.Login;
 using Tracking.Application.Authorization.Commad.ValidToken;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
@@ -15,7 +9,6 @@ using Tracking.Application.User.Comand.DeleteUser;
 using Tracking.Application.User.Comand.UpdateUserInfo;
 using Tracking.Application.User.Query.GetUserById;
 using Tracking.Application.User.Query.GetUsers;
-
 using Tracking.Application.VerificationCode.Command.ResetPassword;
 using Tracking.Application.VerificationCode.Command.SendVerificationCode;
 using Tracking.Persistence.Database;

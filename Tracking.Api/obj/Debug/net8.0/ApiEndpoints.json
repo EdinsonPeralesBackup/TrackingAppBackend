@@ -95,6 +95,32 @@
   },
   {
     "ContainingType": "Tracking.Api.Controllers.CodeController",
+    "Method": "RegisterVisit",
+    "RelativePath": "api/v1/Code/registerVisit/{trackingId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trackingId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.TrustedContacts.Command.RegisterVisit.RegisterVisitCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.CodeController",
     "Method": "SendCodeVerification",
     "RelativePath": "api/v1/Code/sendCode",
     "HttpMethod": "POST",
@@ -148,7 +174,7 @@
   {
     "ContainingType": "Tracking.Api.Controllers.MapsController",
     "Method": "ArriveRoute",
-    "RelativePath": "api/v1/Maps/arriveRoute",
+    "RelativePath": "api/v1/Maps/finishRoute",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -379,7 +405,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Tracking.Application.Maps.Command.SendSOSSignal.SendSOSSignalCommand",
+        "Type": "Tracking.Application.Maps.Command.SendSOSSignal.SendSOSSignalCommandDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",

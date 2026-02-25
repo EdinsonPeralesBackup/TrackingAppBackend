@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
-using Tracking.Application.Common.Settings;
 using Tracking.Persistence.Database;
 using Tracking.Persistence.Repository;
 

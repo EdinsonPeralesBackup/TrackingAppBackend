@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dapper;
+﻿using Dapper;
 using Microsoft.Extensions.DependencyInjection;
+using System.Data;
 using Tracking.Application.Authorization.Commad.Login;
 using Tracking.Application.Authorization.Commad.Register;
 using Tracking.Application.Common.Interface;

@@ -1,21 +1,13 @@
 ﻿using Dapper;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
-using Tracking.Application.Authorization.Commad.Register;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
 using Tracking.Application.Maps.Command.ArriveRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Application.Maps.Query.GetTrackingHistory;
-using Tracking.Application.TrustedContacts.Query.GetTrustedContact;
 using Tracking.Persistence.Database;
 
 namespace Tracking.Persistence.Repository

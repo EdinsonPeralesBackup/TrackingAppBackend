@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Tracking.Application.Authorization.Commad.Login;
+﻿using Tracking.Application.Authorization.Commad.Login;
 using Tracking.Application.Authorization.Commad.Register;
 
 namespace Tracking.Application.Common.Interface.Repositories

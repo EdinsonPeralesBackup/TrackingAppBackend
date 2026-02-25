@@ -82,11 +82,12 @@ namespace Tracking.Api.Controllers
 
         [HttpPost]
         [Route("sendSOS")]
-        [ProducesResponseType(typeof(SendSOSSignalCommand), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(SendSOSSignalCommandDTO), StatusCodes.Status200OK)]
         public async Task<IActionResult> SendSOS(SendSOSSignalCommand command)
         {
             var response = await Mediator.Send(command);
             return Ok(response);
         }
+
     }
 }

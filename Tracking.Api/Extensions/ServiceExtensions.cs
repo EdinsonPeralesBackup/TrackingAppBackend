@@ -1,18 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc.Authorization;
+﻿using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using Tracking.Api.Services;
+using Tracking.Api.Utils;
+using Tracking.Application.Common;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Settings;
-using System.IdentityModel.Tokens.Jwt;
-using Tracking.Application.Common;
-using Tracking.Persistence;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Tracking.Api.Utils;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using System.Security.Claims;
-using Tracking.Api.Services;
 using Tracking.Infrastructure;
-using FluentValidation.AspNetCore;
+using Tracking.Persistence;
 
 namespace Tracking.Api.Extensions
 {

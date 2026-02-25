@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dapper;
+﻿using Dapper;
 using Microsoft.Extensions.DependencyInjection;
-using Tracking.Application.Authorization.Commad.Register;
+using System.Data;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
+using Tracking.Application.Maps.Command.SendSOSSignal;
 using Tracking.Application.TrustedContacts.Command.ChangeStatusConfidenceContact;
 using Tracking.Application.TrustedContacts.Command.DeleteTrustedContact;
 using Tracking.Application.TrustedContacts.Command.RegisterTrustedContact;
+using Tracking.Application.TrustedContacts.Command.RegisterVisit;
 using Tracking.Application.TrustedContacts.Command.UpdateTrustedContact;
 using Tracking.Application.TrustedContacts.Query.GetSpecificTrustedContact;
 using Tracking.Application.TrustedContacts.Query.GetTrustedContact;
-using Tracking.Application.User.Comand.DeleteUser;
 using Tracking.Persistence.Database;
 
 namespace Tracking.Persistence.Repository
@@ -210,6 +205,51 @@ namespace Tracking.Persistence.Repository
                     }
                     return response;
                 }
+            }
+        }
+
+        public async Task<string> RegisterAlert(RegisterAlert command)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@pidUser", command.IdUser, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@ptrackingId", command.TrackingId, DbType.String, ParameterDirection.Input);
+                parameters.Add("@platitude", command.Coordinate.Latitude, DbType.Double, ParameterDirection.Input);
+                parameters.Add("@plongitude", command.Coordinate.Longitude, DbType.Double, ParameterDirection.Input);
+                parameters.Add("@ptimestamp", command.DateRegister, DbType.DateTime, ParameterDirection.Input);
+                parameters.Add("@msj", "", DbType.String, ParameterDirection.Output);
+
+                await cnx.ExecuteReaderAsync(
+                    "[dbo].[sp_RegisterAlert]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure);
+
+                var mensaje = parameters.Get<string>("msj");
+                return mensaje;
+            }
+        }
+
+        public async Task<RegisterVisitCommandDTO> RegisterVisit(RegisterVisitCommand command)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@pTrackingId", command.TrackingId, DbType.String, ParameterDirection.Input);
+                parameters.Add("@msj", "", DbType.String, ParameterDirection.Output);
+
+                await cnx.ExecuteReaderAsync(
+                    "[dbo].[sp_RegisterVisit]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure);
+
+                var mensaje = parameters.Get<string>("msj");
+                return new RegisterVisitCommandDTO()
+                {
+                    Mensaje = mensaje
+                };
             }
         }
     }

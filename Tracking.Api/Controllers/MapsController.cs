@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Tracking.Api.Filter;
-using Tracking.Application.Authorization.Commad.Login;
 using Tracking.Application.Maps.Command.ArriveRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
@@ -11,7 +9,6 @@ namespace Tracking.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    [Authorize]
     [TypeFilter(typeof(AuthorizationFilter))]
     public class MapsController : AbstractController
     {
@@ -34,7 +31,7 @@ namespace Tracking.Api.Controllers
         }
 
         [HttpPost]
-        [Route("arriveRoute")]
+        [Route("finishRoute")]
         [ProducesResponseType(typeof(ArriveRouteCommandDTO), StatusCodes.Status200OK)]
         public async Task<IActionResult> ArriveRoute(ArriveRouteCommand command)
         {
