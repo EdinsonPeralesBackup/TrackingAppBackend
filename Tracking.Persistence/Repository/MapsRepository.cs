@@ -5,6 +5,7 @@ using System.Xml.Serialization;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
 using Tracking.Application.Maps.Command.ArriveRoute;
+using Tracking.Application.Maps.Command.CancelRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Application.Maps.Query.GetTrackingHistory;
@@ -175,6 +176,28 @@ namespace Tracking.Persistence.Repository
                     }
                     return response;
                 }
+            }
+        }
+
+        public async Task<CancelRouteCommandDTO> CancelRoute(CancelRouteCommand command)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@puserId", command.IdUser, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@msj", "", DbType.String, ParameterDirection.Output);
+
+                using var reader = await cnx.ExecuteReaderAsync(
+                    "[dbo].[sp_CancelRoute]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure);
+
+                var message = parameters.Get<string>("msj");
+                return new CancelRouteCommandDTO()
+                {
+                    Codigo = message
+                };
             }
         }
 

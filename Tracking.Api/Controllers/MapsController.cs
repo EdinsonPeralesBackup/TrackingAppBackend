@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Tracking.Api.Filter;
 using Tracking.Application.Maps.Command.ArriveRoute;
+using Tracking.Application.Maps.Command.CancelRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Application.Maps.Query.GetTrackingHistory;
@@ -36,6 +37,18 @@ namespace Tracking.Api.Controllers
         public async Task<IActionResult> ArriveRoute(ArriveRouteCommand command)
         {
             var response = await Mediator.Send(command);
+            return Ok(response);
+        }
+
+        [HttpPost]
+        [Route("cancelRoute")]
+        [ProducesResponseType(typeof(CancelRouteCommandDTO), StatusCodes.Status200OK)]
+        public async Task<IActionResult> CancelRoute()
+        {
+            var response = await Mediator.Send(new CancelRouteCommand()
+            {
+                IdUser = Convert.ToInt32(this.CurrentUser.Id)
+            });
             return Ok(response);
         }
 

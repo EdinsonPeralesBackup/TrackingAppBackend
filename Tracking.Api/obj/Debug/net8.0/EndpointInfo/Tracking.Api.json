@@ -1685,6 +1685,9 @@
           "deviationRadius": {
             "type": "number",
             "format": "double"
+          },
+          "cancelable": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false
