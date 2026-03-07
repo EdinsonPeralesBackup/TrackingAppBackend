@@ -465,6 +465,35 @@
         }
       }
     },
+    "/api/v1/Maps/cancelRoute": {
+      "post": {
+        "tags": [
+          "Maps"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CancelRouteCommandDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CancelRouteCommandDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CancelRouteCommandDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/Maps/getTrackingHistory/{isRutaActual}": {
       "post": {
         "tags": [
@@ -1180,6 +1209,16 @@
             "items": {
               "$ref": "#/components/schemas/GetTrustedContactQueryDTO"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CancelRouteCommandDTO": {
+        "type": "object",
+        "properties": {
+          "codigo": {
+            "type": "string",
             "nullable": true
           }
         },

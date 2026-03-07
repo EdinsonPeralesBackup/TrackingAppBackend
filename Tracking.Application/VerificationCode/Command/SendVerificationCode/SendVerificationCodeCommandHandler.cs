@@ -31,7 +31,8 @@ namespace Tracking.Application.VerificationCode.Command.SendVerificationCode
             var sid = "";
             InsertCodeResetCommandDTO Insert = await this._userRepository.InsertCodeReset(new InsertCodeResetCommand()
             {
-                Code = codeReset
+                Code = codeReset,
+                Phone = request.Phone
             });
             if (Insert.Message == "Code registed successfully.")
             {
@@ -40,8 +41,8 @@ namespace Tracking.Application.VerificationCode.Command.SendVerificationCode
 
             var response = new SendVerificationCodeCommandDTO()
             {
-                Message = sid == "accepted" ? $"Recovery code sent to +51 {request.Phone}" : "Error, code not sent",
-                ExpiresIn = sid == "accepted" ? 360 : 0,
+                Message = sid == "queued" ? $"Recovery code sent to +51 {request.Phone}" : "Error, code not sent",
+                ExpiresIn = sid == "queued" ? 360 : 0,
             };
             return response;
         }

@@ -173,6 +173,26 @@
   },
   {
     "ContainingType": "Tracking.Api.Controllers.MapsController",
+    "Method": "CancelRoute",
+    "RelativePath": "api/v1/Maps/cancelRoute",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Maps.Command.CancelRoute.CancelRouteCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.MapsController",
     "Method": "ArriveRoute",
     "RelativePath": "api/v1/Maps/finishRoute",
     "HttpMethod": "POST",

@@ -19,19 +19,26 @@ namespace Tracking.Infrastructure.Services
             IAcortadorServices acortadorServices)
         {
             this.accountSid = "ACb617e3ccb5c2b18d8f8681b4501f03f9";
-            this.authToken = "b863421c2d63e827ffcb8caeae1943e7";
+            this.authToken = "aa3cdc83651510db30e03b4426b2f762";
             this.numberPhone = "+18503184909";
             this.messagingServicesId = "VA8c2e65202f923c86252eb99b0b3b6494";
         }
         public string SendVerificationCode(string phone, string message)
         {
-            TwilioClient.Init(this.accountSid, this.authToken);
-            var messageOptions = new CreateMessageOptions(new PhoneNumber("+51" + phone));
-            messageOptions.MessagingServiceSid = this.messagingServicesId;
-            messageOptions.Body = message;
-            var send = MessageResource.Create(messageOptions);
+            //TwilioClient.Init(this.accountSid, this.authToken);
+            //var messageOptions = new CreateMessageOptions(new PhoneNumber("+51" + phone));
+            //messageOptions.MessagingServiceSid = this.messagingServicesId;
+            //messageOptions.Body = message;
+            //var send = MessageResource.Create(messageOptions);
 
-            return send.Status.ToString();
+            //return send.Status.ToString();
+            TwilioClient.Init(this.accountSid, this.authToken);
+            var messaget = MessageResource.Create(
+                body: message.ToString(),
+                from: this.numberPhone,
+                to: "+51" + phone
+            );
+            return messaget.Status.ToString();
         }
 
         public string SendSOS(string phone, GetUserByIdQueryDTO getUserById, Coordinates? coordinates, string rutaAcortada)

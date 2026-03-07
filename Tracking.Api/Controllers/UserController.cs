@@ -72,6 +72,7 @@ namespace Tracking.Api.Controllers
         [ProducesResponseType(typeof(ResetPasswordCommandDTO), StatusCodes.Status200OK)]
         public async Task<IActionResult> ResetPassword(ResetPasswordCommand request)
         {
+            request.IdUser = Convert.ToInt32(this.CurrentUser.Id);
             var response = await Mediator.Send(request);
             return Ok(response);
         }
