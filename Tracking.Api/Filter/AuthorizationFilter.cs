@@ -10,7 +10,7 @@ using Tracking.Application.Common.Interface.Repositories;
 
 namespace Tracking.Api.Filter
 {
-    public class AuthorizationFilter : IActionFilter
+    public class AuthorizationFilter : IAsyncActionFilter
     {
         private readonly IUserRepository _userRepository;
 
@@ -19,7 +19,9 @@ namespace Tracking.Api.Filter
             this._userRepository = userRepository;
         }
 
-        public void OnActionExecuting(ActionExecutingContext context)
+        public async Task OnActionExecutionAsync(
+            ActionExecutingContext context,
+            ActionExecutionDelegate next)
         {
             string _key = "WCM9K1M2&7g1O4bogUii$TYxWwTP@S*1";
             string _issuer = "Tracking.Api";
@@ -34,10 +36,10 @@ namespace Tracking.Api.Filter
 
             var token = request.Headers["Authorization"].ToString().Replace("Bearer ", "");
 
-            var isTokenValid = (this._userRepository.ValidToken(new ValidTokenCommand()
+            var isTokenValid = await this._userRepository.ValidToken(new ValidTokenCommand()
             {
                 Token = token
-            })).Result;
+            });
 
             if (!isTokenValid.IsValid)
             {
@@ -96,6 +98,7 @@ namespace Tracking.Api.Filter
             {
                 context.Result = new UnauthorizedResult();
             }
+            await next();
         }
 
         public void OnActionExecuted(ActionExecutedContext context)
