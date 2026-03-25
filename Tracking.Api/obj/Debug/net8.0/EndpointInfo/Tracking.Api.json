@@ -494,6 +494,59 @@
         }
       }
     },
+    "/api/v1/Maps/dangerRoute": {
+      "post": {
+        "tags": [
+          "Maps"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangerRouteCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangerRouteCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangerRouteCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangerRouteCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CancelRouteCommandDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CancelRouteCommandDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CancelRouteCommandDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/Maps/getTrackingHistory/{isRutaActual}": {
       "post": {
         "tags": [
@@ -1271,6 +1324,21 @@
           },
           "rolNombre": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DangerRouteCommand": {
+        "type": "object",
+        "properties": {
+          "idRoute": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dateDanger": {
+            "type": "string",
+            "format": "date-time",
             "nullable": true
           }
         },

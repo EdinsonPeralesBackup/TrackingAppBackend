@@ -193,6 +193,32 @@
   },
   {
     "ContainingType": "Tracking.Api.Controllers.MapsController",
+    "Method": "DangerRoute",
+    "RelativePath": "api/v1/Maps/dangerRoute",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Tracking.Application.Maps.Command.DangerRoute.DangerRouteCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Maps.Command.CancelRoute.CancelRouteCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.MapsController",
     "Method": "ArriveRoute",
     "RelativePath": "api/v1/Maps/finishRoute",
     "HttpMethod": "POST",

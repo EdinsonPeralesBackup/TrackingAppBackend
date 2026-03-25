@@ -22,7 +22,7 @@ namespace Tracking.Application.Maps.Query.GetTrackingHistory
         }
         public Task<IEnumerable<GetTrackingHistoryQueryDTO>> Handle(GetTrackingHistoryQuery request, CancellationToken cancellationToken)
         {
-            var response = this._mapsRepository.GetTrustedContacts(request);
+            var response = this._mapsRepository.GetTrackingHistory(request);
             return response;
         }
     }

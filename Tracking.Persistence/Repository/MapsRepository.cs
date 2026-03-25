@@ -6,6 +6,7 @@ using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
 using Tracking.Application.Maps.Command.ArriveRoute;
 using Tracking.Application.Maps.Command.CancelRoute;
+using Tracking.Application.Maps.Command.DangerRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Application.Maps.Query.GetTrackingHistory;
@@ -145,7 +146,7 @@ namespace Tracking.Persistence.Repository
             }
         }
 
-        public async Task<IEnumerable<GetTrackingHistoryQueryDTO>> GetTrustedContacts(GetTrackingHistoryQuery query)
+        public async Task<IEnumerable<GetTrackingHistoryQueryDTO>> GetTrackingHistory(GetTrackingHistoryQuery query)
         {
             using (var cnx = _dataBase.GetConnection())
             {
@@ -172,6 +173,7 @@ namespace Tracking.Persistence.Repository
                             DestinationLatitud = Convert.IsDBNull(reader["DESTINATION_LATITUD"]) ? 0 : Convert.ToDouble(reader["DESTINATION_LATITUD"].ToString()),
                             DestinationLongitude = Convert.IsDBNull(reader["DESTINATION_LONGITUDE"]) ? 0 : Convert.ToDouble(reader["DESTINATION_LONGITUDE"].ToString()),
                             Timestamp = Convert.IsDBNull(reader["TIME"]) ? default : Convert.ToDateTime(reader["TIME"].ToString()),
+                            State = Convert.IsDBNull(reader["State"]) ? string.Empty : reader["State"].ToString()
                         });
                     }
                     return response;
@@ -197,6 +199,29 @@ namespace Tracking.Persistence.Repository
                 return new CancelRouteCommandDTO()
                 {
                     Codigo = message
+                };
+            }
+        }
+
+        public async Task<DangerRouteCommandDTO> DangerRoute(DangerRouteCommand command)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@prouteId", command.IdRoute, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@ptimestampDanger", command.DateDanger, DbType.DateTime, ParameterDirection.Input);
+                parameters.Add("@msj", "", DbType.String, ParameterDirection.Output);
+
+                using var reader = await cnx.ExecuteReaderAsync(
+                    "[dbo].[sp_DangerRoute]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure);
+
+                var message = parameters.Get<string>("msj");
+                return new DangerRouteCommandDTO()
+                {
+                    Mensaje = message
                 };
             }
         }

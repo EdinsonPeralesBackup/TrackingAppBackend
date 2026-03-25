@@ -2,6 +2,7 @@
 using Tracking.Api.Filter;
 using Tracking.Application.Maps.Command.ArriveRoute;
 using Tracking.Application.Maps.Command.CancelRoute;
+using Tracking.Application.Maps.Command.DangerRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Application.Maps.Query.GetTrackingHistory;
@@ -49,6 +50,15 @@ namespace Tracking.Api.Controllers
             {
                 IdUser = Convert.ToInt32(this.CurrentUser.Id)
             });
+            return Ok(response);
+        }
+
+        [HttpPost]
+        [Route("dangerRoute")]
+        [ProducesResponseType(typeof(CancelRouteCommandDTO), StatusCodes.Status200OK)]
+        public async Task<IActionResult> DangerRoute(DangerRouteCommand command)
+        {
+            var response = await Mediator.Send(command);
             return Ok(response);
         }
 

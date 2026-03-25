@@ -10,5 +10,6 @@
         public double DestinationLatitud { get; set; }
         public double DestinationLongitude { get; set; }
         public DateTime Timestamp { get; set; }
+        public string State { get; set; }
     }
 }
