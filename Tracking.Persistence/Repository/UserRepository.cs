@@ -36,7 +36,7 @@ namespace Tracking.Persistence.Repository
                 parameters.Add("@pIdUser", command.IdUser, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@msj", "", DbType.String, ParameterDirection.Output);
 
-                using var reader = await cnx.ExecuteReaderAsync(
+                await cnx.ExecuteAsync(
                     "[dbo].[usp_DeleteUser]",
                     param: parameters,
                     commandType: CommandType.StoredProcedure);
@@ -59,7 +59,7 @@ namespace Tracking.Persistence.Repository
                 parameters.Add("@pphone", command.Phone, DbType.String, ParameterDirection.Input);
                 parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
 
-                using var reader = await cnx.ExecuteReaderAsync(
+                await cnx.ExecuteAsync(
                     "[dbo].[sp_RegisterCodeReset]",
                     param: parameters,
                     commandType: CommandType.StoredProcedure);
@@ -83,7 +83,7 @@ namespace Tracking.Persistence.Repository
                 parameters.Add("@pidUser", command.IdUser, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
 
-                using var reader = await cnx.ExecuteReaderAsync(
+                await cnx.ExecuteAsync(
                     "[dbo].[sp_ResetPassword]",
                     param: parameters,
                     commandType: CommandType.StoredProcedure);
@@ -105,10 +105,11 @@ namespace Tracking.Persistence.Repository
                 parameters.Add("@pToken", token, DbType.String, ParameterDirection.Input);
                 parameters.Add("@pidUser", idUser, DbType.Int32, ParameterDirection.Input);
 
-                using var reader = await cnx.ExecuteReaderAsync(
+                await cnx.ExecuteAsync(
                     "[dbo].[sp_RegisterToken]",
                     param: parameters,
-                    commandType: CommandType.StoredProcedure);
+                    commandType: CommandType.StoredProcedure
+                );
             }
         }
 
@@ -120,7 +121,7 @@ namespace Tracking.Persistence.Repository
 
                 parameters.Add("@pidUser", command.IdUser, DbType.Int32, ParameterDirection.Input);
 
-                using var reader = await cnx.ExecuteReaderAsync(
+                await cnx.ExecuteAsync(
                     "[dbo].[sp_DeleteToken]",
                     param: parameters,
                     commandType: CommandType.StoredProcedure);
@@ -136,7 +137,7 @@ namespace Tracking.Persistence.Repository
                 parameters.Add("@ptoken", command.Token, DbType.String, ParameterDirection.Input);
                 parameters.Add("@count", false, DbType.Boolean, ParameterDirection.Output);
 
-                using var reader = await cnx.ExecuteReaderAsync(
+                await cnx.ExecuteAsync(
                     "[dbo].[sp_ValidToken]",
                     param: parameters,
                     commandType: CommandType.StoredProcedure);
@@ -163,7 +164,7 @@ namespace Tracking.Persistence.Repository
                 parameters.Add("@pavatarImg", command.Avatar, DbType.String, ParameterDirection.Input);
                 parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
 
-                using var reader = await cnx.ExecuteReaderAsync(
+                await cnx.ExecuteAsync(
                     "[dbo].[usp_EditUserInfo]",
                     param: parameters,
                     commandType: CommandType.StoredProcedure);
