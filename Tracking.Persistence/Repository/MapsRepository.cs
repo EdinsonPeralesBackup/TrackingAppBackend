@@ -9,6 +9,7 @@ using Tracking.Application.Maps.Command.CancelRoute;
 using Tracking.Application.Maps.Command.DangerRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
+using Tracking.Application.Maps.Query.GetDangerRoute;
 using Tracking.Application.Maps.Query.GetTrackingHistory;
 using Tracking.Persistence.Database;
 
@@ -106,6 +107,7 @@ namespace Tracking.Persistence.Repository
                 var lastLatitud = parameters.Get<double>("lastLatitud");
                 var lastLongitute = parameters.Get<double>("lastLongitute");
                 var cancelable = parameters.Get<bool>("cancelable");
+                var danger = parameters.Get<string>("isDanger");
                 return new UpdatePointCommandDTO()
                 {
                     Status = status,
@@ -116,7 +118,8 @@ namespace Tracking.Persistence.Repository
                         Longitude = lastLongitute
                     },
                     DeviationRadius = deviation,
-                    Cancelable = cancelable
+                    Cancelable = cancelable,
+                    Danger = danger
                 };
             }
         }
@@ -181,6 +184,35 @@ namespace Tracking.Persistence.Repository
             }
         }
 
+        public async Task<IEnumerable<CoordinatePointOfRoute>> GetPointOfRoute(int trackingId)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@pTrackingId", trackingId, DbType.Int32, ParameterDirection.Input);
+
+                using (var reader = await cnx.ExecuteReaderAsync(
+                    "[dbo].[sp_GetPointOfRoute]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure))
+                {
+                    List<CoordinatePointOfRoute> response = new();
+                    while (reader.Read())
+                    {
+                        response.Add(new CoordinatePointOfRoute()
+                        {
+                            OriginLatitud = Convert.IsDBNull(reader["ORIGIN_LATITUD"]) ? 0 : Convert.ToDouble(reader["ORIGIN_LATITUD"].ToString()),
+                            OriginLongitude = Convert.IsDBNull(reader["ORIGIN_LONGITUDE"]) ? 0 : Convert.ToDouble(reader["ORIGIN_LONGITUDE"].ToString()),
+                            EndLatitud = Convert.IsDBNull(reader["END_LATITUD"]) ? 0 : Convert.ToDouble(reader["END_LATITUD"].ToString()),
+                            EndLongitude = Convert.IsDBNull(reader["END_LONGITUDE"]) ? 0 : Convert.ToDouble(reader["END_LONGITUDE"].ToString())
+                        });
+                    }
+                    return response;
+                }
+            }
+        }
+
         public async Task<CancelRouteCommandDTO> CancelRoute(CancelRouteCommand command)
         {
             using (var cnx = _dataBase.GetConnection())
@@ -225,7 +257,33 @@ namespace Tracking.Persistence.Repository
                 };
             }
         }
+        public async Task<IEnumerable<GetDangerRouteQueryDTO>> GetDangerRoute(GetDangerRouteQuery query)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
 
+                parameters.Add("@pTrackingRoute", query.TrackingId, DbType.String, ParameterDirection.Input);
+
+                using (var reader = await cnx.ExecuteReaderAsync(
+                    "[dbo].[sp_GetDangerRoute]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure))
+                {
+                    List<GetDangerRouteQueryDTO> response = new();
+                    while (reader.Read())
+                    {
+                        response.Add(new GetDangerRouteQueryDTO()
+                        {
+                            Latitude = Convert.IsDBNull(reader["LATITUD"]) ? 0 : Convert.ToDouble(reader["LATITUD"].ToString()),
+                            Longitude = Convert.IsDBNull(reader["LONGITUDE"]) ? 0 : Convert.ToDouble(reader["LONGITUDE"].ToString()),
+                            Timestamp = Convert.IsDBNull(reader["TIME"]) ? default : Convert.ToDateTime(reader["TIME"].ToString()),
+                        });
+                    }
+                    return response;
+                }
+            }
+        }
         private string ConvertirXML(List<Step> steps)
         {
             var serializer = new XmlSerializer(typeof(List<Step>));

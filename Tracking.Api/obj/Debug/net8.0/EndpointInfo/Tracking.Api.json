@@ -547,6 +547,45 @@
         }
       }
     },
+    "/api/v1/Maps/getDangerRoute/{trackingId}": {
+      "get": {
+        "tags": [
+          "Maps"
+        ],
+        "parameters": [
+          {
+            "name": "trackingId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDangerRouteQueryDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDangerRouteQueryDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDangerRouteQueryDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/Maps/getTrackingHistory/{isRutaActual}": {
       "post": {
         "tags": [
@@ -826,59 +865,6 @@
                 "schema": {
                   "type": "integer",
                   "format": "int32"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/v1/TrustedContact/sendSOS": {
-      "post": {
-        "tags": [
-          "TrustedContact"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SendSOSSignalCommand"
-              }
-            },
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SendSOSSignalCommand"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SendSOSSignalCommand"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SendSOSSignalCommand"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/SendSOSSignalCommandDTO"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SendSOSSignalCommandDTO"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SendSOSSignalCommandDTO"
                 }
               }
             }
@@ -1392,6 +1378,24 @@
         },
         "additionalProperties": false
       },
+      "GetDangerRouteQueryDTO": {
+        "type": "object",
+        "properties": {
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
       "GetTrustedContactQueryDTO": {
         "type": "object",
         "properties": {
@@ -1693,36 +1697,6 @@
         },
         "additionalProperties": false
       },
-      "SendSOSSignalCommand": {
-        "type": "object",
-        "properties": {
-          "trackingId": {
-            "type": "string",
-            "nullable": true
-          },
-          "userId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "coordinate": {
-            "$ref": "#/components/schemas/Coordinates"
-          }
-        },
-        "additionalProperties": false
-      },
-      "SendSOSSignalCommandDTO": {
-        "type": "object",
-        "properties": {
-          "message": {
-            "type": "string",
-            "nullable": true
-          },
-          "fallBackUsed": {
-            "type": "boolean"
-          }
-        },
-        "additionalProperties": false
-      },
       "SendVerificationCodeCommand": {
         "type": "object",
         "properties": {
@@ -1795,6 +1769,10 @@
           },
           "cancelable": {
             "type": "boolean"
+          },
+          "danger": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

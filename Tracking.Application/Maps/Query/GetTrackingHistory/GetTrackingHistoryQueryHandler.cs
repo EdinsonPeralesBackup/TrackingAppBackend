@@ -20,9 +20,18 @@ namespace Tracking.Application.Maps.Query.GetTrackingHistory
             this._mapper = mapper;
             this._mapsRepository = mapsRepository;
         }
-        public Task<IEnumerable<GetTrackingHistoryQueryDTO>> Handle(GetTrackingHistoryQuery request, CancellationToken cancellationToken)
+        public async Task<IEnumerable<GetTrackingHistoryQueryDTO>> Handle(GetTrackingHistoryQuery request, CancellationToken cancellationToken)
         {
-            var response = this._mapsRepository.GetTrackingHistory(request);
+            var response = await this._mapsRepository.GetTrackingHistory(request);
+            if (request.EsRutaActual)
+            {
+                var first = response.FirstOrDefault();
+                if (first != null)
+                {
+                    var coordinates = await _mapsRepository.GetPointOfRoute(first.IdRoute);
+                    first.Coordinates = [.. coordinates];
+                }
+            }
             return response;
         }
     }

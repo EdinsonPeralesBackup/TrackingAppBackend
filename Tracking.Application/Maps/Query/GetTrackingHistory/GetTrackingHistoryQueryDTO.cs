@@ -11,5 +11,14 @@
         public double DestinationLongitude { get; set; }
         public DateTime Timestamp { get; set; }
         public string State { get; set; }
+        public CoordinatePointOfRoute[] Coordinates { get; set; }
+    }
+
+    public class CoordinatePointOfRoute
+    {
+        public double OriginLatitud { get; set; }
+        public double OriginLongitude { get; set; }
+        public double EndLatitud { get; set; }
+        public double EndLongitude { get; set; }
     }
 }

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Serilog;
 using Tracking.Api.Extensions;
 using Tracking.Api.Utils;
+using Tracking.Application.Common.Hubs;
 using Tracking.Application.Common.Settings;
 
 namespace Tracking.Api
@@ -27,6 +28,7 @@ namespace Tracking.Api
             services.AddCustomHealthCheck();
             services.AddCustomOptions(Configuration);
             services.AddLayersDependencyInjections(Configuration);
+            services.AddSignalR();
 
             services.AddSwaggerGen(options =>
             {
@@ -73,12 +75,14 @@ namespace Tracking.Api
 
             app.UseSession();
 
+
             //var applicationDisplayName = configurationManager.GetValue<string>(Constants.ApplicationDisplayName);
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
                 endpoints.MapControllers();
+                endpoints.MapHub<DangerHub>("/dangerHub");
                 endpoints.MapGet(Constants.WelcomePath, async context =>
                 {
                     await context.Response.WriteAsync(string.Format(Constants.WelcomeAPI, appSettings.ApplicationDisplayName));

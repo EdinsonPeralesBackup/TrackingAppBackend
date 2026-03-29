@@ -579,3 +579,4 @@ E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\obj\Debug\net8.0\refint
 E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\obj\Debug\net8.0\Tracking.Api.pdb
 E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\obj\Debug\net8.0\Tracking.Api.genruntimeconfig.cache
 E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\obj\Debug\net8.0\ref\Tracking.Api.dll
+E:\Proyectos\TrackingApp\TrackingAppBackend\Tracking.Api\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll

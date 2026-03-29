@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Tracking.Api.Filter;
 using Tracking.Application.Maps.Command.ArriveRoute;
 using Tracking.Application.Maps.Command.CancelRoute;
 using Tracking.Application.Maps.Command.DangerRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
+using Tracking.Application.Maps.Query.GetDangerRoute;
 using Tracking.Application.Maps.Query.GetTrackingHistory;
 
 namespace Tracking.Api.Controllers
@@ -59,6 +61,18 @@ namespace Tracking.Api.Controllers
         public async Task<IActionResult> DangerRoute(DangerRouteCommand command)
         {
             var response = await Mediator.Send(command);
+            return Ok(response);
+        }
+
+        [HttpGet]
+        [Route("getDangerRoute/{trackingId}")]
+        [ProducesResponseType(typeof(GetDangerRouteQueryDTO), StatusCodes.Status200OK)]
+        public async Task<IActionResult> DangerRoute(string trackingId)
+        {
+            var response = await Mediator.Send(new GetDangerRouteQuery()
+            {
+                TrackingId = trackingId
+            });
             return Ok(response);
         }
 

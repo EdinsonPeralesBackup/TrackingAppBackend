@@ -245,6 +245,32 @@
   },
   {
     "ContainingType": "Tracking.Api.Controllers.MapsController",
+    "Method": "DangerRoute",
+    "RelativePath": "api/v1/Maps/getDangerRoute/{trackingId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trackingId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.Maps.Query.GetDangerRoute.GetDangerRouteQueryDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.MapsController",
     "Method": "GetRoute",
     "RelativePath": "api/v1/Maps/getRoute",
     "HttpMethod": "POST",
@@ -426,32 +452,6 @@
     "ReturnTypes": [
       {
         "Type": "Tracking.Application.TrustedContacts.Command.RegisterTrustedContact.RegisterTrustedContactCommand",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Tracking.Api.Controllers.TrustedContactController",
-    "Method": "SendSOS",
-    "RelativePath": "api/v1/TrustedContact/sendSOS",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "Tracking.Application.Maps.Command.SendSOSSignal.SendSOSSignalCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Tracking.Application.Maps.Command.SendSOSSignal.SendSOSSignalCommandDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
