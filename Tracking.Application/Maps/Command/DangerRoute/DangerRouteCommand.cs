@@ -9,7 +9,7 @@ namespace Tracking.Application.Maps.Command.DangerRoute
 {
     public class DangerRouteCommand : IRequest<DangerRouteCommandDTO>
     {
-        public int IdRoute { get; set; }
+        public int TrackingId { get; set; }
         public DateTime? DateDanger { get; set; }
     }
 }

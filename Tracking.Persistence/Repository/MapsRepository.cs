@@ -241,7 +241,7 @@ namespace Tracking.Persistence.Repository
             {
                 DynamicParameters parameters = new DynamicParameters();
 
-                parameters.Add("@prouteId", command.IdRoute, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@prouteId", command.TrackingId, DbType.Int32, ParameterDirection.Input);
                 parameters.Add("@ptimestampDanger", command.DateDanger, DbType.DateTime, ParameterDirection.Input);
                 parameters.Add("@msj", "", DbType.String, ParameterDirection.Output);
 
