@@ -1626,6 +1626,10 @@
           "phonenumber": {
             "type": "string",
             "nullable": true
+          },
+          "codeVerification": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
