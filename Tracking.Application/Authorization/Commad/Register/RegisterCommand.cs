@@ -9,5 +9,6 @@ namespace Tracking.Application.Authorization.Commad.Register
         public string Birthday { get; set; }
         public string Password { get; set; }
         public string Phonenumber { get; set; }
+        public string CodeVerification { get; set; }
     }
 }

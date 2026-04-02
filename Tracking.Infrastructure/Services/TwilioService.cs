@@ -19,7 +19,7 @@ namespace Tracking.Infrastructure.Services
             IAcortadorServices acortadorServices)
         {
             this.accountSid = "ACb617e3ccb5c2b18d8f8681b4501f03f9";
-            this.authToken = "ca8171e762f0d70c491627fa49baa9e3";
+            this.authToken = "d90f164763b08f681512f1182d7063d3";
             this.numberPhone = "+18503184909";
             //this.messagingServicesId = "VA8c2e65202f923c86252eb99b0b3b6494";
         }
