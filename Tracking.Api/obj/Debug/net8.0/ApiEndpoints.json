@@ -489,6 +489,32 @@
   },
   {
     "ContainingType": "Tracking.Api.Controllers.UserController",
+    "Method": "changePassword",
+    "RelativePath": "api/v1/User/changePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Tracking.Application.User.Comand.ChangePassword.ChangePasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tracking.Application.User.Comand.ChangePassword.ChangePasswordCommandDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tracking.Api.Controllers.UserController",
     "Method": "DeleteUser",
     "RelativePath": "api/v1/User/deleteUser",
     "HttpMethod": "DELETE",

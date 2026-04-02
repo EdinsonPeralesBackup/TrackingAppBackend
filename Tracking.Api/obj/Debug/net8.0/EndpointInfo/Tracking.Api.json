@@ -1081,6 +1081,59 @@
         }
       }
     },
+    "/api/v1/User/changePassword": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChangePasswordCommandDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChangePasswordCommandDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChangePasswordCommandDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/User/updateUserInfo": {
       "put": {
         "tags": [
@@ -1263,6 +1316,38 @@
         },
         "additionalProperties": false
       },
+      "ChangePasswordCommand": {
+        "type": "object",
+        "properties": {
+          "codeVerifacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "newPassword": {
+            "type": "string",
+            "nullable": true
+          },
+          "oldPassword": {
+            "type": "string",
+            "nullable": true
+          },
+          "idUser": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangePasswordCommandDTO": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Coordinates": {
         "type": "object",
         "properties": {
@@ -1318,7 +1403,7 @@
       "DangerRouteCommand": {
         "type": "object",
         "properties": {
-          "idRoute": {
+          "trackingId": {
             "type": "integer",
             "format": "int32"
           },
@@ -1647,9 +1732,9 @@
             "type": "string",
             "nullable": true
           },
-          "idUser": {
-            "type": "integer",
-            "format": "int32"
+          "phone": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

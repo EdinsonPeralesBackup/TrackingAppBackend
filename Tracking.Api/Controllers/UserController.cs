@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Tracking.Api.Filter;
 using Tracking.Application.Authorization.Commad.DeleteToken;
+using Tracking.Application.User.Comand.ChangePassword;
 using Tracking.Application.User.Comand.DeleteUser;
 using Tracking.Application.User.Comand.UpdateUserInfo;
 using Tracking.Application.User.Query.GetUserById;
@@ -71,6 +72,15 @@ namespace Tracking.Api.Controllers
         [Route("resetPassword")]
         [ProducesResponseType(typeof(ResetPasswordCommandDTO), StatusCodes.Status200OK)]
         public async Task<IActionResult> ResetPassword(ResetPasswordCommand request)
+        {
+            var response = await Mediator.Send(request);
+            return Ok(response);
+        }
+
+        [HttpPost]
+        [Route("changePassword")]
+        [ProducesResponseType(typeof(ChangePasswordCommandDTO), StatusCodes.Status200OK)]
+        public async Task<IActionResult> changePassword(ChangePasswordCommand request)
         {
             request.IdUser = Convert.ToInt32(this.CurrentUser.Id);
             var response = await Mediator.Send(request);

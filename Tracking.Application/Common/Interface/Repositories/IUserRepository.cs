@@ -1,5 +1,6 @@
 ﻿using Tracking.Application.Authorization.Commad.DeleteToken;
 using Tracking.Application.Authorization.Commad.ValidToken;
+using Tracking.Application.User.Comand.ChangePassword;
 using Tracking.Application.User.Comand.DeleteUser;
 using Tracking.Application.User.Comand.UpdateUserInfo;
 using Tracking.Application.User.Query.GetUserById;
@@ -20,5 +21,6 @@ namespace Tracking.Application.Common.Interface.Repositories
         Task<UpdateUserInfoCommandDTO> UpdateUserInfo(UpdateUserInfoCommand command);
         Task<GetUsersQueryDTO> GetUser(GetUsersQuery command);
         Task<GetUserByIdQueryDTO> GetUserById(GetUserByIdQuery command);
+        Task<ChangePasswordCommandDTO> ChangePassword(ChangePasswordCommand command);
     }
 }

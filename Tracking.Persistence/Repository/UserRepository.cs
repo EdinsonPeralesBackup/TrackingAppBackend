@@ -5,6 +5,7 @@ using Tracking.Application.Authorization.Commad.DeleteToken;
 using Tracking.Application.Authorization.Commad.ValidToken;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Common.Interface.Repositories;
+using Tracking.Application.User.Comand.ChangePassword;
 using Tracking.Application.User.Comand.DeleteUser;
 using Tracking.Application.User.Comand.UpdateUserInfo;
 using Tracking.Application.User.Query.GetUserById;
@@ -80,7 +81,7 @@ namespace Tracking.Persistence.Repository
 
                 parameters.Add("@presetCode", command.Code, DbType.String, ParameterDirection.Input);
                 parameters.Add("@pnewPassword", this._cryptography.Encrypt(command.NewPassword), DbType.String, ParameterDirection.Input);
-                parameters.Add("@pidUser", command.IdUser, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@pphone", command.Phone, DbType.String, ParameterDirection.Input);
                 parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
 
                 await cnx.ExecuteAsync(
@@ -90,6 +91,31 @@ namespace Tracking.Persistence.Repository
 
                 var mensaje = parameters.Get<string>("message");
                 return new ResetPasswordCommandDTO()
+                {
+                    Message = mensaje
+                };
+            }
+        }
+
+        public async Task<ChangePasswordCommandDTO> ChangePassword(ChangePasswordCommand command)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@presetCode", command.CodeVerifacion, DbType.String, ParameterDirection.Input);
+                parameters.Add("@poldPassword", this._cryptography.Encrypt(command.OldPassword), DbType.String, ParameterDirection.Input);
+                parameters.Add("@pnewPassword", this._cryptography.Encrypt(command.NewPassword), DbType.String, ParameterDirection.Input);
+                parameters.Add("@pidUser", command.IdUser, DbType.Int32, ParameterDirection.Input);
+                parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
+
+                await cnx.ExecuteAsync(
+                    "[dbo].[sp_ChangePassword]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure);
+
+                var mensaje = parameters.Get<string>("message");
+                return new ChangePasswordCommandDTO()
                 {
                     Message = mensaje
                 };

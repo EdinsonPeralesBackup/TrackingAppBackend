@@ -13,25 +13,18 @@ namespace Tracking.Infrastructure.Services
         string accountSid;
         string authToken;
         string numberPhone;
-        string messagingServicesId;
+        //string messagingServicesId;
 
         public TwilioService(
             IAcortadorServices acortadorServices)
         {
             this.accountSid = "ACb617e3ccb5c2b18d8f8681b4501f03f9";
-            this.authToken = "aa3cdc83651510db30e03b4426b2f762";
+            this.authToken = "ca8171e762f0d70c491627fa49baa9e3";
             this.numberPhone = "+18503184909";
-            this.messagingServicesId = "VA8c2e65202f923c86252eb99b0b3b6494";
+            //this.messagingServicesId = "VA8c2e65202f923c86252eb99b0b3b6494";
         }
         public string SendVerificationCode(string phone, string message)
         {
-            //TwilioClient.Init(this.accountSid, this.authToken);
-            //var messageOptions = new CreateMessageOptions(new PhoneNumber("+51" + phone));
-            //messageOptions.MessagingServiceSid = this.messagingServicesId;
-            //messageOptions.Body = message;
-            //var send = MessageResource.Create(messageOptions);
-
-            //return send.Status.ToString();
             TwilioClient.Init(this.accountSid, this.authToken);
             var messaget = MessageResource.Create(
                 body: message.ToString(),
