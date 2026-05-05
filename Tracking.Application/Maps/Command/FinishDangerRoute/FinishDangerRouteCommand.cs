@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tracking.Application.Maps.Query.GetDangerRoute
+namespace Tracking.Application.Maps.Command.FinishDangerRoute
 {
-    public class GetDangerRouteQuery : IRequest<IEnumerable<GetDangerRouteQueryDTO>>
+    public class FinishDangerRouteCommand : IRequest<FinishDangerRouteCommandDTO>
     {
         public string TrackingId { get; set; }
-        public string Phone { get; set; }
+        public int IdUser { get; set; }
     }
 }

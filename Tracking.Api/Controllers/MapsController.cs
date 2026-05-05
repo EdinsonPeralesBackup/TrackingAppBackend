@@ -4,6 +4,7 @@ using Tracking.Api.Filter;
 using Tracking.Application.Maps.Command.ArriveRoute;
 using Tracking.Application.Maps.Command.CancelRoute;
 using Tracking.Application.Maps.Command.DangerRoute;
+using Tracking.Application.Maps.Command.FinishDangerRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Application.Maps.Query.GetDangerRoute;
@@ -71,7 +72,8 @@ namespace Tracking.Api.Controllers
         {
             var response = await Mediator.Send(new GetDangerRouteQuery()
             {
-                TrackingId = trackingId
+                TrackingId = trackingId,
+                Phone = this.CurrentUser.Phone
             });
             return Ok(response);
         }
@@ -86,6 +88,16 @@ namespace Tracking.Api.Controllers
                 IdUser = Convert.ToInt32(this.CurrentUser.Id),
                 EsRutaActual = isRutaActual
             });
+            return Ok(response);
+        }
+
+        [HttpPost]
+        [Route("finishDangerRoute")]
+        [ProducesResponseType(typeof(FinishDangerRouteCommandDTO), StatusCodes.Status200OK)]
+        public async Task<IActionResult> FinishDangerRoute(FinishDangerRouteCommand command)
+        {
+            command.IdUser = Convert.ToInt32(this.CurrentUser.Id);
+            var response = await Mediator.Send(command);
             return Ok(response);
         }
     }

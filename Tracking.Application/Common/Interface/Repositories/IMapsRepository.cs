@@ -1,6 +1,7 @@
 ﻿using Tracking.Application.Maps.Command.ArriveRoute;
 using Tracking.Application.Maps.Command.CancelRoute;
 using Tracking.Application.Maps.Command.DangerRoute;
+using Tracking.Application.Maps.Command.FinishDangerRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Application.Maps.Query.GetDangerRoute;
@@ -18,5 +19,6 @@ namespace Tracking.Application.Common.Interface.Repositories
         Task<CancelRouteCommandDTO> CancelRoute(CancelRouteCommand command);
         Task<DangerRouteCommandDTO> DangerRoute(DangerRouteCommand command);
         Task<IEnumerable<GetDangerRouteQueryDTO>> GetDangerRoute(GetDangerRouteQuery query);
+        Task<FinishDangerRouteCommandDTO> FinishDangerRoute(FinishDangerRouteCommand command);
     }
 }

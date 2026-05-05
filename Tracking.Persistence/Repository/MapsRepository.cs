@@ -7,6 +7,7 @@ using Tracking.Application.Common.Interface.Repositories;
 using Tracking.Application.Maps.Command.ArriveRoute;
 using Tracking.Application.Maps.Command.CancelRoute;
 using Tracking.Application.Maps.Command.DangerRoute;
+using Tracking.Application.Maps.Command.FinishDangerRoute;
 using Tracking.Application.Maps.Command.ObtenerRuta;
 using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Application.Maps.Query.GetDangerRoute;
@@ -265,6 +266,7 @@ namespace Tracking.Persistence.Repository
                 DynamicParameters parameters = new DynamicParameters();
 
                 parameters.Add("@pTrackingRoute", query.TrackingId, DbType.String, ParameterDirection.Input);
+                parameters.Add("@pPhoneUser", query.Phone, DbType.String, ParameterDirection.Input);
 
                 using (var reader = await cnx.ExecuteReaderAsync(
                     "[dbo].[sp_GetDangerRoute]",
@@ -283,6 +285,30 @@ namespace Tracking.Persistence.Repository
                     }
                     return response;
                 }
+            }
+        }
+
+        public async Task<FinishDangerRouteCommandDTO> FinishDangerRoute(FinishDangerRouteCommand command)
+        {
+            using (var cnx = _dataBase.GetConnection())
+            {
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@pTrackingId", command.TrackingId, DbType.String, ParameterDirection.Input);
+                parameters.Add("@pIdUser", command.IdUser, DbType.Int32, ParameterDirection.Input);
+
+                parameters.Add("@finish", "", DbType.String, ParameterDirection.Output);
+
+                using var reader = await cnx.ExecuteReaderAsync(
+                    "[dbo].[sp_FinishDangerRoute]",
+                    param: parameters,
+                    commandType: CommandType.StoredProcedure);
+
+                var finish= parameters.Get<string>("finish");
+                return new FinishDangerRouteCommandDTO()
+                {
+                    Finish = finish
+                };
             }
         }
         private string ConvertirXML(List<Step> steps)

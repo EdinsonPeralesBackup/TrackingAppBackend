@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Tracking.Application.Authorization.Commad.DeleteToken;
 using Tracking.Application.Authorization.Commad.Login;
 using Tracking.Application.Authorization.Commad.Register;
 using Tracking.Application.VerificationCode.Command.ResetPassword;
@@ -32,7 +33,7 @@ namespace Tracking.Api.Controllers
         [HttpPost]
         [Route("deleteToken")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<IActionResult> DeleteToken(LoginCommand command)
+        public async Task<IActionResult> DeleteToken(DeleteTokenCommand command)
         {
             var response = await Mediator.Send(command);
             return Ok(response);
