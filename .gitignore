@@ -46,7 +46,6 @@ publish/
 ############################
 
 .idea/
-.vscode/
 
 ############################
 # OS
@@ -69,3 +68,6 @@ Thumbs.db
 
 appsettings.Development.json
 appsettings.Local.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

@@ -96,6 +96,7 @@ namespace Tracking.Persistence.Repository
                 parameters.Add("@lastLatitud", 0, DbType.Double, ParameterDirection.Output);
                 parameters.Add("@lastLongitute", 0, DbType.Double, ParameterDirection.Output);
                 parameters.Add("@cancelable", false, DbType.Boolean, ParameterDirection.Output);
+                parameters.Add("@isDanger", "", DbType.String, ParameterDirection.Output);
 
                 using var reader = await cnx.ExecuteReaderAsync(
                     "[dbo].[sp_RegisterLiveCoordinate]",

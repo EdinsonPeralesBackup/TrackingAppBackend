@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Tracking.Application.Authorization.Commad.Login;
 using Tracking.Application.Authorization.Commad.Register;
+using Tracking.Application.VerificationCode.Command.ResetPassword;
 
 namespace Tracking.Api.Controllers
 {
@@ -37,5 +38,13 @@ namespace Tracking.Api.Controllers
             return Ok(response);
         }
 
+        [HttpPost]
+        [Route("resetPassword")]
+        [ProducesResponseType(typeof(ResetPasswordCommandDTO), StatusCodes.Status200OK)]
+        public async Task<IActionResult> ResetPassword(ResetPasswordCommand request)
+        {
+            var response = await Mediator.Send(request);
+            return Ok(response);
+        }
     }
 }

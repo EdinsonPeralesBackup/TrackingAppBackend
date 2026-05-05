@@ -14,7 +14,7 @@ namespace Tracking.Api.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("sendCode")]
-        [ProducesResponseType(typeof(CurrentUser), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(SendVerificationCodeCommandDTO), StatusCodes.Status200OK)]
         public async Task<IActionResult> SendCodeVerification(SendVerificationCodeCommand command)
         {
             var response = await this.Mediator.Send(command);

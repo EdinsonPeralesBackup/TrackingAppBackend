@@ -69,15 +69,6 @@ namespace Tracking.Api.Controllers
         }
 
         [HttpPost]
-        [Route("resetPassword")]
-        [ProducesResponseType(typeof(ResetPasswordCommandDTO), StatusCodes.Status200OK)]
-        public async Task<IActionResult> ResetPassword(ResetPasswordCommand request)
-        {
-            var response = await Mediator.Send(request);
-            return Ok(response);
-        }
-
-        [HttpPost]
         [Route("changePassword")]
         [ProducesResponseType(typeof(ChangePasswordCommandDTO), StatusCodes.Status200OK)]
         public async Task<IActionResult> changePassword(ChangePasswordCommand request)
