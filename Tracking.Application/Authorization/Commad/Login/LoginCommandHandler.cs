@@ -40,7 +40,7 @@ namespace Tracking.Application.Authorization.Commad.Login
                 return token;
             }
             token.Token = GenerateToken(response);
-            this._userRepository.InsertToken(token.Token, response.Id);
+            await this._userRepository.InsertToken(token.Token, response.Id);
             return token;
         }
 

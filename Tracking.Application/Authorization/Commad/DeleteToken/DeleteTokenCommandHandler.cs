@@ -22,7 +22,7 @@ namespace Tracking.Application.Authorization.Commad.DeleteToken
         }
         public async Task<DeleteTokenCommandDTO> Handle(DeleteTokenCommand request, CancellationToken cancellationToken)
         {
-            this._userRepository.DeleteToken(request);
+            await this._userRepository.DeleteToken(request);
             return new DeleteTokenCommandDTO()
             {
                 Message = "Logout successful"
