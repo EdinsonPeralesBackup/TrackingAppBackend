@@ -15,8 +15,8 @@ namespace Tracking.Application.Common.Interface.Repositories
         Task<DeleteUserCommandDTO> DeleteUser(DeleteUserCommand command);
         Task<InsertCodeResetCommandDTO> InsertCodeReset(InsertCodeResetCommand command);
         Task<ResetPasswordCommandDTO> ResetPassword(ResetPasswordCommand command);
-        void InsertToken(string token, int idUser);
-        void DeleteToken(DeleteTokenCommand command);
+        Task InsertToken(string token, int idUser);
+        Task DeleteToken(DeleteTokenCommand command);
         Task<ValidTokenCommandDTO> ValidToken(ValidTokenCommand command);
         Task<UpdateUserInfoCommandDTO> UpdateUserInfo(UpdateUserInfoCommand command);
         Task<GetUsersQueryDTO> GetUser(GetUsersQuery command);

@@ -122,7 +122,7 @@ namespace Tracking.Persistence.Repository
             }
         }
 
-        public async void InsertToken(string token, int idUser)
+        public async Task InsertToken(string token, int idUser)
         {
             using (var cnx = _dataBase.GetConnection())
             {
@@ -139,7 +139,7 @@ namespace Tracking.Persistence.Repository
             }
         }
 
-        public async void DeleteToken(DeleteTokenCommand command)
+        public async Task DeleteToken(DeleteTokenCommand command)
         {
             using (var cnx = _dataBase.GetConnection())
             {
