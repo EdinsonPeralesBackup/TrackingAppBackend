@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Microsoft.Extensions.Configuration;
+using System.Text;
 using Tracking.Application.Common.Interface;
 using Tracking.Application.Maps.Command.UpdatePoint;
 using Tracking.Application.User.Query.GetUserById;
@@ -13,15 +14,14 @@ namespace Tracking.Infrastructure.Services
         string accountSid;
         string authToken;
         string numberPhone;
-        //string messagingServicesId;
 
         public TwilioService(
-            IAcortadorServices acortadorServices)
+            IAcortadorServices acortadorServices,
+            IConfiguration configuration )
         {
-            this.accountSid = "AC3f3e5fa2ae43710afd3d7a4aada8a197";
-            this.authToken = "614e790f94bb0911fd14bb10ab0c88ca";
-            this.numberPhone = "+17013605412";
-            //this.messagingServicesId = "VA8c2e65202f923c86252eb99b0b3b6494";
+            this.accountSid = configuration["twilio:accountSid"] ?? "";
+            this.authToken = configuration["twilio:authToken"] ?? "";
+            this.numberPhone = configuration["twilio:fromPhoneNumber"] ?? "";
         }
         public string SendVerificationCode(string phone, string message)
         {
