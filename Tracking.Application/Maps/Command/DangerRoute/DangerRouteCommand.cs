@@ -11,5 +11,6 @@ namespace Tracking.Application.Maps.Command.DangerRoute
     {
         public int TrackingId { get; set; }
         public DateTime? DateDanger { get; set; }
+        public DateTime? DateDangerFront { get; set; }
     }
 }
