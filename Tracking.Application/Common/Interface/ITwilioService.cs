@@ -5,7 +5,10 @@ namespace Tracking.Application.Common.Interface
 {
     public interface ITwilioService
     {
-        string SendVerificationCode(string phone, string message);
-        string SendSOS(string phone, GetUserByIdQueryDTO getUserById, Coordinates? coordinates, string trackingId);
+        Task<string> SendVerificationCodeAsync(string phone);
+
+        Task<bool> CheckVerificationCodeAsync(
+            string phone,
+            string code);
     }
 }

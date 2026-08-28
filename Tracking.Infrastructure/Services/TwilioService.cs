@@ -1,61 +1,48 @@
-﻿using System.Text;
+﻿using Microsoft.Extensions.Options;
 using Tracking.Application.Common.Interface;
-using Tracking.Application.Maps.Command.UpdatePoint;
-using Tracking.Application.User.Query.GetUserById;
+using Tracking.Application.Common.Settings;
 using Twilio;
-using Twilio.Rest.Api.V2010.Account;
-using Twilio.Types;
+using Twilio.Rest.Verify.V2.Service;
 
 namespace Tracking.Infrastructure.Services
 {
     public class TwilioService : ITwilioService
     {
-        string accountSid;
-        string authToken;
-        string numberPhone;
-        //string messagingServicesId;
+        private readonly TwilioSettings _twilioSettings;
 
-        public TwilioService(
-            IAcortadorServices acortadorServices)
+        public TwilioService(IOptions<TwilioSettings> twilioOptions)
         {
-            this.accountSid = "AC3f3e5fa2ae43710afd3d7a4aada8a197";
-            this.authToken = "614e790f94bb0911fd14bb10ab0c88ca";
-            this.numberPhone = "+17013605412";
-            //this.messagingServicesId = "VA8c2e65202f923c86252eb99b0b3b6494";
-        }
-        public string SendVerificationCode(string phone, string message)
-        {
-            TwilioClient.Init(this.accountSid, this.authToken);
-            var messaget = MessageResource.Create(
-                body: message.ToString(),
-                from: this.numberPhone,
-                to: "+51" + phone
+            _twilioSettings = twilioOptions.Value;
+
+            TwilioClient.Init(
+                _twilioSettings.AccountSid,
+                _twilioSettings.AuthToken
             );
-            return messaget.Status.ToString();
         }
 
-        public string SendSOS(string phone, GetUserByIdQueryDTO getUserById, Coordinates? coordinates, string rutaAcortada)
+        public async Task<string> SendVerificationCodeAsync(string phone)
         {
-            var messageBody = new StringBuilder();
-
-            messageBody.AppendLine($"Su contacto de confianza {getUserById.Name} {getUserById.LastName}, ha enviado un mensaje de emergencia.");
-            if (coordinates != null)
-            {
-                messageBody.AppendLine($"Coordenadas: {coordinates.Latitude}, {coordinates.Longitude}");
-                messageBody.AppendLine($"Puede visitar el viaje en el siguiente enlace: {rutaAcortada}");
-            }
-            else
-            {
-                messageBody.AppendLine("No se proporcionaron coordenadas.");
-            }
-
-            TwilioClient.Init(this.accountSid, this.authToken);
-            var message = MessageResource.Create(
-                body: messageBody.ToString(),
-                from: this.numberPhone,
-                to: "+51" + phone
+            var verification = await VerificationResource.CreateAsync(
+                to: "+51" + phone,
+                channel: "sms",
+                pathServiceSid: _twilioSettings.VerifyServiceSid
             );
-            return message.Sid;
+
+            return verification.Status;
+        }
+
+        public async Task<bool> CheckVerificationCodeAsync(
+            string phone,
+            string code)
+        {
+            var verificationCheck =
+                await VerificationCheckResource.CreateAsync(
+                    to: "+51" + phone,
+                    code: code,
+                    pathServiceSid: _twilioSettings.VerifyServiceSid
+                );
+
+            return verificationCheck.Status == "approved";
         }
     }
 }

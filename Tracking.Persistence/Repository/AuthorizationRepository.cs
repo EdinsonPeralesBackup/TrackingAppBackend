@@ -66,7 +66,7 @@ namespace Tracking.Persistence.Repository
                 parameters.Add("@pbirthday", Convert.ToDateTime(command.Birthday), DbType.DateTime, ParameterDirection.Input);
                 parameters.Add("@ppassword", this.cryptography.Encrypt(command.Password), DbType.String, ParameterDirection.Input);
                 parameters.Add("@pphonenumber", command.Phonenumber, DbType.String, ParameterDirection.Input);
-                parameters.Add("@presetCode", command.CodeVerification, DbType.String, ParameterDirection.Input);
+
                 parameters.Add("@idUser", "", DbType.Int32, ParameterDirection.Output);
                 parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
 
@@ -77,6 +77,7 @@ namespace Tracking.Persistence.Repository
 
                 var userId = parameters.Get<int>("idUser");
                 var message = parameters.Get<string>("message");
+
                 return new RegisterCommandDTO()
                 {
                     UserId = userId,

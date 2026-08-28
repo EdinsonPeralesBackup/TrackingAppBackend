@@ -79,10 +79,23 @@ namespace Tracking.Persistence.Repository
             {
                 DynamicParameters parameters = new DynamicParameters();
 
-                parameters.Add("@presetCode", command.Code, DbType.String, ParameterDirection.Input);
-                parameters.Add("@pnewPassword", this._cryptography.Encrypt(command.NewPassword), DbType.String, ParameterDirection.Input);
-                parameters.Add("@pphone", command.Phone, DbType.String, ParameterDirection.Input);
-                parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
+                parameters.Add(
+                    "@pnewPassword",
+                    this._cryptography.Encrypt(command.NewPassword),
+                    DbType.String,
+                    ParameterDirection.Input);
+
+                parameters.Add(
+                    "@pphone",
+                    command.Phone,
+                    DbType.String,
+                    ParameterDirection.Input);
+
+                parameters.Add(
+                    "@message",
+                    "",
+                    DbType.String,
+                    ParameterDirection.Output);
 
                 await cnx.ExecuteAsync(
                     "[dbo].[sp_ResetPassword]",
@@ -90,6 +103,7 @@ namespace Tracking.Persistence.Repository
                     commandType: CommandType.StoredProcedure);
 
                 var mensaje = parameters.Get<string>("message");
+
                 return new ResetPasswordCommandDTO()
                 {
                     Message = mensaje
@@ -103,11 +117,29 @@ namespace Tracking.Persistence.Repository
             {
                 DynamicParameters parameters = new DynamicParameters();
 
-                parameters.Add("@presetCode", command.CodeVerifacion, DbType.String, ParameterDirection.Input);
-                parameters.Add("@poldPassword", this._cryptography.Encrypt(command.OldPassword), DbType.String, ParameterDirection.Input);
-                parameters.Add("@pnewPassword", this._cryptography.Encrypt(command.NewPassword), DbType.String, ParameterDirection.Input);
-                parameters.Add("@pidUser", command.IdUser, DbType.Int32, ParameterDirection.Input);
-                parameters.Add("@message", "", DbType.String, ParameterDirection.Output);
+                parameters.Add(
+                    "@poldPassword",
+                    this._cryptography.Encrypt(command.OldPassword),
+                    DbType.String,
+                    ParameterDirection.Input);
+
+                parameters.Add(
+                    "@pnewPassword",
+                    this._cryptography.Encrypt(command.NewPassword),
+                    DbType.String,
+                    ParameterDirection.Input);
+
+                parameters.Add(
+                    "@pidUser",
+                    command.IdUser,
+                    DbType.Int32,
+                    ParameterDirection.Input);
+
+                parameters.Add(
+                    "@message",
+                    "",
+                    DbType.String,
+                    ParameterDirection.Output);
 
                 await cnx.ExecuteAsync(
                     "[dbo].[sp_ChangePassword]",
@@ -115,6 +147,7 @@ namespace Tracking.Persistence.Repository
                     commandType: CommandType.StoredProcedure);
 
                 var mensaje = parameters.Get<string>("message");
+
                 return new ChangePasswordCommandDTO()
                 {
                     Message = mensaje

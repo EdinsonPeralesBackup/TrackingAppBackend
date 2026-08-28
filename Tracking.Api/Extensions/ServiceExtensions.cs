@@ -172,6 +172,7 @@ namespace Tracking.Api.Extensions
             services.Configure<ExternalServicesSettings>(configuration);
             services.Configure<JwtSettings>(configuration.GetSection(Constants.JwtSettings));
             //var rabbitMQSettings = configuration.GetSection(Constants.RabbitMQSettings).Get<RabbitMQSettings>();
+            services.Configure<TwilioSettings>(configuration.GetSection("Twilio"));
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;
