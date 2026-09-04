@@ -315,15 +315,107 @@ namespace Tracking.Persistence.Repository
         }
         private string ConvertirXML(List<Step> steps)
         {
+            var segmentedSteps = new List<Step>();
+
+            foreach (var step in steps)
+            {
+                var decodedPoints = DecodePolyline(step.Polyline?.Points);
+
+                // Si por algún motivo Google no devuelve una polilínea válida,
+                // conservamos el comportamiento anterior Start → End.
+                if (decodedPoints.Count < 2)
+                {
+                    segmentedSteps.Add(step);
+                    continue;
+                }
+
+                for (int i = 0; i < decodedPoints.Count - 1; i++)
+                {
+                    segmentedSteps.Add(new Step
+                    {
+                        Distance = step.Distance,
+                        Duration = step.Duration,
+
+                        Start_location = new Location
+                        {
+                            Lat = Math.Round(decodedPoints[i].Lat, 6),
+                            Lng = Math.Round(decodedPoints[i].Lng, 6)
+                        },
+
+                        End_location = new Location
+                        {
+                            Lat = Math.Round(decodedPoints[i + 1].Lat, 6),
+                            Lng = Math.Round(decodedPoints[i + 1].Lng, 6)
+                        },
+
+                        Html_instructions = step.Html_instructions,
+                        Travel_mode = step.Travel_mode
+                    });
+                }
+            }
+
             var serializer = new XmlSerializer(typeof(List<Step>));
-            string xmlOutput;
+
             using (var writer = new StringWriter())
             {
-                serializer.Serialize(writer, steps);
-                xmlOutput = writer.ToString();
-                Console.WriteLine(xmlOutput);
+                serializer.Serialize(writer, segmentedSteps);
+                return writer.ToString();
             }
-            return xmlOutput;
+        }
+        private List<Location> DecodePolyline(string? encodedPoints)
+        {
+            var points = new List<Location>();
+
+            if (string.IsNullOrWhiteSpace(encodedPoints))
+                return points;
+
+            int index = 0;
+            int latitude = 0;
+            int longitude = 0;
+
+            while (index < encodedPoints.Length)
+            {
+                int result = 0;
+                int shift = 0;
+                int b;
+
+                do
+                {
+                    b = encodedPoints[index++] - 63;
+                    result |= (b & 0x1F) << shift;
+                    shift += 5;
+                }
+                while (b >= 0x20 && index < encodedPoints.Length);
+
+                int deltaLatitude =
+                    (result & 1) != 0 ? ~(result >> 1) : (result >> 1);
+
+                latitude += deltaLatitude;
+
+                result = 0;
+                shift = 0;
+
+                do
+                {
+                    b = encodedPoints[index++] - 63;
+                    result |= (b & 0x1F) << shift;
+                    shift += 5;
+                }
+                while (b >= 0x20 && index < encodedPoints.Length);
+
+                int deltaLongitude =
+                    (result & 1) != 0 ? ~(result >> 1) : (result >> 1);
+
+                longitude += deltaLongitude;
+
+                points.Add(new Location
+                {
+                    Lat = latitude / 100000.0,
+                    Lng = longitude / 100000.0
+                });
+            }
+
+            return points;
         }
     }
 }
