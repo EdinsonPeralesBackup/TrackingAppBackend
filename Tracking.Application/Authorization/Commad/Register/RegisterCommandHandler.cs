@@ -30,6 +30,26 @@ namespace Tracking.Application.Authorization.Commad.Register
             RegisterCommand request,
             CancellationToken cancellationToken)
         {
+            // Evita llamar a Twilio si Flutter no envía el número.
+            if (string.IsNullOrWhiteSpace(request.Phonenumber))
+            {
+                return new RegisterCommandDTO()
+                {
+                    UserId = 0,
+                    Message = "Phone number is required."
+                };
+            }
+
+            // Evita llamar a Twilio si no se envía el código.
+            if (string.IsNullOrWhiteSpace(request.CodeVerification))
+            {
+                return new RegisterCommandDTO()
+                {
+                    UserId = 0,
+                    Message = "Verification code is required."
+                };
+            }
+
             var isApproved =
                 await _twilioService.CheckVerificationCodeAsync(
                     request.Phonenumber,
